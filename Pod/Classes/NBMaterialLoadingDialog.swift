@@ -44,7 +44,7 @@
         :param: message The message displayed to the user while its loading
         :returns: The Loading Dialog
     */
-    public class func showLoadingDialogWithText(message: String) -> NBMaterialLoadingDialog {
+    public class func showLoadingDialogWithText(windowView: UIView, message: String) -> NBMaterialLoadingDialog {
         let containerView = UIView()
         let circularLoadingActivity = NBMaterialCircularActivityIndicator()
         let loadingLabel = UILabel()
@@ -83,7 +83,7 @@
 
         // Initialize dialog and display
         let dialog = NBMaterialLoadingDialog()
-        dialog.showDialog(nil, content: containerView)
+        dialog.showDialog(windowView, title: nil, content: containerView)
 
         // Start spinner
         circularLoadingActivity.startAnimating()

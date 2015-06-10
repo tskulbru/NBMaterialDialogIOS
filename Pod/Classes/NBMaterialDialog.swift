@@ -42,10 +42,11 @@ Simple material dialog class
     private var cancelButton: BFPaperButton?
     private var tapGesture: UITapGestureRecognizer!
     private var backgroundColor: UIColor!
+    private var windowView: UIView!
 
     private var isStacked: Bool = false
 
-    private let kBackgroundTransparency: CGFloat = 0.2
+    private let kBackgroundTransparency: CGFloat = 0.7
     private let kPadding: CGFloat = 16.0
     private let kWidthMargin: CGFloat = 40.0
     private let kHeightMargin: CGFloat = 24.0
@@ -69,19 +70,13 @@ Simple material dialog class
     // MARK: - Constructors
     public convenience init() {
         self.init(color: UIColor.whiteColor())
-
-        modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
     }
     
     public convenience init(color: UIColor) {
         self.init(nibName: nil, bundle:nil)
-
-        modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-
-//        view.frame = UIScreen.mainScreen().bounds
-//        view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
-//        view.backgroundColor = UIColor.redColor()
-        view.backgroundColor = UIColor.clearColor() //UIColor(red:0, green:0, blue:0, alpha:kBackgroundTransparency)
+        view.frame = UIScreen.mainScreen().bounds
+        view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+        view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:kBackgroundTransparency)
         backgroundColor = color
         setupContainerView()
         view.addSubview(containerView)
@@ -119,80 +114,84 @@ Simple material dialog class
             }
         }
 
-//        view.removeGestureRecognizer(tapGesture)
-//
-//        for childView in view.subviews {
-//            childView.removeFromSuperview()
-//        }
+        view.removeGestureRecognizer(tapGesture)
 
-//        view.removeFromSuperview()
-//        strongSelf = nil
+        for childView in view.subviews {
+            childView.removeFromSuperview()
+        }
 
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        view.removeFromSuperview()
+        strongSelf = nil
     }
 
     /**
     Displays a simple dialog using a title and a view with the content you need
 
+    :param: windowView The window which the dialog is to be attached
     :param: title The dialog title
     :param: content A custom content view
     */
-    public func showDialog(title: String?, content: UIView) -> NBMaterialDialog {
-        return showDialog(title, content: content, dialogHeight: nil, okButtonTitle: nil, action: nil, cancelButtonTitle: nil, stackedButtons: false)
+    public func showDialog(windowView: UIView, title: String?, content: UIView) -> NBMaterialDialog {
+        return showDialog(windowView, title: title, content: content, dialogHeight: nil, okButtonTitle: nil, action: nil, cancelButtonTitle: nil, stackedButtons: false)
     }
 
     /**
     Displays a simple dialog using a title and a view with the content you need
 
-    :param: title The dialog title
-    :param: content A custom content view
-    :param: dialogHeight The height of the dialog
-    */
-    public func showDialog(title: String?, content: UIView, dialogHeight: CGFloat?) -> NBMaterialDialog {
-        return showDialog(title, content: content, dialogHeight: dialogHeight, okButtonTitle: nil, action: nil, cancelButtonTitle: nil, stackedButtons: false)
-    }
-
-    /**
-    Displays a simple dialog using a title and a view with the content you need
-
+    :param: windowView The window which the dialog is to be attached
     :param: title The dialog title
     :param: content A custom content view
     :param: dialogHeight The height of the dialog
-    :param: okButtonTitle The title of the last button (far-most right), normally OK, CLOSE or YES (positive response).
     */
-    public func showDialog(title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?) -> NBMaterialDialog {
-        return showDialog(title, content: content, dialogHeight: dialogHeight, okButtonTitle: okButtonTitle, action: nil, cancelButtonTitle: nil, stackedButtons: false)
+    public func showDialog(windowView: UIView, title: String?, content: UIView, dialogHeight: CGFloat?) -> NBMaterialDialog {
+        return showDialog(windowView, title: title, content: content, dialogHeight: dialogHeight, okButtonTitle: nil, action: nil, cancelButtonTitle: nil, stackedButtons: false)
     }
 
     /**
     Displays a simple dialog using a title and a view with the content you need
 
+    :param: windowView The window which the dialog is to be attached
     :param: title The dialog title
     :param: content A custom content view
     :param: dialogHeight The height of the dialog
     :param: okButtonTitle The title of the last button (far-most right), normally OK, CLOSE or YES (positive response).
-    :param: action The action you wish to invoke when a button is clicked
     */
-    public func showDialog(title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?) -> NBMaterialDialog {
-        return showDialog(title, content: content, dialogHeight: dialogHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: nil, stackedButtons: false)
+    public func showDialog(windowView: UIView, title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?) -> NBMaterialDialog {
+        return showDialog(windowView, title: title, content: content, dialogHeight: dialogHeight, okButtonTitle: okButtonTitle, action: nil, cancelButtonTitle: nil, stackedButtons: false)
     }
 
     /**
     Displays a simple dialog using a title and a view with the content you need
 
+    :param: windowView The window which the dialog is to be attached
     :param: title The dialog title
     :param: content A custom content view
     :param: dialogHeight The height of the dialog
     :param: okButtonTitle The title of the last button (far-most right), normally OK, CLOSE or YES (positive response).
     :param: action The action you wish to invoke when a button is clicked
     */
-    public func showDialog(title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialDialog {
-        return showDialog(title, content: content, dialogHeight: dialogHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle, stackedButtons: false)
+    public func showDialog(windowView: UIView, title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?) -> NBMaterialDialog {
+        return showDialog(windowView, title: title, content: content, dialogHeight: dialogHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: nil, stackedButtons: false)
     }
 
     /**
     Displays a simple dialog using a title and a view with the content you need
 
+    :param: windowView The window which the dialog is to be attached
+    :param: title The dialog title
+    :param: content A custom content view
+    :param: dialogHeight The height of the dialog
+    :param: okButtonTitle The title of the last button (far-most right), normally OK, CLOSE or YES (positive response).
+    :param: action The action you wish to invoke when a button is clicked
+    */
+    public func showDialog(windowView: UIView, title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialDialog {
+        return showDialog(windowView, title: title, content: content, dialogHeight: dialogHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle, stackedButtons: false)
+    }
+
+    /**
+    Displays a simple dialog using a title and a view with the content you need
+
+    :param: windowView The window which the dialog is to be attached
     :param: title The dialog title
     :param: content A custom content view
     :param: dialogHeight The height of the dialog
@@ -201,14 +200,18 @@ Simple material dialog class
     :param: cancelButtonTitle The title of the first button (the left button), normally CANCEL or NO (negative response)
     :param: stackedButtons Defines if a stackd button view should be used
     */
-    public func showDialog(title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?, stackedButtons: Bool) -> NBMaterialDialog {
-
-        let screenSize = UIScreen.mainScreen().bounds
+    public func showDialog(windowView: UIView, title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?, stackedButtons: Bool) -> NBMaterialDialog {
 
         isStacked = stackedButtons
 
         var totalButtonTitleLength: CGFloat = 0.0
 
+        self.windowView = windowView
+        
+        let windowSize = windowView.bounds
+
+        windowView.addSubview(view)
+        view.frame = windowView.bounds
         tapGesture = UITapGestureRecognizer(target: self, action: "tappedBg")
         view.addGestureRecognizer(tapGesture)
 
@@ -229,7 +232,7 @@ Simple material dialog class
             }
 
             // Calculate if the combined button title lengths are longer than max allowed for this dialog, if so use stacked buttons.
-            let buttonTotalMaxLength: CGFloat = (screenSize.width - (kWidthMargin*2)) - 16 - 16 - 8
+            let buttonTotalMaxLength: CGFloat = (windowSize.width - (kWidthMargin*2)) - 16 - 16 - 8
             if totalButtonTitleLength > buttonTotalMaxLength {
                 isStacked = true
             }
@@ -257,7 +260,7 @@ Simple material dialog class
         setupViewConstraints()
 
         // To get dynamic width to work we need to comment this out and uncomment the stuff in setupViewConstraints. But its currently not working..
-        containerView.frame = CGRectMake(kWidthMargin, (screenSize.height - (dialogHeight ?? kMinimumHeight)) / 2, screenSize.width - (kWidthMargin*2), fmin(kMaxHeight, (dialogHeight ?? kMinimumHeight)))
+        containerView.frame = CGRectMake(kWidthMargin, (windowSize.height - (dialogHeight ?? kMinimumHeight)) / 2, windowSize.width - (kWidthMargin*2), fmin(kMaxHeight, (dialogHeight ?? kMinimumHeight)))
         containerView.clipsToBounds = true
         return self
     }
@@ -300,7 +303,7 @@ Simple material dialog class
     */
     internal func setupViewConstraints() {
         if constraintViews == nil {
-            constraintViews = ["content": contentView, "containerView": containerView]
+            constraintViews = ["content": contentView, "containerView": containerView, "window": windowView]
         }
         containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-24-[content]-24-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
         if let titleLabel = self.titleLabel {
@@ -320,6 +323,7 @@ Simple material dialog class
         } else {
             containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[content]-24-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
         }
+        // TODO: Fix constraints for the containerView so we can remove the dialogheight var
 //
 //        let margins = ["kWidthMargin": kWidthMargin, "kMinimumHeight": kMinimumHeight, "kMaxHeight": kMaxHeight]
 //        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(>=kWidthMargin)-[containerView(>=80@1000)]-(>=kWidthMargin)-|", options: NSLayoutFormatOptions(0), metrics: margins, views: constraintViews))
@@ -334,13 +338,13 @@ Simple material dialog class
     internal func setupButtonConstraints() {
         if let okButton = self.okButton {
             constraintViews["okButton"] = okButton
-            containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[content]-24-[okButton(==36)]-14-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+            containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[content]-24-[okButton(==36)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
 
             // The cancel button is only shown when the ok button is visible
             if let cancelButton = self.cancelButton {
                 constraintViews["cancelButton"] = cancelButton
-                containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[cancelButton(==36)]-14-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
-                containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[cancelButton(>=64)]-4-[okButton(>=64)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+                containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[cancelButton(==36)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+                containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[cancelButton(>=64)]-8-[okButton(>=64)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
             } else {
                 containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[okButton(>=64)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
             }
@@ -354,10 +358,10 @@ Simple material dialog class
         constraintViews["okButton"] = okButton!
         constraintViews["cancelButton"] = cancelButton!
 
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[content]-16-[okButton(==48)]-[cancelButton(==48)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[content]-24-[okButton(==48)]-[cancelButton(==48)]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
 
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[okButton]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[cancelButton]-8-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[okButton]-16-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[cancelButton]-16-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
     }
 
     // MARK: Private view helpers / initializers
