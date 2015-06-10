@@ -10,13 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "NBMaterialDialogIOS"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NBMaterialDialogIOS."
-  s.description      = <<-DESC
-                       An optional longer description of NBMaterialDialogIOS
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS."
   s.homepage         = "https://github.com/tskulbru/NBMaterialDialogIOS"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'

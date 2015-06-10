@@ -1,4 +1,5 @@
 # NBMaterialDialogIOS
+NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS
 
 [![CI Status](http://img.shields.io/travis/Torstein Skulbru/NBMaterialDialogIOS.svg?style=flat)](https://travis-ci.org/Torstein Skulbru/NBMaterialDialogIOS)
 [![Version](https://img.shields.io/cocoapods/v/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
