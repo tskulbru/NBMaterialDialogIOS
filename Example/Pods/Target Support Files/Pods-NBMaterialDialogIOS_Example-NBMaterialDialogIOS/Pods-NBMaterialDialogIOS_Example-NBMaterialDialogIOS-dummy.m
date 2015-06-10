@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_NBMaterialDialogIOS_Example_NBMaterialDialogIOS : NSObject
+@end
+@implementation PodsDummy_Pods_NBMaterialDialogIOS_Example_NBMaterialDialogIOS
+@end

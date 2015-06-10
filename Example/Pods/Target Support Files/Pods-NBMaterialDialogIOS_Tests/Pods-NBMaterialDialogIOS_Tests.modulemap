@@ -1,0 +1,6 @@
+framework module Pods_NBMaterialDialogIOS_Tests {
+  umbrella header "Pods-NBMaterialDialogIOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
