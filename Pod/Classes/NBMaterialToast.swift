@@ -79,7 +79,7 @@ public enum NBLunchDuration : NSTimeInterval {
         })
     }
 
-    internal class func __createWithTextAndConstraints(text: String, duration: NBLunchDuration) -> AnyObject {
+    internal class func __createWithTextAndConstraints(windowView: UIView, text: String, duration: NBLunchDuration) -> NBMaterialToast {
         let screenSize = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
 
@@ -106,8 +106,7 @@ public enum NBLunchDuration : NSTimeInterval {
 
         toast.addSubview(textLabel)
 
-        let mainWindow = UIApplication.sharedApplication().keyWindow
-        mainWindow?.addSubview(toast)
+        windowView.addSubview(toast)
 
         toast.constraintViews = [
             "textLabel": textLabel,
@@ -128,10 +127,9 @@ public enum NBLunchDuration : NSTimeInterval {
         toast.setContentHuggingPriority(750, forAxis: UILayoutConstraintAxis.Horizontal)
         toast.setContentCompressionResistancePriority(750, forAxis: UILayoutConstraintAxis.Horizontal)
 
-        mainWindow?.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[toast(>=minHeight)]-vMargin-|", options: NSLayoutFormatOptions(0), metrics: toast.constraintMetrics, views: toast.constraintViews))
-        mainWindow?.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(>=hMargin)-[toast]-(>=hMargin)-|", options: NSLayoutFormatOptions(0), metrics: toast.constraintMetrics, views: toast.constraintViews))
-        mainWindow?.addConstraint(NSLayoutConstraint(item: toast, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: mainWindow!, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
-
+        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[toast(>=minHeight)]-vMargin-|", options: NSLayoutFormatOptions(0), metrics: toast.constraintMetrics, views: toast.constraintViews))
+        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(>=hMargin)-[toast]-(>=hMargin)-|", options: NSLayoutFormatOptions(0), metrics: toast.constraintMetrics, views: toast.constraintViews))
+        windowView.addConstraint(NSLayoutConstraint(item: toast, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: windowView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
 
         return toast
 
@@ -139,21 +137,23 @@ public enum NBLunchDuration : NSTimeInterval {
 
     /**
     Displays a classic toast message with a user defined text, shown for a standard period of time
-    
+
+    :param: windowView The window which the toast is to be attached
     :param: text The message to be displayed
     */
-    public class func showWithText(text: NSString) {
-        NBMaterialToast.showWithText(text, duration: NBLunchDuration.MEDIUM)
+    public class func showWithText(windowView: UIView, text: String) {
+        NBMaterialToast.showWithText(windowView, text: text, duration: NBLunchDuration.MEDIUM)
     }
 
     /**
     Displays a classic toast message with a user defined text and duration
     
+    :param: windowView The window which the toast is to be attached
     :param: text The message to be displayed
     :param: duration The duration of the toast
     */
-    public class func showWithText(text: NSString, duration: NBLunchDuration) {
-        let toast: NBMaterialToast = NBMaterialToast.__createWithTextAndConstraints(text as String, duration: duration) as! NBMaterialToast
+    public class func showWithText(windowView: UIView, text: String, duration: NBLunchDuration) {
+        let toast: NBMaterialToast = NBMaterialToast.__createWithTextAndConstraints(windowView, text: text, duration: duration)
         toast.__show()
     }
 }

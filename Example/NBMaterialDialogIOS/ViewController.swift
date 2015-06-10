@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        NBMaterialToast.showWithText("kajdasd", duration: NBLunchDuration.LONG)
+        NBMaterialToast.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
         var indicator = NBMaterialCircularActivityIndicator(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
         view.addSubview(indicator)
         indicator.setAnimating(true)
@@ -36,6 +36,8 @@ class ViewController: UIViewController {
     @IBAction func handleShowAlert(sender: AnyObject) {
 //        NBMaterialAlertDialog.showAlertWithText(view, text: "asd", okButtonTitle: "OK", action: nil, cancelButtonTitle: nil)
 //        NBMaterialAlertDialog.showAlertWithTextAndTitle(view, text: "Super duper text?", title: "Did you know..", dialogHeight: 150, okButtonTitle: "YES", action: nil, cancelButtonTitle: "OH SHIT")
+
+        NBMaterialLoadingDialog.showLoadingDialogWithText(view, message: "Loading some awesome content...")
     }
 }
 

@@ -61,6 +61,7 @@
         loadingLabel.font = UIFont.robotoRegularOfSize(14)
         loadingLabel.textColor = NBConfig.PrimaryTextDark
         loadingLabel.text = message
+        // TODO: Add support for multiple lines, probably need to fix the dynamic dialog height todo first
         loadingLabel.numberOfLines = 1
 
         containerView.addSubview(loadingLabel)
