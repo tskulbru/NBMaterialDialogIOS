@@ -17,7 +17,7 @@ extension World {
     }
 
     public func describe(description: String, flags: FilterFlags, closure: () -> ()) {
-        let group = ExampleGroup(description: description, flags: flags)
+        var group = ExampleGroup(description: description, flags: flags)
         currentExampleGroup!.appendExampleGroup(group)
         currentExampleGroup = group
         closure()
@@ -44,7 +44,7 @@ extension World {
         currentExampleGroup!.hooks.appendBefore(closure)
     }
 
-    public func beforeEach(closure closure: BeforeExampleWithMetadataClosure) {
+    public func beforeEach(#closure: BeforeExampleWithMetadataClosure) {
         currentExampleGroup!.hooks.appendBefore(closure)
     }
 
@@ -52,7 +52,7 @@ extension World {
         currentExampleGroup!.hooks.appendAfter(closure)
     }
 
-    public func afterEach(closure closure: AfterExampleWithMetadataClosure) {
+    public func afterEach(#closure: AfterExampleWithMetadataClosure) {
         currentExampleGroup!.hooks.appendAfter(closure)
     }
 
@@ -82,7 +82,7 @@ extension World {
         let callsite = Callsite(file: file, line: line)
         let closure = World.sharedWorld().sharedExample(name)
 
-        let group = ExampleGroup(description: name, flags: flags)
+        var group = ExampleGroup(description: name, flags: flags)
         currentExampleGroup!.appendExampleGroup(group)
         currentExampleGroup = group
         closure(sharedExampleContext)
@@ -95,6 +95,6 @@ extension World {
     }
 
     public func pending(description: String, closure: () -> ()) {
-        print("Pending: \(description)")
+        println("Pending: \(description)")
     }
 }

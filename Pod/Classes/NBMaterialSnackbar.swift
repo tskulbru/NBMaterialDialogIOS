@@ -1,5 +1,5 @@
 //
-//  NBSnackbar.swift
+//  NBMaterialSnackbar.swift
 //  NBMaterialDialogIOS
 //
 //  Created by Torstein Skulbru on 02/05/15.
@@ -26,7 +26,7 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@objc public class NBSnackbar : UIView {
+@objc public class NBMaterialSnackbar : UIView {
     // MARK: - Class variables and constants
 
     internal let kMinHeight: CGFloat = 48.0
@@ -34,7 +34,7 @@
     internal let kHorizontalPadding: CGFloat = 24.0
     internal let kVerticalSinglePadding: CGFloat = 14.0
     internal let kVerticalMultiPadding: CGFloat = 24.0
-    internal let kFontRoboto: UIFont = UIFont(name: "Roboto-Regular", size: 14)!
+    internal let kFontRoboto: UIFont = UIFont.robotoRegularOfSize(14)
     internal let kFontColor: UIColor = NBConfig.PrimaryTextLight
     internal let kDefaultBackground: UIColor = UIColor(hex: 0x323232, alpha: 1.0)
 
@@ -92,7 +92,7 @@
         let screenSize = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
 
-        var snack = NBSnackbar()
+        var snack = NBMaterialSnackbar()
         snack.lunchDuration = duration
         snack.setTranslatesAutoresizingMaskIntoConstraints(false)
         snack.currentHeight = snack.kMinHeight
@@ -148,7 +148,7 @@
     :param: text The message to be displayed
     */
     public class func showWithText(text: NSString) {
-        NBSnackbar.showWithText(text, duration: NBLunchDuration.MEDIUM)
+        NBMaterialSnackbar.showWithText(text, duration: NBLunchDuration.MEDIUM)
     }
 
     /**
@@ -158,7 +158,7 @@
     :param: duration The duration of the snackbar
     */
     public class func showWithText(text: NSString, duration: NBLunchDuration) {
-        let toast: NBSnackbar = NBSnackbar.__createSingleWithTextAndDuration(text as String, duration: duration) as! NBSnackbar
+        let toast: NBMaterialSnackbar = NBMaterialSnackbar.__createSingleWithTextAndDuration(text as String, duration: duration) as! NBMaterialSnackbar
         toast.__show()
     }
 }

@@ -37,8 +37,8 @@
     :param: action The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
     :param: cancelButtonTitle The negative button when multiple buttons.
     */
-    public class func showAlertWithText(text: String, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) {
-        NBMaterialAlertDialog.showAlertWithTextAndTitle(text, title: nil, dialogHeight: nil, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
+    public class func showAlertWithText(text: String, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialDialog {
+        return NBMaterialAlertDialog.showAlertWithTextAndTitle(text, title: nil, dialogHeight: nil, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
     }
 
     /**
@@ -51,15 +51,15 @@
     :param: action The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
     :param: cancelButtonTitle The negative button when multiple buttons.
     */
-    public class func showAlertWithTextAndTitle(text: String, title: String?, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) {
+    public class func showAlertWithTextAndTitle(text: String, title: String?, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialDialog {
         let alertLabel = UILabel()
         alertLabel.numberOfLines = 0
-        alertLabel.font = UIFont(name: "Roboto-Regular", size: 14)
+        alertLabel.font = UIFont.robotoRegularOfSize(14)
         alertLabel.textColor = NBConfig.PrimaryTextDark
         alertLabel.text = text
         alertLabel.sizeToFit()
 
         let dialog = NBMaterialDialog()
-        dialog.showDialog(title, content: alertLabel, dialogHeight: dialogHeight ?? dialog.kMinimumHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
+        return dialog.showDialog(title, content: alertLabel, dialogHeight: dialogHeight ?? dialog.kMinimumHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
     }
 }

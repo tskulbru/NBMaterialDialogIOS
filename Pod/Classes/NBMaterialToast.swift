@@ -40,7 +40,7 @@ public enum NBLunchDuration : NSTimeInterval {
     internal let kMinHeight: CGFloat = 48.0
     internal let kHorizontalPadding: CGFloat = 24.0
     internal let kVerticalPadding: CGFloat = 16.0
-    internal let kFontRoboto: UIFont = UIFont(name: "Roboto-Regular", size: 14)!
+    internal let kFontRoboto: UIFont = UIFont.robotoRegularOfSize(14)
     internal let kFontColor: UIColor = NBConfig.PrimaryTextLight
     internal let kDefaultBackground: UIColor = UIColor(hex: 0x323232, alpha: 1.0)
 

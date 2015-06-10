@@ -58,7 +58,7 @@
 
         loadingLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         loadingLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
-        loadingLabel.font = UIFont(name: "Roboto-Regular", size: 14)
+        loadingLabel.font = UIFont.robotoRegularOfSize(14)
         loadingLabel.textColor = NBConfig.PrimaryTextDark
         loadingLabel.text = message
         loadingLabel.numberOfLines = 1

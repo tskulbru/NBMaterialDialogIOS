@@ -42,11 +42,10 @@ Simple material dialog class
     private var cancelButton: BFPaperButton?
     private var tapGesture: UITapGestureRecognizer!
     private var backgroundColor: UIColor!
-    private var windowView: UIView!
 
     private var isStacked: Bool = false
 
-    private let kBackgroundTransparency: CGFloat = 0.7
+    private let kBackgroundTransparency: CGFloat = 0.2
     private let kPadding: CGFloat = 16.0
     private let kWidthMargin: CGFloat = 40.0
     private let kHeightMargin: CGFloat = 24.0
@@ -70,13 +69,19 @@ Simple material dialog class
     // MARK: - Constructors
     public convenience init() {
         self.init(color: UIColor.whiteColor())
+
+        modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
     }
     
     public convenience init(color: UIColor) {
         self.init(nibName: nil, bundle:nil)
-        view.frame = UIScreen.mainScreen().bounds
-        view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
-        view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:kBackgroundTransparency)
+
+        modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+
+//        view.frame = UIScreen.mainScreen().bounds
+//        view.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+//        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = UIColor.clearColor() //UIColor(red:0, green:0, blue:0, alpha:kBackgroundTransparency)
         backgroundColor = color
         setupContainerView()
         view.addSubview(containerView)
@@ -114,14 +119,16 @@ Simple material dialog class
             }
         }
 
-        view.removeGestureRecognizer(tapGesture)
+//        view.removeGestureRecognizer(tapGesture)
+//
+//        for childView in view.subviews {
+//            childView.removeFromSuperview()
+//        }
 
-        for childView in view.subviews {
-            childView.removeFromSuperview()
-        }
+//        view.removeFromSuperview()
+//        strongSelf = nil
 
-        view.removeFromSuperview()
-        strongSelf = nil
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 
     /**
@@ -196,15 +203,12 @@ Simple material dialog class
     */
     public func showDialog(title: String?, content: UIView, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?, stackedButtons: Bool) -> NBMaterialDialog {
 
+        let screenSize = UIScreen.mainScreen().bounds
+
         isStacked = stackedButtons
 
         var totalButtonTitleLength: CGFloat = 0.0
 
-        windowView = UIApplication.sharedApplication().keyWindow?.subviews.first as! UIView
-        let windowSize = windowView.bounds
-
-        windowView.addSubview(view)
-        view.frame = windowView.bounds
         tapGesture = UITapGestureRecognizer(target: self, action: "tappedBg")
         view.addGestureRecognizer(tapGesture)
 
@@ -219,13 +223,13 @@ Simple material dialog class
         }
 
         if let okButtonTitle = okButtonTitle {
-            totalButtonTitleLength += (okButtonTitle.uppercaseString as NSString).sizeWithAttributes([NSFontAttributeName: UIFont(name: "Roboto-Medium", size: 14)!]).width + 8
+            totalButtonTitleLength += (okButtonTitle.uppercaseString as NSString).sizeWithAttributes([NSFontAttributeName: UIFont.robotoMediumOfSize(14)]).width + 8
             if let cancelButtonTitle = cancelButtonTitle {
-                totalButtonTitleLength += (cancelButtonTitle.uppercaseString as NSString).sizeWithAttributes([NSFontAttributeName: UIFont(name: "Roboto-Medium", size: 14)!]).width + 8
+                totalButtonTitleLength += (cancelButtonTitle.uppercaseString as NSString).sizeWithAttributes([NSFontAttributeName: UIFont.robotoMediumOfSize(14)]).width + 8
             }
 
             // Calculate if the combined button title lengths are longer than max allowed for this dialog, if so use stacked buttons.
-            let buttonTotalMaxLength: CGFloat = (windowSize.width - (kWidthMargin*2)) - 16 - 16 - 8
+            let buttonTotalMaxLength: CGFloat = (screenSize.width - (kWidthMargin*2)) - 16 - 16 - 8
             if totalButtonTitleLength > buttonTotalMaxLength {
                 isStacked = true
             }
@@ -253,7 +257,7 @@ Simple material dialog class
         setupViewConstraints()
 
         // To get dynamic width to work we need to comment this out and uncomment the stuff in setupViewConstraints. But its currently not working..
-        containerView.frame = CGRectMake(kWidthMargin, (windowSize.height - (dialogHeight ?? kMinimumHeight)) / 2, windowSize.width - (kWidthMargin*2), fmin(kMaxHeight, (dialogHeight ?? kMinimumHeight)))
+        containerView.frame = CGRectMake(kWidthMargin, (screenSize.height - (dialogHeight ?? kMinimumHeight)) / 2, screenSize.width - (kWidthMargin*2), fmin(kMaxHeight, (dialogHeight ?? kMinimumHeight)))
         containerView.clipsToBounds = true
         return self
     }
@@ -296,7 +300,7 @@ Simple material dialog class
     */
     internal func setupViewConstraints() {
         if constraintViews == nil {
-            constraintViews = ["content": contentView, "containerView": containerView, "window": windowView]
+            constraintViews = ["content": contentView, "containerView": containerView]
         }
         containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-24-[content]-24-|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
         if let titleLabel = self.titleLabel {
@@ -371,7 +375,7 @@ Simple material dialog class
         titleLabel = UILabel()
         if let titleLabel = titleLabel {
             titleLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
-            titleLabel.font = UIFont(name: "Roboto-Medium", size: 20)
+            titleLabel.font = UIFont.robotoMediumOfSize(20)
             titleLabel.textColor = UIColor(white: 0.13, alpha: 1.0)
             titleLabel.numberOfLines = 0
             titleLabel.text = title
@@ -390,7 +394,7 @@ Simple material dialog class
             button.setTitle(title.uppercaseString, forState: .Normal)
             button.setTitleColor(NBConfig.AccentColor, forState: .Normal)
             button.isRaised = false
-            button.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 14)
+            button.titleLabel?.font = UIFont.robotoMediumOfSize(14)
             if isStacked {
                 button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
                 button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 20)

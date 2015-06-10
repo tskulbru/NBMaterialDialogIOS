@@ -17,8 +17,8 @@ install_framework()
   fi
 
   # use filter instead of exclude so missing patterns dont' throw errors
-  echo "rsync -av --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers/" --filter "- PrivateHeaders/" ${source} ${destination}"
-  rsync -av --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers/" --filter "- PrivateHeaders/" "${source}" "${destination}"
+  echo "rsync -av --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers/" --filter "- PrivateHeaders/" --filter "- Modules/" ${source} ${destination}"
+  rsync -av --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers/" --filter "- PrivateHeaders/" --filter "- Modules/" "${source}" "${destination}"
   # Resign the code if required by the build settings to avoid unstable apps
   if [ "${CODE_SIGNING_REQUIRED}" == "YES" ]; then
       code_sign "${destination}/$1"
@@ -48,16 +48,20 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'BFPaperButton.framework'
   install_framework 'FBSnapshotTestCase.framework'
   install_framework 'NBMaterialDialogIOS.framework'
   install_framework 'Nimble.framework'
   install_framework 'Nimble_Snapshots.framework'
   install_framework 'Quick.framework'
+  install_framework 'UIColor_BFPaperColors.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'BFPaperButton.framework'
   install_framework 'FBSnapshotTestCase.framework'
   install_framework 'NBMaterialDialogIOS.framework'
   install_framework 'Nimble.framework'
   install_framework 'Nimble_Snapshots.framework'
   install_framework 'Quick.framework'
+  install_framework 'UIColor_BFPaperColors.framework'
 fi

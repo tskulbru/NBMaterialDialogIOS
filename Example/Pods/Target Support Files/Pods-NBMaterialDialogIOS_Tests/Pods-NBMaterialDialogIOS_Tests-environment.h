@@ -6,6 +6,12 @@
 // project.
 
 
+// BFPaperButton
+#define COCOAPODS_POD_AVAILABLE_BFPaperButton
+#define COCOAPODS_VERSION_MAJOR_BFPaperButton 2
+#define COCOAPODS_VERSION_MINOR_BFPaperButton 0
+#define COCOAPODS_VERSION_PATCH_BFPaperButton 18
+
 // FBSnapshotTestCase
 #define COCOAPODS_POD_AVAILABLE_FBSnapshotTestCase
 #define COCOAPODS_VERSION_MAJOR_FBSnapshotTestCase 1
@@ -33,6 +39,12 @@
 // Quick
 #define COCOAPODS_POD_AVAILABLE_Quick
 #define COCOAPODS_VERSION_MAJOR_Quick 0
-#define COCOAPODS_VERSION_MINOR_Quick 4
-#define COCOAPODS_VERSION_PATCH_Quick 0
+#define COCOAPODS_VERSION_MINOR_Quick 3
+#define COCOAPODS_VERSION_PATCH_Quick 1
+
+// UIColor+BFPaperColors
+#define COCOAPODS_POD_AVAILABLE_UIColor_BFPaperColors
+#define COCOAPODS_VERSION_MAJOR_UIColor_BFPaperColors 1
+#define COCOAPODS_VERSION_MINOR_UIColor_BFPaperColors 7
+#define COCOAPODS_VERSION_PATCH_UIColor_BFPaperColors 1
 

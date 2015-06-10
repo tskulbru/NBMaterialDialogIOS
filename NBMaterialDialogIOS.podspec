@@ -24,13 +24,15 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/tskulbru/NBMaterialDialogIOS.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/tskulbru'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '8.1'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'NBMaterialDialogIOS' => ['Pod/Assets/*.ttf']
-  }
+  s.source_files = 'Pod/Classes/**/*.swift'
+  s.resource = 'Pod/Assets/*.ttf'
+#  s.resource_bundles = {
+#   'NBMaterialDialogIOS' => ['Pod/Assets/*.ttf']
+# }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
