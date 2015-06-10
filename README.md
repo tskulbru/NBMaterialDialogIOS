@@ -1,7 +1,6 @@
 # NBMaterialDialogIOS
 NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS
 
-[![CI Status](http://img.shields.io/travis/Torstein Skulbru/NBMaterialDialogIOS.svg?style=flat)](https://travis-ci.org/Torstein Skulbru/NBMaterialDialogIOS)
 [![Version](https://img.shields.io/cocoapods/v/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
 [![License](https://img.shields.io/cocoapods/l/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
 [![Platform](https://img.shields.io/cocoapods/p/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
@@ -13,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 ## Installation
-
+### SOON!!
 NBMaterialDialogIOS is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -23,7 +22,7 @@ pod "NBMaterialDialogIOS"
 
 ## Author
 
-Torstein Skulbru, torstein.skulbru@evry.com
+Torstein Skulbru
 
 ## License
 
