@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        NBMaterialToast.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
+//        NBMaterialToast.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
+        NBMaterialSnackbar.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
         var indicator = NBMaterialCircularActivityIndicator(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
         view.addSubview(indicator)
         indicator.setAnimating(true)

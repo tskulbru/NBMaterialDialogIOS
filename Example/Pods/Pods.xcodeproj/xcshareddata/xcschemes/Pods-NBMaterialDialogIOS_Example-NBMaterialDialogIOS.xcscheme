@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43DC7C4FDCFEF5EF3475A0C3"
+               BlueprintIdentifier = "52A7C855E56C3BE53688C8B1"
                BuildableName = "NBMaterialDialogIOS.framework"
                BlueprintName = "Pods-NBMaterialDialogIOS_Example-NBMaterialDialogIOS"
                ReferencedContainer = "container:Pods.xcodeproj">
