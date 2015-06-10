@@ -10,7 +10,7 @@ import UIKit
 import NBMaterialDialogIOS
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,12 +21,9 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-//        NBMaterialToast.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
-        NBMaterialSnackbar.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
-        var indicator = NBMaterialCircularActivityIndicator(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
-        view.addSubview(indicator)
-        indicator.setAnimating(true)
-
+        let loadingIndicatorView = NBMaterialCircularActivityIndicator(frame: CGRect(x: 247, y: 46, width: 48, height: 48))
+        loadingIndicatorView.setAnimating(true)
+        view.addSubview(loadingIndicatorView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,11 +31,38 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func handleShowAlert(sender: AnyObject) {
-//        NBMaterialAlertDialog.showAlertWithText(view, text: "asd", okButtonTitle: "OK", action: nil, cancelButtonTitle: nil)
-//        NBMaterialAlertDialog.showAlertWithTextAndTitle(view, text: "Super duper text?", title: "Did you know..", dialogHeight: 150, okButtonTitle: "YES", action: nil, cancelButtonTitle: "OH SHIT")
+    /**
+    Lets you run a block of code after a delay defined in seconds
 
-        NBMaterialLoadingDialog.showLoadingDialogWithText(view, message: "Loading some awesome content...")
+    :param: delay The delay defined in seconds
+    :param: closure The block of code you wish to run
+    */
+    private func delay(delay: Double, closure: (Void) -> Void) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+
+    @IBAction func handleShowAlert(sender: AnyObject) {
+        NBMaterialAlertDialog.showAlertWithText(view, text: "Simple alert dialog", okButtonTitle: "OK", action: nil, cancelButtonTitle: nil)
+    }
+    @IBAction func handleShowAlertWithTitle(sender: AnyObject) {
+        NBMaterialAlertDialog.showAlertWithTextAndTitle(view, text: "Simple alert dialog", title: "Catchy Title", dialogHeight: 160, okButtonTitle: "AGREE", action: nil, cancelButtonTitle: "DISAGREE")
+    }
+    @IBAction func handleShowLoadingDialog(sender: AnyObject) {
+        let loadingDialog = NBMaterialLoadingDialog.showLoadingDialogWithText(view, message: "Loading something..")
+        delay(3, closure: { () in
+            loadingDialog.hideDialog()
+        })
+    }
+    @IBAction func handleShowToast(sender: AnyObject) {
+        NBMaterialToast.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
+    }
+    @IBAction func handleShowSnackbar(sender: AnyObject) {
+        NBMaterialSnackbar.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
     }
 }
 

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,9 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPk-Jf-uft" userLabel="ShowAlertDialogBtn">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple loading indicator: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ze-gv-ZjJ">
+                                <rect key="frame" x="32" y="56" width="195" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="dce-O8-bHL"/>
+                                    <constraint firstAttribute="height" constant="21" id="g74-Xj-F9l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0R-2C-56r">
+                                <rect key="frame" x="32" y="139" width="185" height="30"/>
+                                <state key="normal" title="Show Alert Dialog with title">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShowAlertWithTitle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7cG-e1-UZE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opX-o4-6H7">
+                                <rect key="frame" x="32" y="177" width="230" height="30"/>
+                                <state key="normal" title="Show Loading Dialog (3 seconds)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShowLoadingDialog:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MKR-ix-HM4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwX-am-V9G">
+                                <rect key="frame" x="32" y="215" width="153" height="30"/>
+                                <state key="normal" title="Display a simple Toast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShowToast:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uMx-xN-cFB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNm-Fy-yhq">
+                                <rect key="frame" x="32" y="253" width="182" height="30"/>
+                                <state key="normal" title="Display a simple Snackbar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShowSnackbar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4IG-PM-EX7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPk-Jf-uft" userLabel="ShowAlertDialogBtn">
+                                <rect key="frame" x="32" y="101" width="123" height="30"/>
+                                <state key="normal" title="Show Alert Dialog">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -27,6 +74,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Ze-gv-ZjJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="1Wj-uy-Wii"/>
+                            <constraint firstItem="7Ze-gv-ZjJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="36" id="CvU-AY-ymY"/>
+                            <constraint firstItem="VPk-Jf-uft" firstAttribute="leading" secondItem="7Ze-gv-ZjJ" secondAttribute="leading" id="Fgk-T3-qOx"/>
+                            <constraint firstItem="c0R-2C-56r" firstAttribute="leading" secondItem="VPk-Jf-uft" secondAttribute="leading" id="Ocf-VS-1pd"/>
+                            <constraint firstItem="c0R-2C-56r" firstAttribute="top" secondItem="VPk-Jf-uft" secondAttribute="bottom" constant="8" symbolic="YES" id="WWQ-fN-G5G"/>
+                            <constraint firstItem="VPk-Jf-uft" firstAttribute="top" secondItem="7Ze-gv-ZjJ" secondAttribute="bottom" constant="24" id="rmd-yN-jht"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

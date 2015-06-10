@@ -98,7 +98,7 @@ Simple material dialog class
     /**
         Hides the dialog
     */
-    internal func hideDialog() {
+    public func hideDialog() {
         hideDialog(-1)
     }
 
