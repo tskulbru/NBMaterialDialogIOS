@@ -1,9 +1,10 @@
 # NBMaterialDialogIOS
 NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS
-
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
 [![Version](https://img.shields.io/cocoapods/v/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
-[![License](https://img.shields.io/cocoapods/l/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
-[![Platform](https://img.shields.io/cocoapods/p/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
 
 ## Demo
 
