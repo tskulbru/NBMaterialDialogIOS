@@ -5,14 +5,13 @@ NBMaterialDialogIOS contains different dialogs and components used in Material D
 [![License](https://img.shields.io/cocoapods/l/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
 [![Platform](https://img.shields.io/cocoapods/p/NBMaterialDialogIOS.svg?style=flat)](http://cocoapods.org/pods/NBMaterialDialogIOS)
 
-## Usage
+## Demo
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+![Example Gif](Screenshots/appdemo.gif)
 
 ## Installation
-### SOON!!
 NBMaterialDialogIOS is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -20,10 +19,19 @@ it, simply add the following line to your Podfile:
 pod "NBMaterialDialogIOS"
 ```
 
+## Usage
+To set up your own color scheme, set your colors in `NBConfig`
+
+MaterialDialog supports any kind of UIView as its content, so if you want you can provide a scrollview if need be.
+
+More information on how you should use the different components, see the example project.
+
 ## Author
 
 Torstein Skulbru
 
 ## License
 
-NBMaterialDialogIOS is available under the MIT license. See the LICENSE file for more info.
+_NBMaterialDialogIOS_ is available under the MIT license. 
+
+> See the [LICENSE file](LICENSE) for more info.
