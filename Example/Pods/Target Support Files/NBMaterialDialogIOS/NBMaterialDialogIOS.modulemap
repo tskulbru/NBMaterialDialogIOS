@@ -1,0 +1,6 @@
+framework module NBMaterialDialogIOS {
+  umbrella header "NBMaterialDialogIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module UIColor_BFPaperColors {
+  umbrella header "UIColor+BFPaperColors-umbrella.h"
+
+  export *
+  module * { export * }
+}

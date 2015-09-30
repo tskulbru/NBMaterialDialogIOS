@@ -1,0 +1,6 @@
+framework module BFPaperButton {
+  umbrella header "BFPaperButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

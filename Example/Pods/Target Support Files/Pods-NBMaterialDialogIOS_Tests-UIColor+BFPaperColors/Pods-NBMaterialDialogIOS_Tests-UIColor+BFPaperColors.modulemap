@@ -1,6 +1,0 @@
-framework module UIColor_BFPaperColors {
-  umbrella header "Pods-NBMaterialDialogIOS_Tests-UIColor+BFPaperColors-umbrella.h"
-
-  export *
-  module * { export * }
-}

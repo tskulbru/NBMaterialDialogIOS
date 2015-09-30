@@ -1,8 +1,7 @@
 {
   "name": "NBMaterialDialogIOS",
-  "version": "0.1.0",
-  "summary": "A short description of NBMaterialDialogIOS.",
-  "description": "                       An optional longer description of NBMaterialDialogIOS\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "version": "0.2.0",
+  "summary": "NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS.",
   "homepage": "https://github.com/tskulbru/NBMaterialDialogIOS",
   "license": "MIT",
   "authors": {
@@ -10,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/tskulbru/NBMaterialDialogIOS.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.1"
@@ -20,7 +19,7 @@
   "resources": "Pod/Assets/*.ttf",
   "dependencies": {
     "BFPaperButton": [
-      "~> 2.0.16"
+      "~> 2.0.18"
     ]
   }
 }

@@ -1,6 +1,0 @@
-framework module BFPaperButton {
-  umbrella header "Pods-NBMaterialDialogIOS_Tests-BFPaperButton-umbrella.h"
-
-  export *
-  module * { export * }
-}
