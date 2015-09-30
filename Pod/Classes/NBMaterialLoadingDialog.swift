@@ -41,8 +41,8 @@
     /**
         Displays a loading dialog with a loading spinner, and a message
         
-        :param: message The message displayed to the user while its loading
-        :returns: The Loading Dialog
+        - parameter message: The message displayed to the user while its loading
+        - returns: The Loading Dialog
     */
     public class func showLoadingDialogWithText(windowView: UIView, message: String) -> NBMaterialLoadingDialog {
         let containerView = UIView()
@@ -50,14 +50,14 @@
         let loadingLabel = UILabel()
 
         circularLoadingActivity.initialize()
-        circularLoadingActivity.setTranslatesAutoresizingMaskIntoConstraints(false)
+        circularLoadingActivity.translatesAutoresizingMaskIntoConstraints = false
         circularLoadingActivity.lineWidth = 3.5
         circularLoadingActivity.tintColor = NBConfig.AccentColor
 
         containerView.addSubview(circularLoadingActivity)
 
-        loadingLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
-        loadingLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        loadingLabel.translatesAutoresizingMaskIntoConstraints = false
+        loadingLabel.translatesAutoresizingMaskIntoConstraints = false
         loadingLabel.font = UIFont.robotoRegularOfSize(14)
         loadingLabel.textColor = NBConfig.PrimaryTextDark
         loadingLabel.text = message
@@ -68,8 +68,8 @@
 
         // Setup constraints
         let constraintViews = ["spinner": circularLoadingActivity, "label": loadingLabel]
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[spinner(==32)]-16-[label]|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[spinner(==32)]", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[spinner(==32)]-16-[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[spinner(==32)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
         // Center Y needs to be set manually, not through VFL
         containerView.addConstraint(
             NSLayoutConstraint(
@@ -80,7 +80,7 @@
                 attribute: NSLayoutAttribute.CenterY,
                 multiplier: 1,
                 constant: 0))
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[label]|", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
 
         // Initialize dialog and display
         let dialog = NBMaterialLoadingDialog()

@@ -58,7 +58,7 @@
         backgroundColor = kDefaultBackground
     }
 
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -68,7 +68,7 @@
         superview?.layoutIfNeeded()
         verticalConstraint.constant = 0
 
-        UIView.animateKeyframesWithDuration(0.4, delay: 0.2, options: nil, animations: {
+        UIView.animateKeyframesWithDuration(0.4, delay: 0.2, options: [], animations: {
             self.textLabel.alpha = 1.0
         }, completion: nil)
 
@@ -81,7 +81,7 @@
 
     internal func __hide() {
         verticalConstraint.constant = currentHeight
-        UIView.animateWithDuration(0.4, delay: lunchDuration.rawValue, options: nil, animations: {
+        UIView.animateWithDuration(0.4, delay: lunchDuration.rawValue, options: [], animations: {
             self.superview?.layoutIfNeeded()
             }, completion: { (finished) in
                 self.removeFromSuperview()
@@ -89,15 +89,12 @@
     }
 
     internal class func __createSingleWithTextAndDuration(windowView: UIView, text: String, duration: NBLunchDuration) -> NBMaterialSnackbar {
-        let screenSize = UIScreen.mainScreen().bounds
-        let screenWidth = screenSize.width
 
-        var snack = NBMaterialSnackbar()
+        let snack = NBMaterialSnackbar()
         snack.lunchDuration = duration
-        snack.setTranslatesAutoresizingMaskIntoConstraints(false)
+        snack.translatesAutoresizingMaskIntoConstraints = false
         snack.currentHeight = snack.kMinHeight
 
-        var toastFrame = CGRectZero
         snack.textLabel = UILabel()
 
 
@@ -107,7 +104,7 @@
         snack.textLabel.textColor = snack.kFontColor
         snack.textLabel.numberOfLines = 1
         snack.textLabel.alpha = 0.0
-        snack.textLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        snack.textLabel.translatesAutoresizingMaskIntoConstraints = false
         snack.textLabel.text = text
 
         snack.addSubview(snack.textLabel)
@@ -124,11 +121,11 @@
             "minHeight": snack.kMinHeight,
         ]
 
-        snack.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-vPad-[textLabel]-vPad-|", options: NSLayoutFormatOptions(0), metrics: snack.constraintMetrics, views: snack.constraintViews))
-        snack.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-hPad-[textLabel]-hPad-|", options: NSLayoutFormatOptions(0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        snack.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-vPad-[textLabel]-vPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        snack.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-hPad-[textLabel]-hPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
 
-        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[snack(==minHeight)]", options: NSLayoutFormatOptions(0), metrics: snack.constraintMetrics, views: snack.constraintViews))
-        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[snack]|", options: NSLayoutFormatOptions(0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[snack(==minHeight)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[snack]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
 
         snack.verticalConstraint = NSLayoutConstraint(item: snack, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: windowView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: snack.currentHeight)
         windowView.addConstraint(snack.verticalConstraint)
@@ -144,7 +141,7 @@
     /**
     Displays a snackbar (new in material design) at the bottom of the screen
     
-    :param: text The message to be displayed
+    - parameter text: The message to be displayed
     */
     public class func showWithText(windowView: UIView, text: String) {
         NBMaterialSnackbar.showWithText(windowView, text: text, duration: NBLunchDuration.MEDIUM)
@@ -153,8 +150,8 @@
     /**
     Displays a snackbar (new in material design) at the bottom of the screen
 
-    :param: text The message to be displayed
-    :param: duration The duration of the snackbar
+    - parameter text: The message to be displayed
+    - parameter duration: The duration of the snackbar
     */
     public class func showWithText(windowView: UIView, text: String, duration: NBLunchDuration) {
         let toast: NBMaterialSnackbar = NBMaterialSnackbar.__createSingleWithTextAndDuration(windowView, text: text, duration: duration)

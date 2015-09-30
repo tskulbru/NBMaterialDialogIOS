@@ -32,11 +32,11 @@
     /**
     Displays an alert dialog with a simple text and buttons
 
-    :param: windowView The window which the dialog is to be attached
-    :param: text The main alert message
-    :param: okButtonTitle The positive button if multiple buttons, or a dismiss action button if one button. Usually either OK or CANCEL (of only one button)
-    :param: action The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
-    :param: cancelButtonTitle The negative button when multiple buttons.
+    - parameter windowView: The window which the dialog is to be attached
+    - parameter text: The main alert message
+    - parameter okButtonTitle: The positive button if multiple buttons, or a dismiss action button if one button. Usually either OK or CANCEL (of only one button)
+    - parameter action: The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
+    - parameter cancelButtonTitle: The negative button when multiple buttons.
     */
     public class func showAlertWithText(windowView: UIView, text: String, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialAlertDialog {
         return NBMaterialAlertDialog.showAlertWithTextAndTitle(windowView, text: text, title: nil, dialogHeight: nil, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
@@ -46,12 +46,12 @@
     Displays an alert dialog with a simple text, title and buttons.
     Remember to read Material guidelines on when to include a dialog title.
 
-    :param: windowView The window which the dialog is to be attached
-    :param: text The main alert message
-    :param: title The title of the alert
-    :param: okButtonTitle The positive button if multiple buttons, or a dismiss action button if one button. Usually either OK or CANCEL (of only one button)
-    :param: action The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
-    :param: cancelButtonTitle The negative button when multiple buttons.
+    - parameter windowView: The window which the dialog is to be attached
+    - parameter text: The main alert message
+    - parameter title: The title of the alert
+    - parameter okButtonTitle: The positive button if multiple buttons, or a dismiss action button if one button. Usually either OK or CANCEL (of only one button)
+    - parameter action: The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
+    - parameter cancelButtonTitle: The negative button when multiple buttons.
     */
     public class func showAlertWithTextAndTitle(windowView: UIView, text: String, title: String?, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialAlertDialog {
         let alertLabel = UILabel()

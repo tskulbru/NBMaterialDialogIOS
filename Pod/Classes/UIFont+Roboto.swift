@@ -6,8 +6,6 @@
 //
 //
 
-
-
 private class FontLoader {
     class func loadFont(name: String) {
         let bundle = NSBundle(forClass: FontLoader.self)

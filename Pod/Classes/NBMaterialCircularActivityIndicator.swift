@@ -95,7 +95,7 @@
         initialize()
     }
 
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         initialize()
@@ -143,7 +143,7 @@
     /**
     Start or stop animating the indicator
     
-    :param: animate BOOL
+    - parameter animate: BOOL
     */
     public func setAnimating(animate: Bool) {
         animate ? startAnimating() : stopAnimating()
