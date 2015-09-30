@@ -3,12 +3,12 @@ use_frameworks!
 
 target 'NBMaterialDialogIOS_Example', :exclusive => true do
   pod "NBMaterialDialogIOS", :path => "../"
-  pod 'BFPaperButton', '~> 2.0.16'
+  pod 'BFPaperButton', '~> 2.0.18'
 end
 
 target 'NBMaterialDialogIOS_Tests', :exclusive => true do
   pod "NBMaterialDialogIOS", :path => "../"
-  pod 'BFPaperButton', '~> 2.0.16'
+  pod 'BFPaperButton', '~> 2.0.18'
 
   pod 'Quick', '~> 0.3.1'
   pod 'Nimble'

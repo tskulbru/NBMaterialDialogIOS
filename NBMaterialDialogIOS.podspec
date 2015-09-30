@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NBMaterialDialogIOS"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS."
   s.homepage         = "https://github.com/tskulbru/NBMaterialDialogIOS"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -31,5 +31,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'BFPaperButton', '~> 2.0.16'
+  s.dependency 'BFPaperButton', '~> 2.0.18'
 end
