@@ -64,7 +64,6 @@
 
     // MARK: - Internal helper methods
     internal func __show() {
-        var nbLunchObj = self
         superview?.layoutIfNeeded()
         verticalConstraint.constant = 0
 
