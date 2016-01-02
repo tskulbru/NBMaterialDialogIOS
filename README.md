@@ -16,12 +16,48 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ![Example Gif](Screenshots/appdemo.gif)
 
 ## Installation
-NBMaterialDialogIOS is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate NBMaterialDialog into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod "NBMaterialDialogIOS"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'NBMaterialDialog', '~> 0.2.1'
 ```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate NBMaterialDialog into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "tskulbru/NBMaterialDialog" ~> 0.2.1
+```
+
+Run `carthage update` to build the framework and drag the built `NBMaterialDialog.framework` into your Xcode project.
 
 ## Usage
 To set up your own color scheme, set your colors in `NBConfig`
