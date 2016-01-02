@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32EC644A1C3851AE007B2731 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC64491C3851AE007B2731 /* Tests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		1E0A10367FA1049FB23D8C3B /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1FE72936A1E4328CECEC226F /* NBMaterialDialogIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NBMaterialDialogIOS.podspec; path = ../NBMaterialDialogIOS.podspec; sourceTree = "<group>"; };
+		32EC64491C3851AE007B2731 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		4C747B255BB242EE8EBDA921 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NBMaterialDialogIOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBMaterialDialogIOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				32EC64491C3851AE007B2731 /* Tests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -206,7 +209,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EC644A1C3851AE007B2731 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +517,7 @@
 			baseConfigurationReference = BA02290BB8727000EFA2C2B2 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -525,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBMaterialDialogIOS_Example.app/NBMaterialDialogIOS_Example";
 			};
 			name = Debug;
@@ -534,6 +540,7 @@
 			baseConfigurationReference = 4C747B255BB242EE8EBDA921 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

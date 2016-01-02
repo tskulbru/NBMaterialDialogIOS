@@ -11,7 +11,7 @@ xcode_scheme: NBMaterialDialogIOS-Example
 xctool_args: -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest'
 podfile: Example/Podfile
 
-xcode_sdk: iphonesimulator9.1
+xcode_sdk: iphonesimulator9.2
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
