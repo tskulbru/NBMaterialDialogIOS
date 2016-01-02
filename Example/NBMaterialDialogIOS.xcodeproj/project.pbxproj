@@ -13,8 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7B7607B41BDA4418B42680D7 /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		AC466F8F5321E9D40EEAA7C2 /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7B7607B41BDA4418B42680D7 /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */; };
+		AC466F8F5321E9D40EEAA7C2 /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

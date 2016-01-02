@@ -7,533 +7,226 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00D38951C4D9750673963F1F626D85FE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C555CE37FEB460F73A9450692DA28692 /* XCTest.framework */; };
-		021739B22833B3060AAA06DAD7AFE6D9 /* BFPaperButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB69B53BBAFE062C2C4ABACF9CD9D8D /* BFPaperButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0319C072B7C92611A398F3A49DE69AFD /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2251F8D7E966E23057302395D4D11 /* SuiteHooks.swift */; };
-		057B336F4150C66B076FFD2A5F8FC186 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B72928424266283A3DB096D5D0BE /* BeLogical.swift */; };
-		06727DA9CE44CB9961BFF69C9EEF4F24 /* NBMaterialDialogIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CDF29A852777E6DB123EF31396E62 /* NBMaterialDialogIOS-dummy.m */; };
-		067F438C35F4B5E8F2B52232B1C1C353 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6473F93D309FD25A989442F7E6A059E4 /* FBSnapshotTestCasePlatform.m */; };
-		08D9D59EA8DDE6FD61183D5E5A40E298 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F229A2D921327B4ED4A823849AEEB /* DSL.swift */; };
-		0F34EA0B7421AC539D4657B2B4B5E3F9 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C4EAB1CBA05A60BEFB4F2B6B3984B /* Closures.swift */; };
-		107D33BA7F166664945719C1B0FAC331 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3337D0929B6AF248AF5E0254D557AA0F /* MatcherProtocols.swift */; };
-		15D9A2CA8A9E752E46DB8627F15C2BB2 /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E069C21BBCE4746D57A887CDD8252A03 /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		184890465999646F6019D4503AFBDC9B /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C96062DC8449FA642B2F3E06886E518 /* World.swift */; };
-		1B22B35EFA7248CC40627A4AF305E404 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F018E1C6118D8FBFBCB3BAC24B4DD76 /* Roboto-Regular.ttf */; };
-		1C1C6D3004CB657BE6660F882ECBB937 /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2113CDD839EB4EE91B930BE916B81645 /* BFPaperButton.m */; };
-		1C618AF37F07CAD5FB4969285958E033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		1C7291414E792EE5F64E915AA842702B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		22FB033F9B0567FF182BBE054D2AC769 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 825037EA67C0D284A9A6158319CDAA51 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2552E15C52471F580FB55ADD113E012C /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9F299E6A78E7B83725599AFBED944 /* BeAnInstanceOf.swift */; };
-		265359FAF3111196C57BE82A3E1863BD /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FF73407B1D871770B725D3BED174B4 /* QuickConfiguration.m */; };
-		2B84AB11305961B168D31C6D1CFBE45E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		2B9049C86806A5FDFAD8768037C8C918 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BEB8E27C93AF42BBB8CFBDA31E1CA /* ObjCMatcher.swift */; };
-		2CC3A36E4C84B2E924D00ED83640A0E4 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96273807F2A7D8A6616202F990B1FD5E /* ThrowError.swift */; };
-		2ED7EAD718A8C92F8AE5DE0D26450CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		355F53ACD757FBE0CA19E71F9C4A78A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C555CE37FEB460F73A9450692DA28692 /* XCTest.framework */; };
-		386811B80D5D2AAB35FA87008B5B543C /* NimbleSnapshotsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2C1A8B98C32FFC0889545E076232C /* NimbleSnapshotsConfiguration.swift */; };
-		3989A5CAF5BE0795EDD19EBCD92DDC56 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735FA7AAF2B9E2598DFE17EA4C596D6 /* BeGreaterThan.swift */; };
-		3ED6E078B07D9081F96CAD85442FD0FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		3F8A6A2D48A0EA7E438009D6AA716675 /* UIColor+BFPaperColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA84FB9DBED4B4C4524A85D5D8DE1284 /* UIColor+BFPaperColors-dummy.m */; };
-		4638A501529256374D4A9E449331DBAF /* PrettySyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA5987043E1B4EED1A6AEE4BDCF801 /* PrettySyntax.swift */; };
-		4665DAADD63F9A7835F73393C040398A /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8B91F0238C14D193BC7FD00BAAC98 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A5B7F7D99A77DDA9C5015B60E815013 /* NBMaterialDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D038EC3FF14501A1F5922B9D76B3A /* NBMaterialDialog.swift */; };
-		4C060809FCAC811187B91A78C6E97704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		4C569578FAEE638A06E1DD5C2D7042AB /* Pods-NBMaterialDialogIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAA86D2BA9579CF6B9307D0F4F4759 /* Pods-NBMaterialDialogIOS_Tests-dummy.m */; };
-		4ED5A9F0A2EEC3BF10BA3E6ADE0D8D9C /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C414D73D3BDC8F94CB4670D2557E1FC2 /* QuickSpec.m */; };
-		4FB3C093D856B7A2AC97C6702262903F /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1421E8E074E8F1FB07811B443C340059 /* FBSnapshotTestCase-dummy.m */; };
-		5136689B40D53F79C4072E82FCE86DC1 /* Pods-NBMaterialDialogIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5267A92CF2E1D2D8B672166B88AC6D /* Pods-NBMaterialDialogIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52DDCBCC07DDD2C0C5BAB9A4C96A2FFD /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB04DE8C333647086B8A4B83DE292AB9 /* BeLessThan.swift */; };
-		54CF0C69AC0EAD175A335C73B200AD2D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8A3BECC87E9DB806D343B4FD46A602 /* Example.swift */; };
-		56B9F7B6AEB44CA295C64243B4C26B7C /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD9CFAD21FEBA4F8AA65B228D86E18 /* Nimble-dummy.m */; };
-		5969D3CC424497449651F7F602399F0C /* NBMaterialToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F4074550935CC95420E54AACE6C86 /* NBMaterialToast.swift */; };
-		5D4886B4D4C548282379871187BAE1F4 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B4DDFF9259A87FE795531CF0F8AF2 /* AdapterProtocols.swift */; };
-		5F82EC0FE98ED462C1C7C7E5EDBB4986 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF9807C3C1BDD28B7D4F753B9F7260A /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60BDCC4E64237017FC562DD83FDF4E23 /* NBMaterialAlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689970A620A0D68145D28B4D8F3FDCEA /* NBMaterialAlertDialog.swift */; };
-		6225CF9DA6F89756739C085C5D809319 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE973BABE6EB3426E11A619043846DA /* Configuration.swift */; };
-		6436740BF6F2FF75BF78BD71BBB09117 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5B4BED1BEE79517002E9D82D45B /* Equal.swift */; };
-		6474DA697E686D5F30D366761E2B6EFB /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E0941D25BC3556AFB8620E709866DE /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		652546964F74BCB3C99DCAC6A3A4E913 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8E4926072E5B5449627F9878CB06FC /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		663E260AEA1705F4BA765672B5A18649 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BADD5DC2B20FCDC003EDAD3D536A3EF /* BeNil.swift */; };
-		668ED4AF544B2F59D69B518DD4367966 /* BFPaperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4601420AD370CDA05B6C30192DC55B06 /* BFPaperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6699DD134221E8440B2104D64F926694 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C600F5E9ADF085C064C4734FB8D /* AllPass.swift */; };
-		66CB42C6E12A8A9E12C462CA50E39456 /* Nimble-Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 122032B9F8FFC6F0A826E2EF031E05E1 /* Nimble-Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67F236D68D294D7EBF0EC6C4991E172F /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CE1E3DD18A4DB203927896FBCC2D6 /* Poll.swift */; };
-		6E51B02AEB14ADAA813EF51207363A77 /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81A1698604064667E3AC040A38535C4 /* ObjCExpectation.swift */; };
-		70C8DABB4F54AC91060191804D35CEB3 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 148F8ED0734FB1EDA60AFC3B2203E1A4 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70F3469F1A74D66FB2FA08F7F6F3F1D1 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1380DDAD0E792F799EE4250B40BB26E /* RaisesException.swift */; };
-		7134CFE8826C5DE34FE16677215830AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		72714E08C9CDAD7590178949B4B11E4E /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31D20A07B4062FCDECF5D690D59BC /* Functional.swift */; };
-		72AEEEE30BC5C3C5FEE16E6CAB047511 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6ACFAF9989C065174C1C436A0E6FC1 /* BeCloseTo.swift */; };
-		73D858BCBED0261B6B78D3BEC63DAA78 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 027CE0306BC6F4F85141F478ECCFEB9D /* UIImage+Compare.m */; };
-		7882A56063EFC82DD62A1AC0862B60B6 /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B08E5FF477436C9AB784207BFE2A94D2 /* Quick-dummy.m */; };
-		793BD7AC45310F823484DA77D82EFF14 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F516C98D8A96152EFC5FE5DD3ED99 /* Expression.swift */; };
-		7A0224D0922612C3B056206F12D89A70 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950C2BC0511A3AC735324241504DF50 /* Filter.swift */; };
-		7B2A318DF7913C6EAA58A2D46F862D4F /* Pods-NBMaterialDialogIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94430EAF26197F3D1AF09977E5CB3FC2 /* Pods-NBMaterialDialogIOS_Example-dummy.m */; };
-		7CABA78770DEFA9A69F6A393378D4F40 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52F57A45AE5BFBFD7230DDD8B53263E /* Quick.framework */; };
-		83483E142F425A45C8F6C595615CD176 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81C2CB7C48FC86674F8BA25491C8F4 /* AssertionDispatcher.swift */; };
-		861CCC3556684187AA0773C007D714FF /* UIFont+Roboto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE2969751130855886E0761E1EDFDC /* UIFont+Roboto.swift */; };
-		86C2CFB1A40D5182F057659483EFBB56 /* NBMaterialLoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646C08A60988D66BF43DC2B6D4FA642 /* NBMaterialLoadingDialog.swift */; };
-		8C610BBC55FE1EAA2BDF0D20F1EE4987 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175CAB1C0F3E4BFC3FF2F0F4A416E376 /* Match.swift */; };
-		8C757DF3A0F468E70DFAE337EAA53C46 /* NBMaterialSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACBD1724985686E3F1745D12DC545 /* NBMaterialSnackbar.swift */; };
-		8DCEFB4A0BDC33FC516CB33D38BB548E /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B51F3E2F5506F23A11228224DB033A16 /* UIColor+BFPaperColors.m */; };
-		963F13990854C41F1B8456DBA554B543 /* HaveValidSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6BDDD7F272C6C9A46216029A029D5C /* HaveValidSnapshot.swift */; };
-		9728DE2B6C153B0AA274E1CFC09FD556 /* UIColor_BFPaperColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82769D907C0C9146CF40FA7F9746173 /* UIColor_BFPaperColors.framework */; };
-		9765831EDE96A3CDB01BC919D35C218F /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE998339A95543B4CE0072035A05F6B /* EndWith.swift */; };
-		97DB86956932F14569E6A87676B5E468 /* UIColor+BFPaperColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5AADBB2199C4AE6DC18D4033508D8B /* UIColor+BFPaperColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99B70CDA59FAB46BEA86B8AE873AB0B1 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9A4897DF9BD061F30CB6A57AC1B7F /* BeIdenticalTo.swift */; };
-		9ADEAB8A50936E1B671EE0D6CF4E0A9E /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860427CB7F88095143A55E2C3847EB7 /* BeGreaterThanOrEqualTo.swift */; };
-		9AE66A87F7AB559F2A245403B16961C6 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC77E4290C9FD9432E4AB32C09FC29 /* AssertionRecorder.swift */; };
-		9DDC1F158D6CBE260618DFE2373F4C45 /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5D9015EE652E6A5D9EA23E226803CA /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EF7979CC3241228BD652E4CEBB11003 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952992E0B533A95129B5EF3464D34E43 /* BeginWith.swift */; };
-		A12CC51D92D502ACDE4FEB1CB362BDAE /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = C205F3CC690596305A071BEB5AFB00ED /* World+DSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A8C7BC8A3EAD5A1411233F2F67CE30DB /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = F85F408B1F4CBA7F1A207E70BC2843B0 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD10060EBD526ACD73244CCA42B2778A /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC0AB17F2E2F7350D64B2F05288B6E /* Contain.swift */; };
-		AECAEAC7586CEF5D8AC176034CD382A0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C555CE37FEB460F73A9450692DA28692 /* XCTest.framework */; };
-		AEE49B69F7259C543B9EBD0129C699D8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B6ACE3F51F86565BEB9F1759322B91 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B02D2489F3469E6BC6569890B57F8036 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = F57B9D285CA9D69F32D588A2CA0E358E /* NMBExceptionCapture.m */; };
-		B157607E05ADEA8751D444C92E375153 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C555CE37FEB460F73A9450692DA28692 /* XCTest.framework */; };
-		B190DCB8E10D94F870451F047EE14813 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB4593D94112E687568756492F92C /* MatcherFunc.swift */; };
-		B3D965A611B56A2528B9748B25DFE2F5 /* UIColor+BFPaperColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9676CEB40F9A7AB2C194C0B51155C2CA /* UIColor+BFPaperColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6F10817F081E0E49D7E2F8B70D1111C /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8794B6C09D84555629AF1C164EFF50F9 /* SourceLocation.swift */; };
-		BA24DD5439CDA690156B0892E16C5A77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		BBCD229BB90046D24B9B62C751165A94 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E08DAF279222C5F74FA35112917DCE /* ExampleGroup.swift */; };
-		BCBEFE3B90F49EAA12C83B26A5197445 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D189F11648BE01A2B77F3392EF159 /* BeEmpty.swift */; };
-		BDAE0EE653409757B60258FBBAE0933D /* BFPaperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CE5C6E7C6A087F7CDCA6E9086E535 /* BFPaperButton-dummy.m */; };
-		BE1E2ADC47C4A1F3F11842BBB69D219A /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = DD206D84FA694697DF8655A70948DE81 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BF06032A58449B4B905AC00208EFF9F0 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FB3A8AFA300EC6DD52BCD5E145F1669 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C004F7227FCD427EC6CB9A1ED65A3C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */; };
-		C22C6F81C9CA1A743A4C78684E515BE0 /* NBMaterialDialogIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E30931B041D8BA22C18EB70D4D91964F /* NBMaterialDialogIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C839843F810AAF0339FDC19988E713E5 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA733D34B7D5A1F9A1E9A06D20ACAE5E /* Callsite.swift */; };
-		CA73F48AB0A3C4EE9D7CC6EE96DB06BE /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38835AA78216033C1484888E1C1556 /* Stringers.swift */; };
-		CD4CAA86BDCEDBFD7320931D203073D7 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB79348F1B69DF744A0BB1380CB5615 /* UIColor+Hex.swift */; };
-		CE4DF0AA04EB7C76CB19894C4BAFB08F /* Nimble-Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B91E688558313D0E90EF1A81B4571E8D /* Nimble-Snapshots-dummy.m */; };
-		CEC3B5AFD51E52D26EBDD434B28E4B80 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0391BE8D24B0A8B3E434C6E89E140E5D /* FailureMessage.swift */; };
-		CF97905D5B7AD9E9CBD18C6953CFA713 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 94093A5A98B8FC76743125DC694B4B3B /* UIImage+Diff.m */; };
-		CFCDDE64698787D2827EC5A62D9003E0 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38EB13031EE9F5D2CDE2DCA5F4DEF3 /* BeLessThanOrEqual.swift */; };
-		D4305CDCF1A0F298A977831324AEFDC7 /* NBConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3397A91B69ECD206AB1C7BEE0CD0D82D /* NBConfig.swift */; };
-		D515294B1F43EF92E588F30A81083E20 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE210C8E6F07A265D41C661D7B6B3999 /* FBSnapshotTestCase.framework */; };
-		D538104DB028124FEEEEAB90920422B5 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C76B3A99AB4FE95F1A0DEEB4D7623 /* Expectation.swift */; };
-		D546290EF14873B89CC7A44FB92F093D /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2726C30B5D814F02875D544DB17EF5A9 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D54ECC6B64145F36DFC2119B1092176E /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8A785C361CF5CEB9FA88B5C956EC83 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5A234DF5460C881BF7CD531BD0E38CF /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC406302AD539445E28EF9B4C1422D9E /* DSL+Wait.swift */; };
-		D98C308553B40EB801BDF074F41A7DBD /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A7D196EBDA1DBA52C9B6439C3F814 /* DSL.swift */; };
-		DC1B279587DFC5905F408DD232B6393B /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 123070BE45E21584665FAE9B32439066 /* QCKDSL.m */; };
-		DE0B14F15ED62F78D1F45F5FD2509F9E /* Pods-NBMaterialDialogIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC6281B6BFB0E22C1D85EB693F08678 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E26C5A041841DC29D3E1F6BC92C07ECB /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0553DD4F17D65653E89DA6377E8C89C9 /* NimbleXCTestHandler.swift */; };
-		E282E9C8469F1F7F755CEBD8F1DA843D /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5753E9677F70C5E791FAFA0B0864AE92 /* ExampleMetadata.swift */; };
-		E532159E4B7468DE1B0C737218B92DF7 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1BA98DC282F317DE234583BD209C4A /* World+DSL.swift */; };
-		E5A63F730E97F82130F81069D9CD6CE8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB59875ABA0D28F1A8AADEE43A238C0 /* Nimble.framework */; };
-		E61692CB947E4C0F467FA038E2BD7BA4 /* BFPaperButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3189B19FED941A6BBC3FD8800B9B916B /* BFPaperButton.framework */; };
-		E844FC433C08230B9B012A6941184508 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B6AFD9FBE21D3F25C08AEDF21FD0D7 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E87516D45CC144FA9F67F6A9415FD5C9 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 53EF187F824F8D2D57492B1B69F092C6 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8EAADEA294857B99E04EAA00ECA9B00 /* NBMaterialCircularActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829EF22C6DC1F268AF0F7242FD5EBB0 /* NBMaterialCircularActivityIndicator.swift */; };
-		EF277693E324A3264F1CA03B6C774169 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B56FE48DA6EAFBA448C2B78F990FE67 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0088C7CF6B3AB9D9C95270AF5C82CEE /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 863D3CEBCFCD23E7C4002A36E272E975 /* FBSnapshotTestCase.m */; };
-		F2287FEE488E8F2C634E51C8ED004889 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED49EEBD8974F05926CC2CB7BBE2FD /* NSString+QCKSelectorName.m */; };
-		F4A43E70827C0984AA33EEFFC2D600B0 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442D3CE31E2A579617612C7DFE559F0 /* DSL.m */; };
-		FB2FDC3E942376C2E8560FDB60A286CF /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C10449A8ABC9D0B679B7E0367E4D6 /* BeAKindOf.swift */; };
-		FB993680B24EC264C6966F38408F33A3 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8785D9DF519970819337DE8356C9D737 /* ExampleHooks.swift */; };
-		FCA1E0B2586D39FB2D9164024675E2A2 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9212D773EB25237A144D4607ACF69C02 /* FBSnapshotTestController.m */; };
-		FEA9E649BC88CB1796D2E98CCB5448A0 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97411921F7DCB2B166CB49A6CA09A920 /* Roboto-Medium.ttf */; };
-		FF7651EDFF006A44D81F97A6683768F7 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFB0CB5D3EBC67AEE121EC53A7682AA /* AsyncMatcherWrapper.swift */; };
+		079234622107482DE15756C6F477DF8E /* UIColor+BFPaperColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D0B303B6DE0FFD3B2BA74CE09B3416 /* UIColor+BFPaperColors-dummy.m */; };
+		096313FD1F2E4412C4DE094F1B732E97 /* UIColor+BFPaperColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B337470CCFCB8319207346587A80E45C /* UIColor+BFPaperColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AE78FCC8D4305E1934BA277768B92C0 /* NBMaterialDialogIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E290C3E18CA797EE2824199AEFFBDF /* NBMaterialDialogIOS-dummy.m */; };
+		0BCA52E2CC833A2E475AB679A8D9017F /* UIFont+Roboto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FFAF03EC8536F238BA33F7C8E7737B /* UIFont+Roboto.swift */; };
+		16D8DE246FED7224ED9772DFB17DEF5C /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB00F2BAB10A3F7F5B6215EF22E835A /* BFPaperButton.m */; };
+		1C5846E62F37CFC70647423A7F5AAAAD /* NBMaterialDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A5FA2B3268BD54D6A4012F10CEB6E /* NBMaterialDialog.swift */; };
+		2275DE3FBDFCA3C6ECC9B953648FDF50 /* NBConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92BF2D6E12A6155B428070064A5E88 /* NBConfig.swift */; };
+		310C1F0FE285F8DA79C47901CD6FEC1A /* Pods-NBMaterialDialogIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC439A68D0DEC56C511EF27F4B610C9 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EA89B4B650F790FD65E5969E8B30B90 /* NBMaterialAlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6A37B9173F9623F49EC2EA08970AA /* NBMaterialAlertDialog.swift */; };
+		3EC15E8E7E88B63A5E1957FCA8954017 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69D498F73C01EEF19A61C41ABFB1E6C4 /* Roboto-Medium.ttf */; };
+		434E4C12CB121CC0A60F0BFD50C54743 /* BFPaperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 657232A53FD9F1430C11726EA442FE38 /* BFPaperButton-dummy.m */; };
+		445E40A5770B1DF22B4172C89A6349DB /* NBMaterialDialogIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF9254D06A9FA81AAF4B52140B30F27 /* NBMaterialDialogIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47EE3C565CA99C28B850A14A21249562 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7882813781513D2B93DB13FED79FB6F /* UIColor+Hex.swift */; };
+		51881BC0FDE4E7A1174B2BB21D571D3F /* BFPaperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E69FC40BFBEC313BA3DD3A8FD8E30DF /* BFPaperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52396FB7D5DB422BF4C3D88C2B1B565E /* UIColor+BFPaperColors.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC8B69670D8F773E6DC1821367A846B /* UIColor+BFPaperColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE379F1E81D1EA9B2A883BC90092FF7 /* Pods-NBMaterialDialogIOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0279D670BA3E67EA51BB3BE06FAD8D25 /* Pods-NBMaterialDialogIOS_Tests-dummy.m */; };
+		6A88A9B1025B976C94AFE4EDB5C5D702 /* NBMaterialCircularActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3252317CA7A004E915EB8324FEC13F05 /* NBMaterialCircularActivityIndicator.swift */; };
+		86DDA208E14F4766698C6F83A12BA157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */; };
+		8746868DFD9FA683790748D8B544CDFE /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C214734AA2146685250DBB73FCD5F650 /* UIColor+BFPaperColors.m */; };
+		B1FBEA8DC0A82B096F701B46DA8E0086 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505ED3DE8ACAC930EBF8F7A03D47960B /* Roboto-Regular.ttf */; };
+		B670ED8065EF5910F386B71B28F5F374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */; };
+		B95E172B6DAFC0EEB132337F3FF3B180 /* BFPaperButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63DCAA1E34142EC85CE4E724BB55104 /* BFPaperButton.framework */; };
+		B9FBE4F470EBAC5360ADF549BCDE02B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */; };
+		BA0FD4D22D14AEEA81A51D52EC10981A /* Pods-NBMaterialDialogIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24542E99EE13FDB5751190E3D13A91D6 /* Pods-NBMaterialDialogIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2BD7BBFC811AFB3D2C2289A88D12EF6 /* NBMaterialLoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3186C3E3DF80C42C12D588E41822678 /* NBMaterialLoadingDialog.swift */; };
+		D7834CA537F846ED093E0CC65604AD22 /* UIColor_BFPaperColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7805E3328634150706FAAFC1CDCCE87E /* UIColor_BFPaperColors.framework */; };
+		D79CF0F9CA9423D554930CBA932E419E /* NBMaterialToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4929F74FCBDE6F0A7085C533240062C /* NBMaterialToast.swift */; };
+		D809DD22A087A7DE3615A88061B2E03D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */; };
+		DB1872FDAE0C1AA5F6DB73C297755E5F /* BFPaperButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C013580F5FC0E76B029F939DB920D1CE /* BFPaperButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14D259A03E27525FE6403E618B7D63C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */; };
+		E44D74971261637F6C30C53013C73AC8 /* NBMaterialSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2EEC5727B376C0A203406F36E20D5 /* NBMaterialSnackbar.swift */; };
+		F0C49A93AF5727C557C6B14CF23D8068 /* Pods-NBMaterialDialogIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B05FECEAD9DC1721FAFD7EFE336A8 /* Pods-NBMaterialDialogIOS_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		17EEF7D0E20AAFED458F402F4FCF7734 /* PBXContainerItemProxy */ = {
+		0626637C76F42D9FD7B1EA595736A065 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D82A36767A74A29F58507B5D4DC76C74;
+			remoteGlobalIDString = 8B0E65E6AEC6569CEF947C82EAAA561B;
 			remoteInfo = NBMaterialDialogIOS;
 		};
-		1840F24F1DE842E635A3286D258AAF4D /* PBXContainerItemProxy */ = {
+		0C6F76EB364151519EF7256ED43E5C80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E18725495C2E1084BD3D62EF504062C;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		228E1095534D2DD852E03475BB68D34C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F39D53F209E5E9B97E6A71A5A3F1BC7D;
+			remoteGlobalIDString = 03B15615889710FDACFA6CB29AFBBDF0;
 			remoteInfo = BFPaperButton;
 		};
-		2939814BFBFFD3DB41F334388D518206 /* PBXContainerItemProxy */ = {
+		984D4BEF2717D8AEA08B0A47033A98A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D6B321FA30935C958776E6D37BCE239A;
-			remoteInfo = Nimble;
-		};
-		2C2A7CE3387836450A6506FD6AD9D693 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F39D53F209E5E9B97E6A71A5A3F1BC7D;
+			remoteGlobalIDString = 03B15615889710FDACFA6CB29AFBBDF0;
 			remoteInfo = BFPaperButton;
 		};
-		2EBB9DDB5CD4D44FE90AC8AE9D2A226D /* PBXContainerItemProxy */ = {
+		9F98B9E80E16CF1105EA423D8813199C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 44F8B8E68E06A8EDBC9DE7B84BCABE18;
+			remoteGlobalIDString = 99CADFE69A7E494B256A79CC7E9026C1;
 			remoteInfo = "UIColor+BFPaperColors";
 		};
-		391CC37144FAB92BB66D57827F61F51F /* PBXContainerItemProxy */ = {
+		B73B8CDD2B4EB4B43DAFFC897371670B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D82A36767A74A29F58507B5D4DC76C74;
+			remoteGlobalIDString = 99CADFE69A7E494B256A79CC7E9026C1;
+			remoteInfo = "UIColor+BFPaperColors";
+		};
+		CD0583DAD1229A51C3A6C6E7D3C1BD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0E65E6AEC6569CEF947C82EAAA561B;
 			remoteInfo = NBMaterialDialogIOS;
 		};
-		3922B7568554B20ED34D5ED2738B1B29 /* PBXContainerItemProxy */ = {
+		DE9614A12D53BAD5ABD2F6BB81897EAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F39D53F209E5E9B97E6A71A5A3F1BC7D;
+			remoteGlobalIDString = 03B15615889710FDACFA6CB29AFBBDF0;
 			remoteInfo = BFPaperButton;
 		};
-		600B5D44BEC4362854476EB6AD79AD4A /* PBXContainerItemProxy */ = {
+		FFAA3FE5B06916EEDE2ECE64A929A331 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D6B321FA30935C958776E6D37BCE239A;
-			remoteInfo = Nimble;
-		};
-		6DF9CCE6E236FEFA95D328167FF8E851 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E18725495C2E1084BD3D62EF504062C;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		6EB29776BE261CC4672B6B6C1A3546B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 44F8B8E68E06A8EDBC9DE7B84BCABE18;
+			remoteGlobalIDString = 99CADFE69A7E494B256A79CC7E9026C1;
 			remoteInfo = "UIColor+BFPaperColors";
-		};
-		837D589495F8BF3DC1EABDA80390E7D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D75ED47E5B80FF267BC9EF42D85BCFA;
-			remoteInfo = Quick;
-		};
-		90308665B27A830766D3251BCC03F9A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 44F8B8E68E06A8EDBC9DE7B84BCABE18;
-			remoteInfo = "UIColor+BFPaperColors";
-		};
-		CA3E95CC7367784144CF70A360D5317C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D75ED47E5B80FF267BC9EF42D85BCFA;
-			remoteInfo = Quick;
-		};
-		DA72AB1165EADCCA24B40708CD5A2B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8328D7D172085B05D141296D64BE531A;
-			remoteInfo = "Nimble-Snapshots";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022ACBD1724985686E3F1745D12DC545 /* NBMaterialSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialSnackbar.swift; sourceTree = "<group>"; };
-		027CE0306BC6F4F85141F478ECCFEB9D /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/UIImage+Compare.m"; sourceTree = "<group>"; };
-		029211C9CD3CE937ABD8D994E4B5DC2F /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0391BE8D24B0A8B3E434C6E89E140E5D /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
-		03A668905E841655A760681B815DF1BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C3B72928424266283A3DB096D5D0BE /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
-		0553DD4F17D65653E89DA6377E8C89C9 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
-		0D0793534B63FC90BA6E703006BC40C7 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		0EA86ED855C0C977C3E40F3536159D62 /* UIColor+BFPaperColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors-prefix.pch"; sourceTree = "<group>"; };
+		0228CFB76B9FF2703F0F6E9EF43FFBED /* BFPaperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFPaperButton-prefix.pch"; sourceTree = "<group>"; };
+		0279D670BA3E67EA51BB3BE06FAD8D25 /* Pods-NBMaterialDialogIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBMaterialDialogIOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		0929751C7FDF2341243F86789DE8425A /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0E69FC40BFBEC313BA3DD3A8FD8E30DF /* BFPaperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFPaperButton-umbrella.h"; sourceTree = "<group>"; };
 		0F53293B109B90DC5245DA066A4E9412 /* Pods-NBMaterialDialogIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NBMaterialDialogIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		112D038EC3FF14501A1F5922B9D76B3A /* NBMaterialDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialDialog.swift; sourceTree = "<group>"; };
-		122032B9F8FFC6F0A826E2EF031E05E1 /* Nimble-Snapshots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-Snapshots-umbrella.h"; sourceTree = "<group>"; };
-		123070BE45E21584665FAE9B32439066 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
-		12F31D20A07B4062FCDECF5D690D59BC /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
 		13EDEA4B3C5AABFBEAD9833111353D93 /* Pods-NBMaterialDialogIOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NBMaterialDialogIOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1421E8E074E8F1FB07811B443C340059 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		148F8ED0734FB1EDA60AFC3B2203E1A4 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/UIImage+Diff.h"; sourceTree = "<group>"; };
-		1715057478F79CBBF485BAA9A78E3E2B /* FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
-		175CAB1C0F3E4BFC3FF2F0F4A416E376 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
-		17DEB4593D94112E687568756492F92C /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
-		1887120FC7A0FDCE4A9EA620BA591019 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		18E08DAF279222C5F74FA35112917DCE /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
-		1A5D02A927AEA142DE1763117F6950AD /* UIColor+BFPaperColors-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+BFPaperColors-Private.xcconfig"; sourceTree = "<group>"; };
-		1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		194FB3F482A8414AABFA7CE1B9CF8ACD /* UIColor+BFPaperColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor+BFPaperColors.modulemap"; sourceTree = "<group>"; };
 		1C3ADC11C78422FC759ADB18AFF5932E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D27BD3D28F31BB575542B0EC4BFCBB9 /* UIColor+BFPaperColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor+BFPaperColors.modulemap"; sourceTree = "<group>"; };
-		2113CDD839EB4EE91B930BE916B81645 /* BFPaperButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFPaperButton.m; path = Classes/BFPaperButton.m; sourceTree = "<group>"; };
-		2601B6441BC3F04A0926C425767E790C /* BFPaperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFPaperButton-prefix.pch"; sourceTree = "<group>"; };
-		26E70C29A3FE61847E77B9262A507A39 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Quick.modulemap; sourceTree = "<group>"; };
-		2726C30B5D814F02875D544DB17EF5A9 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		2AB79348F1B69DF744A0BB1380CB5615 /* UIColor+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		2BADD5DC2B20FCDC003EDAD3D536A3EF /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
-		2CE973BABE6EB3426E11A619043846DA /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
-		2D6D1DA6A81C5E90A89D5BFA8034DD78 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D7F229A2D921327B4ED4A823849AEEB /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
-		2E880E8DBCE648992A0496A3B90E771A /* NBMaterialDialogIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBMaterialDialogIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3088DA4878BD7C34FD897945A8F9D545 /* UIColor_BFPaperColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_BFPaperColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3189B19FED941A6BBC3FD8800B9B916B /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31FF73407B1D871770B725D3BED174B4 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
-		3337D0929B6AF248AF5E0254D557AA0F /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
-		3397A91B69ECD206AB1C7BEE0CD0D82D /* NBConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBConfig.swift; sourceTree = "<group>"; };
-		36E955E1B86094809CF3FE8C0E027114 /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38B6DB32444B602EFB6F5B93B2CE35AF /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
-		3950C2BC0511A3AC735324241504DF50 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
-		3B40CB9AF9CB5F622323E030D5767497 /* NBMaterialDialogIOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NBMaterialDialogIOS.xcconfig; sourceTree = "<group>"; };
-		3BFC77E4290C9FD9432E4AB32C09FC29 /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
-		3FE998339A95543B4CE0072035A05F6B /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
-		4076DEA2DFFCA17B043FCEBA0B4B3329 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44B2251F8D7E966E23057302395D4D11 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
-		45B6AFD9FBE21D3F25C08AEDF21FD0D7 /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Quick/World.h; sourceTree = "<group>"; };
-		4601420AD370CDA05B6C30192DC55B06 /* BFPaperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFPaperButton-umbrella.h"; sourceTree = "<group>"; };
+		24542E99EE13FDB5751190E3D13A91D6 /* Pods-NBMaterialDialogIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBMaterialDialogIOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		3169C8CDE62F4A43D1855FE66794E002 /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3252317CA7A004E915EB8324FEC13F05 /* NBMaterialCircularActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialCircularActivityIndicator.swift; sourceTree = "<group>"; };
+		3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		48B6D2779583C40A8731BB7F68F471BA /* UIColor+BFPaperColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors-prefix.pch"; sourceTree = "<group>"; };
 		4B2B2F02B83AACC75E9A19720822AADE /* Pods-NBMaterialDialogIOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Example-resources.sh"; sourceTree = "<group>"; };
-		4B56FE48DA6EAFBA448C2B78F990FE67 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
-		4C465613523EE156E7A097D9CAE3C5BD /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		52301F22A14FD72C2F7DB1576405554A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5CC21B39E1242AF2C3803691244D51 /* UIColor_BFPaperColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_BFPaperColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505ED3DE8ACAC930EBF8F7A03D47960B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		52FAA94826AD286079F5E814F994C825 /* Pods-NBMaterialDialogIOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		53EF187F824F8D2D57492B1B69F092C6 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
-		554C4EAB1CBA05A60BEFB4F2B6B3984B /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
-		5753E9677F70C5E791FAFA0B0864AE92 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
-		5C6A244EFE0C43DDD1B89121C9C9F6E8 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		5CB59875ABA0D28F1A8AADEE43A238C0 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CBD9CFAD21FEBA4F8AA65B228D86E18 /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
+		53E346FC6A4FB2A87DC3BC736FF3BFAE /* NBMaterialDialogIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NBMaterialDialogIOS.modulemap; sourceTree = "<group>"; };
 		5D5FD700359DA9A5D71B8D3A74F17B6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D7A56E261BDDA1D8B1CA35BF074DA90 /* Nimble-Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Nimble-Snapshots.modulemap"; sourceTree = "<group>"; };
-		5EF43BD3614D5566C0D5DC0C239CAA82 /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FEAA86D2BA9579CF6B9307D0F4F4759 /* Pods-NBMaterialDialogIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBMaterialDialogIOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		645E66141D0B4475CB7EAFD31896119D /* Pods-NBMaterialDialogIOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6473F93D309FD25A989442F7E6A059E4 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		689970A620A0D68145D28B4D8F3FDCEA /* NBMaterialAlertDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialAlertDialog.swift; sourceTree = "<group>"; };
-		69F9A4897DF9BD061F30CB6A57AC1B7F /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
-		6C6ACFAF9989C065174C1C436A0E6FC1 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
-		6C96062DC8449FA642B2F3E06886E518 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
-		6DB69B53BBAFE062C2C4ABACF9CD9D8D /* BFPaperButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFPaperButton.h; path = Classes/BFPaperButton.h; sourceTree = "<group>"; };
-		6EC6281B6BFB0E22C1D85EB693F08678 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBMaterialDialogIOS_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6F0AC2264D873564D24EE05BADD7B952 /* Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Quick-Private.xcconfig"; sourceTree = "<group>"; };
-		6FB3A8AFA300EC6DD52BCD5E145F1669 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/UIImage+Compare.h"; sourceTree = "<group>"; };
-		7860427CB7F88095143A55E2C3847EB7 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		657232A53FD9F1430C11726EA442FE38 /* BFPaperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BFPaperButton-dummy.m"; sourceTree = "<group>"; };
+		666A5FA2B3268BD54D6A4012F10CEB6E /* NBMaterialDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialDialog.swift; sourceTree = "<group>"; };
+		69D498F73C01EEF19A61C41ABFB1E6C4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		6CC439A68D0DEC56C511EF27F4B610C9 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBMaterialDialogIOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6CFFBC5C0BDC5C5A7FD8952D22B0B7C0 /* UIColor+BFPaperColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+BFPaperColors.xcconfig"; sourceTree = "<group>"; };
+		6E92BF2D6E12A6155B428070064A5E88 /* NBConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBConfig.swift; sourceTree = "<group>"; };
+		7010836E1B3FBD2651D9A3BDA5F37ACB /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7805E3328634150706FAAFC1CDCCE87E /* UIColor_BFPaperColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_BFPaperColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		789C43282EFCE4955B1F4127C8408B86 /* Pods-NBMaterialDialogIOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NBMaterialDialogIOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		78AA5E658F5E9C4CB0F8829FE02B01CD /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797B05FECEAD9DC1721FAFD7EFE336A8 /* Pods-NBMaterialDialogIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBMaterialDialogIOS_Example-dummy.m"; sourceTree = "<group>"; };
 		7E2A02BC2F5ADD5678B015EA40F6A71D /* Pods-NBMaterialDialogIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NBMaterialDialogIOS_Example.modulemap"; sourceTree = "<group>"; };
-		7E8A3BECC87E9DB806D343B4FD46A602 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
-		7F018E1C6118D8FBFBCB3BAC24B4DD76 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		7F6BDDD7F272C6C9A46216029A029D5C /* HaveValidSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HaveValidSnapshot.swift; sourceTree = "<group>"; };
-		7FCA5987043E1B4EED1A6AEE4BDCF801 /* PrettySyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrettySyntax.swift; sourceTree = "<group>"; };
-		825037EA67C0D284A9A6158319CDAA51 /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
-		8442D3CE31E2A579617612C7DFE559F0 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
-		845CE1E3DD18A4DB203927896FBCC2D6 /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
-		84C8B91F0238C14D193BC7FD00BAAC98 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
-		863D3CEBCFCD23E7C4002A36E272E975 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		8785D9DF519970819337DE8356C9D737 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
-		8794B6C09D84555629AF1C164EFF50F9 /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
-		8B6F4074550935CC95420E54AACE6C86 /* NBMaterialToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialToast.swift; sourceTree = "<group>"; };
-		8C1D287C1CDFC5583C012A810E7E5527 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8516F32D4ED05CB8FFCA4282A57E4118 /* BFPaperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BFPaperButton.xcconfig; sourceTree = "<group>"; };
 		8D1A09110BEA528CF8A8CFF1296F3EB0 /* Pods-NBMaterialDialogIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NBMaterialDialogIOS_Tests.modulemap"; sourceTree = "<group>"; };
-		8F4CDF29A852777E6DB123EF31396E62 /* NBMaterialDialogIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NBMaterialDialogIOS-dummy.m"; sourceTree = "<group>"; };
-		8F5AADBB2199C4AE6DC18D4033508D8B /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BFPaperColors.h"; path = "UIColor+BFPaperColors/UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
-		8F6BEB8E27C93AF42BBB8CFBDA31E1CA /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
-		908A8C82CD0DF61D5B9291A069A8C803 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Nimble.modulemap; sourceTree = "<group>"; };
-		90BED522E46A16CD0809E973749D5729 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		914A7D196EBDA1DBA52C9B6439C3F814 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
 		91FA0CC624905C6C7D8890CFB5D4D967 /* Pods-NBMaterialDialogIOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Tests-resources.sh"; sourceTree = "<group>"; };
-		9212D773EB25237A144D4607ACF69C02 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		92E0941D25BC3556AFB8620E709866DE /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
-		94093A5A98B8FC76743125DC694B4B3B /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/UIImage+Diff.m"; sourceTree = "<group>"; };
-		94430EAF26197F3D1AF09977E5CB3FC2 /* Pods-NBMaterialDialogIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBMaterialDialogIOS_Example-dummy.m"; sourceTree = "<group>"; };
-		94E6307D484DC0256A615D80E6EA23A3 /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94FF330E8212C20CFB72ABF7706AF991 /* Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.xcconfig; sourceTree = "<group>"; };
-		952992E0B533A95129B5EF3464D34E43 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
-		96273807F2A7D8A6616202F990B1FD5E /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
-		9646C08A60988D66BF43DC2B6D4FA642 /* NBMaterialLoadingDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialLoadingDialog.swift; sourceTree = "<group>"; };
-		9676CEB40F9A7AB2C194C0B51155C2CA /* UIColor+BFPaperColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors-umbrella.h"; sourceTree = "<group>"; };
-		97411921F7DCB2B166CB49A6CA09A920 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		978DB2F1771961C3A8BA460A75F886E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9829EF22C6DC1F268AF0F7242FD5EBB0 /* NBMaterialCircularActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialCircularActivityIndicator.swift; sourceTree = "<group>"; };
-		9B9599F62915B990ED41822CC920DAB1 /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
-		9C38EB13031EE9F5D2CDE2DCA5F4DEF3 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
-		9C6A4C353CDEA055A39726DFE96D8745 /* UIColor+BFPaperColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+BFPaperColors.xcconfig"; sourceTree = "<group>"; };
-		9D5A110C0631536F0C12DB262A817ED2 /* BFPaperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BFPaperButton.modulemap; sourceTree = "<group>"; };
-		9FED49EEBD8974F05926CC2CB7BBE2FD /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
-		A09E74E93777AA47126E1461CB04E50F /* Nimble-Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Nimble-Snapshots.xcconfig"; sourceTree = "<group>"; };
-		A1DE2969751130855886E0761E1EDFDC /* UIFont+Roboto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Roboto.swift"; sourceTree = "<group>"; };
-		A6286D18CFFDE58DCD892DAFA6CB71EB /* NBMaterialDialogIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NBMaterialDialogIOS.modulemap; sourceTree = "<group>"; };
-		A75C10449A8ABC9D0B679B7E0367E4D6 /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
-		A77B9654B5026D8A201B8F2BC5328681 /* NBMaterialDialogIOS-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NBMaterialDialogIOS-Private.xcconfig"; sourceTree = "<group>"; };
-		A7DC0AB17F2E2F7350D64B2F05288B6E /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
-		A81A1698604064667E3AC040A38535C4 /* ObjCExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCExpectation.swift; path = Nimble/ObjCExpectation.swift; sourceTree = "<group>"; };
-		A9B0756EB4510E94C960946E34BB782A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9EC364FEE6600CD6D5A5D2DB95169E7 /* BFPaperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BFPaperButton.xcconfig; sourceTree = "<group>"; };
-		AB04DE8C333647086B8A4B83DE292AB9 /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
-		AE8E4926072E5B5449627F9878CB06FC /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		AF01642FD9666740307011957CAA9349 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B08E5FF477436C9AB784207BFE2A94D2 /* Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-dummy.m"; sourceTree = "<group>"; };
-		B51F3E2F5506F23A11228224DB033A16 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BFPaperColors.m"; path = "UIColor+BFPaperColors/UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
-		B735FA7AAF2B9E2598DFE17EA4C596D6 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
-		B91E688558313D0E90EF1A81B4571E8D /* Nimble-Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-Snapshots-dummy.m"; sourceTree = "<group>"; };
-		B9A4F8BEBE222F55FB501B9EA257878D /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		95D0B303B6DE0FFD3B2BA74CE09B3416 /* UIColor+BFPaperColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors-dummy.m"; sourceTree = "<group>"; };
+		A65F0E53089D05FFD71D64334788E53A /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7882813781513D2B93DB13FED79FB6F /* UIColor+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		AD73F8F2B24C73F1F9BA5B6069BC623C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD6A37B9173F9623F49EC2EA08970AA /* NBMaterialAlertDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialAlertDialog.swift; sourceTree = "<group>"; };
+		B337470CCFCB8319207346587A80E45C /* UIColor+BFPaperColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors-umbrella.h"; sourceTree = "<group>"; };
+		B4FFAF03EC8536F238BA33F7C8E7737B /* UIFont+Roboto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Roboto.swift"; sourceTree = "<group>"; };
+		B7A0265FB5489480268C12D14B709B6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB5D9015EE652E6A5D9EA23E226803CA /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
-		BC74406572435EB903B78429DF31B318 /* Nimble-Snapshots-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Nimble-Snapshots-Private.xcconfig"; sourceTree = "<group>"; };
-		BCA2C1A8B98C32FFC0889545E076232C /* NimbleSnapshotsConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NimbleSnapshotsConfiguration.swift; sourceTree = "<group>"; };
-		BDF9807C3C1BDD28B7D4F753B9F7260A /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
-		BE1BA98DC282F317DE234583BD209C4A /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
-		BE38835AA78216033C1484888E1C1556 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
-		BE5267A92CF2E1D2D8B672166B88AC6D /* Pods-NBMaterialDialogIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBMaterialDialogIOS_Example-umbrella.h"; sourceTree = "<group>"; };
-		C05C76B3A99AB4FE95F1A0DEEB4D7623 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
-		C205F3CC690596305A071BEB5AFB00ED /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Quick/DSL/World+DSL.h"; sourceTree = "<group>"; };
-		C3A9E293771134D1DE5EA93E13A2BF67 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C414D73D3BDC8F94CB4670D2557E1FC2 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
-		C52F57A45AE5BFBFD7230DDD8B53263E /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C555CE37FEB460F73A9450692DA28692 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C734D5B4BED1BEE79517002E9D82D45B /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
-		C818AF3EBC795AB8BE729748A3E654C9 /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
-		CA733D34B7D5A1F9A1E9A06D20ACAE5E /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
-		CBFB0CB5D3EBC67AEE121EC53A7682AA /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
-		CC406302AD539445E28EF9B4C1422D9E /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
-		D0FCD2FDB9457E8F80ED5C7CA92FF9E5 /* BFPaperButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BFPaperButton-Private.xcconfig"; sourceTree = "<group>"; };
-		D54CE5C6E7C6A087F7CDCA6E9086E535 /* BFPaperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BFPaperButton-dummy.m"; sourceTree = "<group>"; };
-		DA3D189F11648BE01A2B77F3392EF159 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
-		DB81C2CB7C48FC86674F8BA25491C8F4 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
-		DD206D84FA694697DF8655A70948DE81 /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
-		DD8A785C361CF5CEB9FA88B5C956EC83 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		BDC8B69670D8F773E6DC1821367A846B /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BFPaperColors.h"; path = "UIColor+BFPaperColors/UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
+		C013580F5FC0E76B029F939DB920D1CE /* BFPaperButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFPaperButton.h; path = Classes/BFPaperButton.h; sourceTree = "<group>"; };
+		C1F86A2DE2615B9D0B70934DBC20AD6C /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C214734AA2146685250DBB73FCD5F650 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BFPaperColors.m"; path = "UIColor+BFPaperColors/UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+		C22E0A260DAC08EE3027009346343329 /* NBMaterialDialogIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBMaterialDialogIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF9254D06A9FA81AAF4B52140B30F27 /* NBMaterialDialogIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMaterialDialogIOS-umbrella.h"; sourceTree = "<group>"; };
+		CDB00F2BAB10A3F7F5B6215EF22E835A /* BFPaperButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFPaperButton.m; path = Classes/BFPaperButton.m; sourceTree = "<group>"; };
+		CDD3A47B4873BBDDD36EE3AF99674B9A /* BFPaperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BFPaperButton.modulemap; sourceTree = "<group>"; };
+		D3186C3E3DF80C42C12D588E41822678 /* NBMaterialLoadingDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialLoadingDialog.swift; sourceTree = "<group>"; };
+		D4929F74FCBDE6F0A7085C533240062C /* NBMaterialToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialToast.swift; sourceTree = "<group>"; };
+		D78D0F937575341A9508C7D607C64ABB /* NBMaterialDialogIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMaterialDialogIOS-prefix.pch"; sourceTree = "<group>"; };
+		D9F2EEC5727B376C0A203406F36E20D5 /* NBMaterialSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialSnackbar.swift; sourceTree = "<group>"; };
+		DA01111D7B13E873285F5B7688189658 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DEC2DCFFA8BB12BDC7209670E945002B /* Pods-NBMaterialDialogIOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NBMaterialDialogIOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E055E60EAB531E906A646A2F23F9C858 /* Nimble-Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-Snapshots-prefix.pch"; sourceTree = "<group>"; };
-		E069C21BBCE4746D57A887CDD8252A03 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
-		E17F516C98D8A96152EFC5FE5DD3ED99 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
-		E30931B041D8BA22C18EB70D4D91964F /* NBMaterialDialogIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMaterialDialogIOS-umbrella.h"; sourceTree = "<group>"; };
-		E42B4DDFF9259A87FE795531CF0F8AF2 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
-		EA84FB9DBED4B4C4524A85D5D8DE1284 /* UIColor+BFPaperColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors-dummy.m"; sourceTree = "<group>"; };
-		EC55191C41D2098EFA16305680ABFC7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECEB24E15DCD7FF769B28124076C3588 /* NBMaterialDialogIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMaterialDialogIOS-prefix.pch"; sourceTree = "<group>"; };
-		EE210C8E6F07A265D41C661D7B6B3999 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF97D2BD1CF490B499F915B4B5945590 /* Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Nimble-Private.xcconfig"; sourceTree = "<group>"; };
-		F1380DDAD0E792F799EE4250B40BB26E /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
-		F57B9D285CA9D69F32D588A2CA0E358E /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
-		F6110C600F5E9ADF085C064C4734FB8D /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
-		F82769D907C0C9146CF40FA7F9746173 /* UIColor_BFPaperColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_BFPaperColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F85F408B1F4CBA7F1A207E70BC2843B0 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
-		F9B6ACE3F51F86565BEB9F1759322B91 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		FBF9F299E6A78E7B83725599AFBED944 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		F06EA0F364B28126A2470EF0D3A4820B /* NBMaterialDialogIOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NBMaterialDialogIOS.xcconfig; sourceTree = "<group>"; };
+		F241C5EC1F8143E72B1B685012057E8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E290C3E18CA797EE2824199AEFFBDF /* NBMaterialDialogIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NBMaterialDialogIOS-dummy.m"; sourceTree = "<group>"; };
+		F63DCAA1E34142EC85CE4E724BB55104 /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDAE7F1AFC0141729449069E31C4846 /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		195E8FED3A8B2C8A48D9E6EE89F3432C /* Frameworks */ = {
+		00E15E26DD40CC6B515265E7E5AC35A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B84AB11305961B168D31C6D1CFBE45E /* Foundation.framework in Frameworks */,
+				B670ED8065EF5910F386B71B28F5F374 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		274548B1337A446E16F43604A0A1848D /* Frameworks */ = {
+		4D3DDC2ABF9C97C66E7D6F78CC0560FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7134CFE8826C5DE34FE16677215830AD /* Foundation.framework in Frameworks */,
-				B157607E05ADEA8751D444C92E375153 /* XCTest.framework in Frameworks */,
+				D809DD22A087A7DE3615A88061B2E03D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B2A7C09181B078BB27E8DE4A182C68E /* Frameworks */ = {
+		AE26ED36C83E26D5B9B14094FB8CE306 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ED7EAD718A8C92F8AE5DE0D26450CBB /* Foundation.framework in Frameworks */,
-				9728DE2B6C153B0AA274E1CFC09FD556 /* UIColor_BFPaperColors.framework in Frameworks */,
+				E14D259A03E27525FE6403E618B7D63C /* Foundation.framework in Frameworks */,
+				D7834CA537F846ED093E0CC65604AD22 /* UIColor_BFPaperColors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71CB215EF7C2C4FB704E5549AA5D6D49 /* Frameworks */ = {
+		C3D79D99AC9080668D8E3B3A354D94A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7291414E792EE5F64E915AA842702B /* Foundation.framework in Frameworks */,
-				355F53ACD757FBE0CA19E71F9C4A78A3 /* XCTest.framework in Frameworks */,
+				B9FBE4F470EBAC5360ADF549BCDE02B3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87A529E7222E2FD99DA12D0C45684243 /* Frameworks */ = {
+		DE1209F266AAD894726B3FF344BE52F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C060809FCAC811187B91A78C6E97704 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93061C50947DFF61AFDE27C2AB8B9CB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA24DD5439CDA690156B0892E16C5A77 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CABC125DF36B4679656860737EE2DB8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E61692CB947E4C0F467FA038E2BD7BA4 /* BFPaperButton.framework in Frameworks */,
-				3ED6E078B07D9081F96CAD85442FD0FA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECC3AF3DA0703405F3E010F84C4BD776 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C004F7227FCD427EC6CB9A1ED65A3C92 /* Foundation.framework in Frameworks */,
-				00D38951C4D9750673963F1F626D85FE /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF1FAE29CEE0D6B2CFDB4F25AE66245A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D515294B1F43EF92E588F30A81083E20 /* FBSnapshotTestCase.framework in Frameworks */,
-				1C618AF37F07CAD5FB4969285958E033 /* Foundation.framework in Frameworks */,
-				E5A63F730E97F82130F81069D9CD6CE8 /* Nimble.framework in Frameworks */,
-				7CABA78770DEFA9A69F6A393378D4F40 /* Quick.framework in Frameworks */,
-				AECAEAC7586CEF5D8AC176034CD382A0 /* XCTest.framework in Frameworks */,
+				B95E172B6DAFC0EEB132337F3FF3B180 /* BFPaperButton.framework in Frameworks */,
+				86DDA208E14F4766698C6F83A12BA157 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0509EB974E040A6629E12CD5F4D21867 /* Pod */ = {
+		14D2E1C16D1E804CD752F701E6865E17 /* UIColor+BFPaperColors */ = {
 			isa = PBXGroup;
 			children = (
-				FB014F2F95A5778577E9BC3E2D1DDA1F /* Assets */,
+				BDC8B69670D8F773E6DC1821367A846B /* UIColor+BFPaperColors.h */,
+				C214734AA2146685250DBB73FCD5F650 /* UIColor+BFPaperColors.m */,
+				E0400C0EA267265CF4751FAB2CA83CD5 /* Support Files */,
 			);
-			path = Pod;
+			path = "UIColor+BFPaperColors";
 			sourceTree = "<group>";
 		};
-		1C30FDD72D39D62556EAE117849D4A32 /* Support Files */ = {
+		26F20EDAD63CAA46B8BE86F1DC6D259D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8C1D287C1CDFC5583C012A810E7E5527 /* Info.plist */,
-				5D7A56E261BDDA1D8B1CA35BF074DA90 /* Nimble-Snapshots.modulemap */,
-				A09E74E93777AA47126E1461CB04E50F /* Nimble-Snapshots.xcconfig */,
-				BC74406572435EB903B78429DF31B318 /* Nimble-Snapshots-Private.xcconfig */,
-				B91E688558313D0E90EF1A81B4571E8D /* Nimble-Snapshots-dummy.m */,
-				E055E60EAB531E906A646A2F23F9C858 /* Nimble-Snapshots-prefix.pch */,
-				122032B9F8FFC6F0A826E2EF031E05E1 /* Nimble-Snapshots-umbrella.h */,
+				8D3F23C4FF31E29AAF1258B5B222490E /* Pod */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Nimble-Snapshots";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2A050800C1D70C69BD9AED812D1317D6 /* Pods-NBMaterialDialogIOS_Tests */ = {
@@ -543,133 +236,45 @@
 				8D1A09110BEA528CF8A8CFF1296F3EB0 /* Pods-NBMaterialDialogIOS_Tests.modulemap */,
 				789C43282EFCE4955B1F4127C8408B86 /* Pods-NBMaterialDialogIOS_Tests-acknowledgements.markdown */,
 				13EDEA4B3C5AABFBEAD9833111353D93 /* Pods-NBMaterialDialogIOS_Tests-acknowledgements.plist */,
-				5FEAA86D2BA9579CF6B9307D0F4F4759 /* Pods-NBMaterialDialogIOS_Tests-dummy.m */,
+				0279D670BA3E67EA51BB3BE06FAD8D25 /* Pods-NBMaterialDialogIOS_Tests-dummy.m */,
 				52FAA94826AD286079F5E814F994C825 /* Pods-NBMaterialDialogIOS_Tests-frameworks.sh */,
 				91FA0CC624905C6C7D8890CFB5D4D967 /* Pods-NBMaterialDialogIOS_Tests-resources.sh */,
-				6EC6281B6BFB0E22C1D85EB693F08678 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */,
-				C3A9E293771134D1DE5EA93E13A2BF67 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */,
-				1887120FC7A0FDCE4A9EA620BA591019 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */,
+				6CC439A68D0DEC56C511EF27F4B610C9 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */,
+				C1F86A2DE2615B9D0B70934DBC20AD6C /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */,
+				0929751C7FDF2341243F86789DE8425A /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */,
 			);
 			name = "Pods-NBMaterialDialogIOS_Tests";
 			path = "Target Support Files/Pods-NBMaterialDialogIOS_Tests";
 			sourceTree = "<group>";
 		};
-		2C1DAD47379420B0503F75BC83705F9C /* Support Files */ = {
+		381C769DBB9CDA07828C0B3ED3E6543C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D0793534B63FC90BA6E703006BC40C7 /* FBSnapshotTestCase.modulemap */,
-				B9A4F8BEBE222F55FB501B9EA257878D /* FBSnapshotTestCase.xcconfig */,
-				1715057478F79CBBF485BAA9A78E3E2B /* FBSnapshotTestCase-Private.xcconfig */,
-				1421E8E074E8F1FB07811B443C340059 /* FBSnapshotTestCase-dummy.m */,
-				5C6A244EFE0C43DDD1B89121C9C9F6E8 /* FBSnapshotTestCase-prefix.pch */,
-				F9B6ACE3F51F86565BEB9F1759322B91 /* FBSnapshotTestCase-umbrella.h */,
-				A9B0756EB4510E94C960946E34BB782A /* Info.plist */,
+				3169C8CDE62F4A43D1855FE66794E002 /* BFPaperButton.framework */,
+				C22E0A260DAC08EE3027009346343329 /* NBMaterialDialogIOS.framework */,
+				7010836E1B3FBD2651D9A3BDA5F37ACB /* Pods_NBMaterialDialogIOS_Example.framework */,
+				A65F0E53089D05FFD71D64334788E53A /* Pods_NBMaterialDialogIOS_Tests.framework */,
+				4E5CC21B39E1242AF2C3803691244D51 /* UIColor_BFPaperColors.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FBSnapshotTestCase";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		38559FA304DBCAD9C73AA1B85FA37961 /* Frameworks */ = {
+		4019B7B10F112586FFD43D8FD3560D02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3189B19FED941A6BBC3FD8800B9B916B /* BFPaperButton.framework */,
-				EE210C8E6F07A265D41C661D7B6B3999 /* FBSnapshotTestCase.framework */,
-				5CB59875ABA0D28F1A8AADEE43A238C0 /* Nimble.framework */,
-				C52F57A45AE5BFBFD7230DDD8B53263E /* Quick.framework */,
-				F82769D907C0C9146CF40FA7F9746173 /* UIColor_BFPaperColors.framework */,
-				4A46ED3A903AC210C501919B3237409A /* iOS */,
+				F63DCAA1E34142EC85CE4E724BB55104 /* BFPaperButton.framework */,
+				7805E3328634150706FAAFC1CDCCE87E /* UIColor_BFPaperColors.framework */,
+				5C1EC812DD3C835062134EFFC2BCCA1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A46ED3A903AC210C501919B3237409A /* iOS */ = {
+		5C1EC812DD3C835062134EFFC2BCCA1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1C00A2BA6C10B1AA74684C59DFA4A27C /* Foundation.framework */,
-				C555CE37FEB460F73A9450692DA28692 /* XCTest.framework */,
+				3A0477DA5F7EC101BDB0AAD8D0AFEDA0 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5FE0B59135E11CCE4DAC469D3E475585 /* Nimble */ = {
-			isa = PBXGroup;
-			children = (
-				E42B4DDFF9259A87FE795531CF0F8AF2 /* AdapterProtocols.swift */,
-				F6110C600F5E9ADF085C064C4734FB8D /* AllPass.swift */,
-				DB81C2CB7C48FC86674F8BA25491C8F4 /* AssertionDispatcher.swift */,
-				3BFC77E4290C9FD9432E4AB32C09FC29 /* AssertionRecorder.swift */,
-				CBFB0CB5D3EBC67AEE121EC53A7682AA /* AsyncMatcherWrapper.swift */,
-				A75C10449A8ABC9D0B679B7E0367E4D6 /* BeAKindOf.swift */,
-				FBF9F299E6A78E7B83725599AFBED944 /* BeAnInstanceOf.swift */,
-				6C6ACFAF9989C065174C1C436A0E6FC1 /* BeCloseTo.swift */,
-				DA3D189F11648BE01A2B77F3392EF159 /* BeEmpty.swift */,
-				B735FA7AAF2B9E2598DFE17EA4C596D6 /* BeGreaterThan.swift */,
-				7860427CB7F88095143A55E2C3847EB7 /* BeGreaterThanOrEqualTo.swift */,
-				69F9A4897DF9BD061F30CB6A57AC1B7F /* BeIdenticalTo.swift */,
-				AB04DE8C333647086B8A4B83DE292AB9 /* BeLessThan.swift */,
-				9C38EB13031EE9F5D2CDE2DCA5F4DEF3 /* BeLessThanOrEqual.swift */,
-				04C3B72928424266283A3DB096D5D0BE /* BeLogical.swift */,
-				2BADD5DC2B20FCDC003EDAD3D536A3EF /* BeNil.swift */,
-				952992E0B533A95129B5EF3464D34E43 /* BeginWith.swift */,
-				A7DC0AB17F2E2F7350D64B2F05288B6E /* Contain.swift */,
-				92E0941D25BC3556AFB8620E709866DE /* DSL.h */,
-				8442D3CE31E2A579617612C7DFE559F0 /* DSL.m */,
-				914A7D196EBDA1DBA52C9B6439C3F814 /* DSL.swift */,
-				CC406302AD539445E28EF9B4C1422D9E /* DSL+Wait.swift */,
-				3FE998339A95543B4CE0072035A05F6B /* EndWith.swift */,
-				C734D5B4BED1BEE79517002E9D82D45B /* Equal.swift */,
-				C05C76B3A99AB4FE95F1A0DEEB4D7623 /* Expectation.swift */,
-				E17F516C98D8A96152EFC5FE5DD3ED99 /* Expression.swift */,
-				0391BE8D24B0A8B3E434C6E89E140E5D /* FailureMessage.swift */,
-				12F31D20A07B4062FCDECF5D690D59BC /* Functional.swift */,
-				175CAB1C0F3E4BFC3FF2F0F4A416E376 /* Match.swift */,
-				17DEB4593D94112E687568756492F92C /* MatcherFunc.swift */,
-				3337D0929B6AF248AF5E0254D557AA0F /* MatcherProtocols.swift */,
-				BDF9807C3C1BDD28B7D4F753B9F7260A /* NMBExceptionCapture.h */,
-				F57B9D285CA9D69F32D588A2CA0E358E /* NMBExceptionCapture.m */,
-				53EF187F824F8D2D57492B1B69F092C6 /* Nimble.h */,
-				0553DD4F17D65653E89DA6377E8C89C9 /* NimbleXCTestHandler.swift */,
-				A81A1698604064667E3AC040A38535C4 /* ObjCExpectation.swift */,
-				8F6BEB8E27C93AF42BBB8CFBDA31E1CA /* ObjCMatcher.swift */,
-				845CE1E3DD18A4DB203927896FBCC2D6 /* Poll.swift */,
-				F1380DDAD0E792F799EE4250B40BB26E /* RaisesException.swift */,
-				8794B6C09D84555629AF1C164EFF50F9 /* SourceLocation.swift */,
-				BE38835AA78216033C1484888E1C1556 /* Stringers.swift */,
-				96273807F2A7D8A6616202F990B1FD5E /* ThrowError.swift */,
-				CD477EE2DA575E76A5FBAF7A5407349A /* Support Files */,
-			);
-			path = Nimble;
-			sourceTree = "<group>";
-		};
-		643F815EFE34432E1855F74738F4F83B /* Quick */ = {
-			isa = PBXGroup;
-			children = (
-				CA733D34B7D5A1F9A1E9A06D20ACAE5E /* Callsite.swift */,
-				554C4EAB1CBA05A60BEFB4F2B6B3984B /* Closures.swift */,
-				2CE973BABE6EB3426E11A619043846DA /* Configuration.swift */,
-				2D7F229A2D921327B4ED4A823849AEEB /* DSL.swift */,
-				7E8A3BECC87E9DB806D343B4FD46A602 /* Example.swift */,
-				18E08DAF279222C5F74FA35112917DCE /* ExampleGroup.swift */,
-				8785D9DF519970819337DE8356C9D737 /* ExampleHooks.swift */,
-				5753E9677F70C5E791FAFA0B0864AE92 /* ExampleMetadata.swift */,
-				3950C2BC0511A3AC735324241504DF50 /* Filter.swift */,
-				DD206D84FA694697DF8655A70948DE81 /* NSString+QCKSelectorName.h */,
-				9FED49EEBD8974F05926CC2CB7BBE2FD /* NSString+QCKSelectorName.m */,
-				F85F408B1F4CBA7F1A207E70BC2843B0 /* QCKDSL.h */,
-				123070BE45E21584665FAE9B32439066 /* QCKDSL.m */,
-				825037EA67C0D284A9A6158319CDAA51 /* Quick.h */,
-				4B56FE48DA6EAFBA448C2B78F990FE67 /* QuickConfiguration.h */,
-				31FF73407B1D871770B725D3BED174B4 /* QuickConfiguration.m */,
-				84C8B91F0238C14D193BC7FD00BAAC98 /* QuickSpec.h */,
-				C414D73D3BDC8F94CB4670D2557E1FC2 /* QuickSpec.m */,
-				44B2251F8D7E966E23057302395D4D11 /* SuiteHooks.swift */,
-				45B6AFD9FBE21D3F25C08AEDF21FD0D7 /* World.h */,
-				6C96062DC8449FA642B2F3E06886E518 /* World.swift */,
-				C205F3CC690596305A071BEB5AFB00ED /* World+DSL.h */,
-				BE1BA98DC282F317DE234583BD209C4A /* World+DSL.swift */,
-				6DEEFB9EF24766B16584741BF39E56D8 /* Support Files */,
-			);
-			path = Quick;
 			sourceTree = "<group>";
 		};
 		6703715DCD2953332AA0D2F17F8FE0FC /* Targets Support Files */ = {
@@ -681,59 +286,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6DEEFB9EF24766B16584741BF39E56D8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EC55191C41D2098EFA16305680ABFC7E /* Info.plist */,
-				26E70C29A3FE61847E77B9262A507A39 /* Quick.modulemap */,
-				C818AF3EBC795AB8BE729748A3E654C9 /* Quick.xcconfig */,
-				6F0AC2264D873564D24EE05BADD7B952 /* Quick-Private.xcconfig */,
-				B08E5FF477436C9AB784207BFE2A94D2 /* Quick-dummy.m */,
-				9B9599F62915B990ED41822CC920DAB1 /* Quick-prefix.pch */,
-				E069C21BBCE4746D57A887CDD8252A03 /* Quick-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Quick";
-			sourceTree = "<group>";
-		};
-		72620AEF1E9000E889961FB63ED3A865 /* BFPaperButton */ = {
-			isa = PBXGroup;
-			children = (
-				6DB69B53BBAFE062C2C4ABACF9CD9D8D /* BFPaperButton.h */,
-				2113CDD839EB4EE91B930BE916B81645 /* BFPaperButton.m */,
-				91CFADC5821C465E3001F4296FFD868C /* Support Files */,
-			);
-			path = BFPaperButton;
-			sourceTree = "<group>";
-		};
-		7441EA0AB4D1862ADB8CF257856B5705 /* FBSnapshotTestCase */ = {
-			isa = PBXGroup;
-			children = (
-				AE8E4926072E5B5449627F9878CB06FC /* FBSnapshotTestCase.h */,
-				863D3CEBCFCD23E7C4002A36E272E975 /* FBSnapshotTestCase.m */,
-				DD8A785C361CF5CEB9FA88B5C956EC83 /* FBSnapshotTestCasePlatform.h */,
-				6473F93D309FD25A989442F7E6A059E4 /* FBSnapshotTestCasePlatform.m */,
-				2726C30B5D814F02875D544DB17EF5A9 /* FBSnapshotTestController.h */,
-				9212D773EB25237A144D4607ACF69C02 /* FBSnapshotTestController.m */,
-				6FB3A8AFA300EC6DD52BCD5E145F1669 /* UIImage+Compare.h */,
-				027CE0306BC6F4F85141F478ECCFEB9D /* UIImage+Compare.m */,
-				148F8ED0734FB1EDA60AFC3B2203E1A4 /* UIImage+Diff.h */,
-				94093A5A98B8FC76743125DC694B4B3B /* UIImage+Diff.m */,
-				2C1DAD47379420B0503F75BC83705F9C /* Support Files */,
-			);
-			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				C088B24637AD0E3273094791875C3D77 /* Development Pods */,
-				38559FA304DBCAD9C73AA1B85FA37961 /* Frameworks */,
-				B40E4BD235A7F899D1B7740F6A2C1FE3 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				4019B7B10F112586FFD43D8FD3560D02 /* Frameworks */,
+				ABC2521AB63A77C55784A0CE3281810A /* Pods */,
+				381C769DBB9CDA07828C0B3ED3E6543C /* Products */,
 				6703715DCD2953332AA0D2F17F8FE0FC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		820EDF40D0821B8F31107B035E6A622C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				69D498F73C01EEF19A61C41ABFB1E6C4 /* Roboto-Medium.ttf */,
+				505ED3DE8ACAC930EBF8F7A03D47960B /* Roboto-Regular.ttf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8593AF30DCFD9C250334ABCA4CE0A664 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E92BF2D6E12A6155B428070064A5E88 /* NBConfig.swift */,
+				ADD6A37B9173F9623F49EC2EA08970AA /* NBMaterialAlertDialog.swift */,
+				3252317CA7A004E915EB8324FEC13F05 /* NBMaterialCircularActivityIndicator.swift */,
+				666A5FA2B3268BD54D6A4012F10CEB6E /* NBMaterialDialog.swift */,
+				D3186C3E3DF80C42C12D588E41822678 /* NBMaterialLoadingDialog.swift */,
+				D9F2EEC5727B376C0A203406F36E20D5 /* NBMaterialSnackbar.swift */,
+				D4929F74FCBDE6F0A7085C533240062C /* NBMaterialToast.swift */,
+				A7882813781513D2B93DB13FED79FB6F /* UIColor+Hex.swift */,
+				B4FFAF03EC8536F238BA33F7C8E7737B /* UIFont+Roboto.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		8A07D2C1C8EC9B0AF8DA842C54B7F498 /* Pods-NBMaterialDialogIOS_Example */ = {
@@ -743,313 +330,245 @@
 				7E2A02BC2F5ADD5678B015EA40F6A71D /* Pods-NBMaterialDialogIOS_Example.modulemap */,
 				DEC2DCFFA8BB12BDC7209670E945002B /* Pods-NBMaterialDialogIOS_Example-acknowledgements.markdown */,
 				0F53293B109B90DC5245DA066A4E9412 /* Pods-NBMaterialDialogIOS_Example-acknowledgements.plist */,
-				94430EAF26197F3D1AF09977E5CB3FC2 /* Pods-NBMaterialDialogIOS_Example-dummy.m */,
+				797B05FECEAD9DC1721FAFD7EFE336A8 /* Pods-NBMaterialDialogIOS_Example-dummy.m */,
 				645E66141D0B4475CB7EAFD31896119D /* Pods-NBMaterialDialogIOS_Example-frameworks.sh */,
 				4B2B2F02B83AACC75E9A19720822AADE /* Pods-NBMaterialDialogIOS_Example-resources.sh */,
-				BE5267A92CF2E1D2D8B672166B88AC6D /* Pods-NBMaterialDialogIOS_Example-umbrella.h */,
-				AF01642FD9666740307011957CAA9349 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */,
-				4C465613523EE156E7A097D9CAE3C5BD /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */,
+				24542E99EE13FDB5751190E3D13A91D6 /* Pods-NBMaterialDialogIOS_Example-umbrella.h */,
+				DA01111D7B13E873285F5B7688189658 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */,
+				FEDAE7F1AFC0141729449069E31C4846 /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */,
 			);
 			name = "Pods-NBMaterialDialogIOS_Example";
 			path = "Target Support Files/Pods-NBMaterialDialogIOS_Example";
 			sourceTree = "<group>";
 		};
-		91CFADC5821C465E3001F4296FFD868C /* Support Files */ = {
+		8D3F23C4FF31E29AAF1258B5B222490E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9D5A110C0631536F0C12DB262A817ED2 /* BFPaperButton.modulemap */,
-				A9EC364FEE6600CD6D5A5D2DB95169E7 /* BFPaperButton.xcconfig */,
-				D0FCD2FDB9457E8F80ED5C7CA92FF9E5 /* BFPaperButton-Private.xcconfig */,
-				D54CE5C6E7C6A087F7CDCA6E9086E535 /* BFPaperButton-dummy.m */,
-				2601B6441BC3F04A0926C425767E790C /* BFPaperButton-prefix.pch */,
-				4601420AD370CDA05B6C30192DC55B06 /* BFPaperButton-umbrella.h */,
-				03A668905E841655A760681B815DF1BF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BFPaperButton";
-			sourceTree = "<group>";
-		};
-		93FAC95D7873B493A95826847AF28639 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E99616B00B33E3AB3BCBE0C931EAE005 /* Classes */,
+				820EDF40D0821B8F31107B035E6A622C /* Assets */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		AD5C7ED3475C39A95336A4F5B4181343 /* Support Files */ = {
+		8EC31AC7CFA6A9A0F8EE6E3D35E572D2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				978DB2F1771961C3A8BA460A75F886E5 /* Info.plist */,
-				A6286D18CFFDE58DCD892DAFA6CB71EB /* NBMaterialDialogIOS.modulemap */,
-				3B40CB9AF9CB5F622323E030D5767497 /* NBMaterialDialogIOS.xcconfig */,
-				A77B9654B5026D8A201B8F2BC5328681 /* NBMaterialDialogIOS-Private.xcconfig */,
-				8F4CDF29A852777E6DB123EF31396E62 /* NBMaterialDialogIOS-dummy.m */,
-				ECEB24E15DCD7FF769B28124076C3588 /* NBMaterialDialogIOS-prefix.pch */,
-				E30931B041D8BA22C18EB70D4D91964F /* NBMaterialDialogIOS-umbrella.h */,
+				8593AF30DCFD9C250334ABCA4CE0A664 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		909798DC2F97035E6075C4C7D19D0902 /* BFPaperButton */ = {
+			isa = PBXGroup;
+			children = (
+				C013580F5FC0E76B029F939DB920D1CE /* BFPaperButton.h */,
+				CDB00F2BAB10A3F7F5B6215EF22E835A /* BFPaperButton.m */,
+				93C276C10A3A14EF3F56030479280161 /* Support Files */,
+			);
+			path = BFPaperButton;
+			sourceTree = "<group>";
+		};
+		92DB2DD83D4015B427780BAD19673552 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F241C5EC1F8143E72B1B685012057E8C /* Info.plist */,
+				53E346FC6A4FB2A87DC3BC736FF3BFAE /* NBMaterialDialogIOS.modulemap */,
+				F06EA0F364B28126A2470EF0D3A4820B /* NBMaterialDialogIOS.xcconfig */,
+				F3E290C3E18CA797EE2824199AEFFBDF /* NBMaterialDialogIOS-dummy.m */,
+				D78D0F937575341A9508C7D607C64ABB /* NBMaterialDialogIOS-prefix.pch */,
+				CBF9254D06A9FA81AAF4B52140B30F27 /* NBMaterialDialogIOS-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/NBMaterialDialogIOS";
 			sourceTree = "<group>";
 		};
-		B40E4BD235A7F899D1B7740F6A2C1FE3 /* Pods */ = {
+		93C276C10A3A14EF3F56030479280161 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				72620AEF1E9000E889961FB63ED3A865 /* BFPaperButton */,
-				7441EA0AB4D1862ADB8CF257856B5705 /* FBSnapshotTestCase */,
-				5FE0B59135E11CCE4DAC469D3E475585 /* Nimble */,
-				DFA9376810B1E7E59CAA3D103AA55EB4 /* Nimble-Snapshots */,
-				643F815EFE34432E1855F74738F4F83B /* Quick */,
-				CF2BA61008DF420507C972A1EE5AE8D6 /* UIColor+BFPaperColors */,
+				CDD3A47B4873BBDDD36EE3AF99674B9A /* BFPaperButton.modulemap */,
+				8516F32D4ED05CB8FFCA4282A57E4118 /* BFPaperButton.xcconfig */,
+				657232A53FD9F1430C11726EA442FE38 /* BFPaperButton-dummy.m */,
+				0228CFB76B9FF2703F0F6E9EF43FFBED /* BFPaperButton-prefix.pch */,
+				0E69FC40BFBEC313BA3DD3A8FD8E30DF /* BFPaperButton-umbrella.h */,
+				AD73F8F2B24C73F1F9BA5B6069BC623C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BFPaperButton";
+			sourceTree = "<group>";
+		};
+		ABC2521AB63A77C55784A0CE3281810A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				909798DC2F97035E6075C4C7D19D0902 /* BFPaperButton */,
+				14D2E1C16D1E804CD752F701E6865E17 /* UIColor+BFPaperColors */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B5C24EFBA9499AE90C73335C872E9D20 /* Resources */ = {
+		B7AFCEEC6C9816A3EBA8ECDCFE683DDB /* NBMaterialDialogIOS */ = {
 			isa = PBXGroup;
 			children = (
-				0509EB974E040A6629E12CD5F4D21867 /* Pod */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C088B24637AD0E3273094791875C3D77 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DA397FA647BB3F20FBB7DE115FEBB296 /* NBMaterialDialogIOS */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				94E6307D484DC0256A615D80E6EA23A3 /* BFPaperButton.framework */,
-				90BED522E46A16CD0809E973749D5729 /* FBSnapshotTestCase.framework */,
-				2E880E8DBCE648992A0496A3B90E771A /* NBMaterialDialogIOS.framework */,
-				78AA5E658F5E9C4CB0F8829FE02B01CD /* Nimble.framework */,
-				2D6D1DA6A81C5E90A89D5BFA8034DD78 /* Nimble_Snapshots.framework */,
-				36E955E1B86094809CF3FE8C0E027114 /* Pods_NBMaterialDialogIOS_Example.framework */,
-				5EF43BD3614D5566C0D5DC0C239CAA82 /* Pods_NBMaterialDialogIOS_Tests.framework */,
-				029211C9CD3CE937ABD8D994E4B5DC2F /* Quick.framework */,
-				3088DA4878BD7C34FD897945A8F9D545 /* UIColor_BFPaperColors.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CD477EE2DA575E76A5FBAF7A5407349A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4076DEA2DFFCA17B043FCEBA0B4B3329 /* Info.plist */,
-				908A8C82CD0DF61D5B9291A069A8C803 /* Nimble.modulemap */,
-				94FF330E8212C20CFB72ABF7706AF991 /* Nimble.xcconfig */,
-				EF97D2BD1CF490B499F915B4B5945590 /* Nimble-Private.xcconfig */,
-				5CBD9CFAD21FEBA4F8AA65B228D86E18 /* Nimble-dummy.m */,
-				38B6DB32444B602EFB6F5B93B2CE35AF /* Nimble-prefix.pch */,
-				BB5D9015EE652E6A5D9EA23E226803CA /* Nimble-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Nimble";
-			sourceTree = "<group>";
-		};
-		CF2BA61008DF420507C972A1EE5AE8D6 /* UIColor+BFPaperColors */ = {
-			isa = PBXGroup;
-			children = (
-				8F5AADBB2199C4AE6DC18D4033508D8B /* UIColor+BFPaperColors.h */,
-				B51F3E2F5506F23A11228224DB033A16 /* UIColor+BFPaperColors.m */,
-				F454BC93CB83E11D02A134BD4553B8A2 /* Support Files */,
-			);
-			path = "UIColor+BFPaperColors";
-			sourceTree = "<group>";
-		};
-		DA397FA647BB3F20FBB7DE115FEBB296 /* NBMaterialDialogIOS */ = {
-			isa = PBXGroup;
-			children = (
-				93FAC95D7873B493A95826847AF28639 /* Pod */,
-				B5C24EFBA9499AE90C73335C872E9D20 /* Resources */,
-				AD5C7ED3475C39A95336A4F5B4181343 /* Support Files */,
+				8EC31AC7CFA6A9A0F8EE6E3D35E572D2 /* Pod */,
+				26F20EDAD63CAA46B8BE86F1DC6D259D /* Resources */,
+				92DB2DD83D4015B427780BAD19673552 /* Support Files */,
 			);
 			name = NBMaterialDialogIOS;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		DFA9376810B1E7E59CAA3D103AA55EB4 /* Nimble-Snapshots */ = {
+		C088B24637AD0E3273094791875C3D77 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7F6BDDD7F272C6C9A46216029A029D5C /* HaveValidSnapshot.swift */,
-				BCA2C1A8B98C32FFC0889545E076232C /* NimbleSnapshotsConfiguration.swift */,
-				7FCA5987043E1B4EED1A6AEE4BDCF801 /* PrettySyntax.swift */,
-				1C30FDD72D39D62556EAE117849D4A32 /* Support Files */,
+				B7AFCEEC6C9816A3EBA8ECDCFE683DDB /* NBMaterialDialogIOS */,
 			);
-			path = "Nimble-Snapshots";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		E99616B00B33E3AB3BCBE0C931EAE005 /* Classes */ = {
+		E0400C0EA267265CF4751FAB2CA83CD5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3397A91B69ECD206AB1C7BEE0CD0D82D /* NBConfig.swift */,
-				689970A620A0D68145D28B4D8F3FDCEA /* NBMaterialAlertDialog.swift */,
-				9829EF22C6DC1F268AF0F7242FD5EBB0 /* NBMaterialCircularActivityIndicator.swift */,
-				112D038EC3FF14501A1F5922B9D76B3A /* NBMaterialDialog.swift */,
-				9646C08A60988D66BF43DC2B6D4FA642 /* NBMaterialLoadingDialog.swift */,
-				022ACBD1724985686E3F1745D12DC545 /* NBMaterialSnackbar.swift */,
-				8B6F4074550935CC95420E54AACE6C86 /* NBMaterialToast.swift */,
-				2AB79348F1B69DF744A0BB1380CB5615 /* UIColor+Hex.swift */,
-				A1DE2969751130855886E0761E1EDFDC /* UIFont+Roboto.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		F454BC93CB83E11D02A134BD4553B8A2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				52301F22A14FD72C2F7DB1576405554A /* Info.plist */,
-				1D27BD3D28F31BB575542B0EC4BFCBB9 /* UIColor+BFPaperColors.modulemap */,
-				9C6A4C353CDEA055A39726DFE96D8745 /* UIColor+BFPaperColors.xcconfig */,
-				1A5D02A927AEA142DE1763117F6950AD /* UIColor+BFPaperColors-Private.xcconfig */,
-				EA84FB9DBED4B4C4524A85D5D8DE1284 /* UIColor+BFPaperColors-dummy.m */,
-				0EA86ED855C0C977C3E40F3536159D62 /* UIColor+BFPaperColors-prefix.pch */,
-				9676CEB40F9A7AB2C194C0B51155C2CA /* UIColor+BFPaperColors-umbrella.h */,
+				B7A0265FB5489480268C12D14B709B6A /* Info.plist */,
+				194FB3F482A8414AABFA7CE1B9CF8ACD /* UIColor+BFPaperColors.modulemap */,
+				6CFFBC5C0BDC5C5A7FD8952D22B0B7C0 /* UIColor+BFPaperColors.xcconfig */,
+				95D0B303B6DE0FFD3B2BA74CE09B3416 /* UIColor+BFPaperColors-dummy.m */,
+				48B6D2779583C40A8731BB7F68F471BA /* UIColor+BFPaperColors-prefix.pch */,
+				B337470CCFCB8319207346587A80E45C /* UIColor+BFPaperColors-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UIColor+BFPaperColors";
 			sourceTree = "<group>";
 		};
-		FB014F2F95A5778577E9BC3E2D1DDA1F /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				97411921F7DCB2B166CB49A6CA09A920 /* Roboto-Medium.ttf */,
-				7F018E1C6118D8FBFBCB3BAC24B4DD76 /* Roboto-Regular.ttf */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0285C080BC4D648BCF20AC762F6C13ED /* Headers */ = {
+		21280282E12CFD2329E64D57A041B8E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0B14F15ED62F78D1F45F5FD2509F9E /* Pods-NBMaterialDialogIOS_Tests-umbrella.h in Headers */,
+				310C1F0FE285F8DA79C47901CD6FEC1A /* Pods-NBMaterialDialogIOS_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BB8CFF2A9B93F616A2252BAA34C074D /* Headers */ = {
+		5FFC790932ED54D97C0E8ED460C6E3B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D965A611B56A2528B9748B25DFE2F5 /* UIColor+BFPaperColors-umbrella.h in Headers */,
-				97DB86956932F14569E6A87676B5E468 /* UIColor+BFPaperColors.h in Headers */,
+				51881BC0FDE4E7A1174B2BB21D571D3F /* BFPaperButton-umbrella.h in Headers */,
+				DB1872FDAE0C1AA5F6DB73C297755E5F /* BFPaperButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		256D217E938FC9F9CA017A5C7E0D557E /* Headers */ = {
+		87AC593314FFC397EBAE42F79F2EF0F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1E2ADC47C4A1F3F11842BBB69D219A /* NSString+QCKSelectorName.h in Headers */,
-				A8C7BC8A3EAD5A1411233F2F67CE30DB /* QCKDSL.h in Headers */,
-				15D9A2CA8A9E752E46DB8627F15C2BB2 /* Quick-umbrella.h in Headers */,
-				22FB033F9B0567FF182BBE054D2AC769 /* Quick.h in Headers */,
-				EF277693E324A3264F1CA03B6C774169 /* QuickConfiguration.h in Headers */,
-				4665DAADD63F9A7835F73393C040398A /* QuickSpec.h in Headers */,
-				A12CC51D92D502ACDE4FEB1CB362BDAE /* World+DSL.h in Headers */,
-				E844FC433C08230B9B012A6941184508 /* World.h in Headers */,
+				BA0FD4D22D14AEEA81A51D52EC10981A /* Pods-NBMaterialDialogIOS_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26A2F819662774EC42B6DF72BC844C1F /* Headers */ = {
+		D1E2D7300C9565A330EEFA583EF67880 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22C6F81C9CA1A743A4C78684E515BE0 /* NBMaterialDialogIOS-umbrella.h in Headers */,
+				096313FD1F2E4412C4DE094F1B732E97 /* UIColor+BFPaperColors-umbrella.h in Headers */,
+				52396FB7D5DB422BF4C3D88C2B1B565E /* UIColor+BFPaperColors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5449BE422A4EAC47D687028792C86BC2 /* Headers */ = {
+		EF244052A1836481071212F8978BA8F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CB42C6E12A8A9E12C462CA50E39456 /* Nimble-Snapshots-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63BEC54CDBBE4BF796485CC8347C1AEE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEE49B69F7259C543B9EBD0129C699D8 /* FBSnapshotTestCase-umbrella.h in Headers */,
-				652546964F74BCB3C99DCAC6A3A4E913 /* FBSnapshotTestCase.h in Headers */,
-				D54ECC6B64145F36DFC2119B1092176E /* FBSnapshotTestCasePlatform.h in Headers */,
-				D546290EF14873B89CC7A44FB92F093D /* FBSnapshotTestController.h in Headers */,
-				BF06032A58449B4B905AC00208EFF9F0 /* UIImage+Compare.h in Headers */,
-				70C8DABB4F54AC91060191804D35CEB3 /* UIImage+Diff.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79A77CF515B8013421A0C3C94BC3CA3F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5136689B40D53F79C4072E82FCE86DC1 /* Pods-NBMaterialDialogIOS_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A444548C6E16E44A4541AC0B348B43B2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6474DA697E686D5F30D366761E2B6EFB /* DSL.h in Headers */,
-				5F82EC0FE98ED462C1C7C7E5EDBB4986 /* NMBExceptionCapture.h in Headers */,
-				9DDC1F158D6CBE260618DFE2373F4C45 /* Nimble-umbrella.h in Headers */,
-				E87516D45CC144FA9F67F6A9415FD5C9 /* Nimble.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA4EC269F0F19FAB24395851E62445BC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668ED4AF544B2F59D69B518DD4367966 /* BFPaperButton-umbrella.h in Headers */,
-				021739B22833B3060AAA06DAD7AFE6D9 /* BFPaperButton.h in Headers */,
+				445E40A5770B1DF22B4172C89A6349DB /* NBMaterialDialogIOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		16CA43DF29E96AE641EF1D60DF111AD3 /* Pods-NBMaterialDialogIOS_Tests */ = {
+		03B15615889710FDACFA6CB29AFBBDF0 /* BFPaperButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18A1100EBA3BAA2414B1751E90436F02 /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Tests" */;
+			buildConfigurationList = 8C2BABD5168F143EFDE2C1ED8ADA1D58 /* Build configuration list for PBXNativeTarget "BFPaperButton" */;
 			buildPhases = (
-				AFA454354AD59909775EA4292C2AC609 /* Sources */,
-				93061C50947DFF61AFDE27C2AB8B9CB3 /* Frameworks */,
-				0285C080BC4D648BCF20AC762F6C13ED /* Headers */,
+				F8860C75290EADEF35DCD0A6AC89BA86 /* Sources */,
+				AE26ED36C83E26D5B9B14094FB8CE306 /* Frameworks */,
+				5FFC790932ED54D97C0E8ED460C6E3B7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EEE8F82BC9702E43F389D1DC8A2E7A46 /* PBXTargetDependency */,
-				CC9468DDED4CF4C14730A22DA6BE02A4 /* PBXTargetDependency */,
-				4317144DB86CC6B33EC65498E03892F7 /* PBXTargetDependency */,
-				DAF0560F7118CC68B9F1B712A21B8D49 /* PBXTargetDependency */,
-				5ADFC9BD82C0E411C02D5C67EA17ADFA /* PBXTargetDependency */,
-				7F263F775E6743D50943F02D3B8D17ED /* PBXTargetDependency */,
-				A43391F1002BC18D863A8CB9232C57C0 /* PBXTargetDependency */,
+				0012619112E3FCA8BEC4A89C0D97A596 /* PBXTargetDependency */,
+			);
+			name = BFPaperButton;
+			productName = BFPaperButton;
+			productReference = 3169C8CDE62F4A43D1855FE66794E002 /* BFPaperButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		257682FF1D77FA3801CFDF421A971111 /* Pods-NBMaterialDialogIOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A0E7C730ED2D877D6783ECCF8080A0 /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Example" */;
+			buildPhases = (
+				5012ACD1BE485440F991713EB0AE1846 /* Sources */,
+				00E15E26DD40CC6B515265E7E5AC35A9 /* Frameworks */,
+				87AC593314FFC397EBAE42F79F2EF0F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				765A0555E89BF82A5CE56F5740850A17 /* PBXTargetDependency */,
+				6395753FECF074030543C815DDD70C2B /* PBXTargetDependency */,
+				D7138C74AC785E6C2728F0B5DBDBAF62 /* PBXTargetDependency */,
+			);
+			name = "Pods-NBMaterialDialogIOS_Example";
+			productName = "Pods-NBMaterialDialogIOS_Example";
+			productReference = 7010836E1B3FBD2651D9A3BDA5F37ACB /* Pods_NBMaterialDialogIOS_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30A53696D3A324E53C524401508FFBEC /* Pods-NBMaterialDialogIOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D82BDF0F26C8AE9F92B4F8CCF67F7CC /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Tests" */;
+			buildPhases = (
+				112D07AF3B914E494EFF11FA4869FE40 /* Sources */,
+				C3D79D99AC9080668D8E3B3A354D94A7 /* Frameworks */,
+				21280282E12CFD2329E64D57A041B8E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211822465106833134AF96D166B8B103 /* PBXTargetDependency */,
+				4CEE32C35BFCFFD981A693026F18D4B5 /* PBXTargetDependency */,
+				8AD97AD45D556718B4DC53697696387D /* PBXTargetDependency */,
 			);
 			name = "Pods-NBMaterialDialogIOS_Tests";
 			productName = "Pods-NBMaterialDialogIOS_Tests";
-			productReference = 5EF43BD3614D5566C0D5DC0C239CAA82 /* Pods_NBMaterialDialogIOS_Tests.framework */;
+			productReference = A65F0E53089D05FFD71D64334788E53A /* Pods_NBMaterialDialogIOS_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		44F8B8E68E06A8EDBC9DE7B84BCABE18 /* UIColor+BFPaperColors */ = {
+		8B0E65E6AEC6569CEF947C82EAAA561B /* NBMaterialDialogIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DA55F5D543C0E562943A3365F784CD3 /* Build configuration list for PBXNativeTarget "UIColor+BFPaperColors" */;
+			buildConfigurationList = 8AC4F5F8199E7CFC9B9630BB85615620 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS" */;
 			buildPhases = (
-				5F75F14EFB51C11779CC83CCF5B1B875 /* Sources */,
-				195E8FED3A8B2C8A48D9E6EE89F3432C /* Frameworks */,
-				1BB8CFF2A9B93F616A2252BAA34C074D /* Headers */,
+				784B9DD0215EFC13729445551D2D7E23 /* Sources */,
+				DE1209F266AAD894726B3FF344BE52F0 /* Frameworks */,
+				40ACA242364213F3B78FF0A05C37140C /* Resources */,
+				EF244052A1836481071212F8978BA8F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				978B94747C8A039E9CC830BA262797CE /* PBXTargetDependency */,
+			);
+			name = NBMaterialDialogIOS;
+			productName = NBMaterialDialogIOS;
+			productReference = C22E0A260DAC08EE3027009346343329 /* NBMaterialDialogIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99CADFE69A7E494B256A79CC7E9026C1 /* UIColor+BFPaperColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF8F008359D2ACB1B97019A9AEA9026 /* Build configuration list for PBXNativeTarget "UIColor+BFPaperColors" */;
+			buildPhases = (
+				456858E6D92B961BD5D64923F8048CD9 /* Sources */,
+				4D3DDC2ABF9C97C66E7D6F78CC0560FA /* Frameworks */,
+				D1E2D7300C9565A330EEFA583EF67880 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1057,135 +576,7 @@
 			);
 			name = "UIColor+BFPaperColors";
 			productName = "UIColor+BFPaperColors";
-			productReference = 3088DA4878BD7C34FD897945A8F9D545 /* UIColor_BFPaperColors.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4AB44BCB74ECC1386C48790F4CE80F94 /* Pods-NBMaterialDialogIOS_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAD9476194B92D5FAB6F76808B8468C6 /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Example" */;
-			buildPhases = (
-				443465B2D76CFDAF9287FFCCBA46EB21 /* Sources */,
-				87A529E7222E2FD99DA12D0C45684243 /* Frameworks */,
-				79A77CF515B8013421A0C3C94BC3CA3F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1CC7167CC9CDC823B220D16ABEDFE8AC /* PBXTargetDependency */,
-				DD25681D7907475EE79A3912F99C452B /* PBXTargetDependency */,
-				0E3AFDE243E1099C9151BD25D2A2A2BC /* PBXTargetDependency */,
-			);
-			name = "Pods-NBMaterialDialogIOS_Example";
-			productName = "Pods-NBMaterialDialogIOS_Example";
-			productReference = 36E955E1B86094809CF3FE8C0E027114 /* Pods_NBMaterialDialogIOS_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5E18725495C2E1084BD3D62EF504062C /* FBSnapshotTestCase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5324F5B088234724E3BFDEA066CFAC4B /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
-			buildPhases = (
-				0A93877FD3B3A35F69FF5F8394B1B179 /* Sources */,
-				ECC3AF3DA0703405F3E010F84C4BD776 /* Frameworks */,
-				63BEC54CDBBE4BF796485CC8347C1AEE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBSnapshotTestCase;
-			productName = FBSnapshotTestCase;
-			productReference = 90BED522E46A16CD0809E973749D5729 /* FBSnapshotTestCase.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8328D7D172085B05D141296D64BE531A /* Nimble-Snapshots */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 107BB24021CBDFA7C3E3836838B1739C /* Build configuration list for PBXNativeTarget "Nimble-Snapshots" */;
-			buildPhases = (
-				20B764369D2FED7075C6DA8BF7FC7275 /* Sources */,
-				FF1FAE29CEE0D6B2CFDB4F25AE66245A /* Frameworks */,
-				5449BE422A4EAC47D687028792C86BC2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38DCCA553380C6578825FFF23691BFCB /* PBXTargetDependency */,
-				EAF56637130522D689BD02429DF47A6B /* PBXTargetDependency */,
-				A89FF8E40D0DFCE472C66057EC0E0EAF /* PBXTargetDependency */,
-			);
-			name = "Nimble-Snapshots";
-			productName = "Nimble-Snapshots";
-			productReference = 2D6D1DA6A81C5E90A89D5BFA8034DD78 /* Nimble_Snapshots.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9D75ED47E5B80FF267BC9EF42D85BCFA /* Quick */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D93C178E712EB29D04B7EF04C741EE47 /* Build configuration list for PBXNativeTarget "Quick" */;
-			buildPhases = (
-				E29BDB7A7443D472243E8D26662B7C35 /* Sources */,
-				274548B1337A446E16F43604A0A1848D /* Frameworks */,
-				256D217E938FC9F9CA017A5C7E0D557E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Quick;
-			productName = Quick;
-			productReference = 029211C9CD3CE937ABD8D994E4B5DC2F /* Quick.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D6B321FA30935C958776E6D37BCE239A /* Nimble */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C081C64054F49B597007F25C791BB86D /* Build configuration list for PBXNativeTarget "Nimble" */;
-			buildPhases = (
-				7DCB0DA068A003A28317DCB838318F7B /* Sources */,
-				71CB215EF7C2C4FB704E5549AA5D6D49 /* Frameworks */,
-				A444548C6E16E44A4541AC0B348B43B2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Nimble;
-			productName = Nimble;
-			productReference = 78AA5E658F5E9C4CB0F8829FE02B01CD /* Nimble.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D82A36767A74A29F58507B5D4DC76C74 /* NBMaterialDialogIOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 532437DB9EEAB12A920A130F64532640 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS" */;
-			buildPhases = (
-				2F02D465058C8845B16EDB3651D346C1 /* Sources */,
-				9CABC125DF36B4679656860737EE2DB8 /* Frameworks */,
-				1C7176C9A28C9229CC57719E95E22590 /* Resources */,
-				26A2F819662774EC42B6DF72BC844C1F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				190AECB9DD06C191062CF73CCB7BA710 /* PBXTargetDependency */,
-			);
-			name = NBMaterialDialogIOS;
-			productName = NBMaterialDialogIOS;
-			productReference = 2E880E8DBCE648992A0496A3B90E771A /* NBMaterialDialogIOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F39D53F209E5E9B97E6A71A5A3F1BC7D /* BFPaperButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F52A1D193D97C244BE3F74F486A6F7C /* Build configuration list for PBXNativeTarget "BFPaperButton" */;
-			buildPhases = (
-				E292A4D10F7C4D9E397F4F412FFB59CB /* Sources */,
-				2B2A7C09181B078BB27E8DE4A182C68E /* Frameworks */,
-				AA4EC269F0F19FAB24395851E62445BC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C91C0BEE547F96D1FF2C0B1E77AE6C4 /* PBXTargetDependency */,
-			);
-			name = BFPaperButton;
-			productName = BFPaperButton;
-			productReference = 94E6307D484DC0256A615D80E6EA23A3 /* BFPaperButton.framework */;
+			productReference = 4E5CC21B39E1242AF2C3803691244D51 /* UIColor_BFPaperColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1205,391 +596,140 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 381C769DBB9CDA07828C0B3ED3E6543C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F39D53F209E5E9B97E6A71A5A3F1BC7D /* BFPaperButton */,
-				5E18725495C2E1084BD3D62EF504062C /* FBSnapshotTestCase */,
-				D82A36767A74A29F58507B5D4DC76C74 /* NBMaterialDialogIOS */,
-				D6B321FA30935C958776E6D37BCE239A /* Nimble */,
-				8328D7D172085B05D141296D64BE531A /* Nimble-Snapshots */,
-				4AB44BCB74ECC1386C48790F4CE80F94 /* Pods-NBMaterialDialogIOS_Example */,
-				16CA43DF29E96AE641EF1D60DF111AD3 /* Pods-NBMaterialDialogIOS_Tests */,
-				9D75ED47E5B80FF267BC9EF42D85BCFA /* Quick */,
-				44F8B8E68E06A8EDBC9DE7B84BCABE18 /* UIColor+BFPaperColors */,
+				03B15615889710FDACFA6CB29AFBBDF0 /* BFPaperButton */,
+				8B0E65E6AEC6569CEF947C82EAAA561B /* NBMaterialDialogIOS */,
+				257682FF1D77FA3801CFDF421A971111 /* Pods-NBMaterialDialogIOS_Example */,
+				30A53696D3A324E53C524401508FFBEC /* Pods-NBMaterialDialogIOS_Tests */,
+				99CADFE69A7E494B256A79CC7E9026C1 /* UIColor+BFPaperColors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C7176C9A28C9229CC57719E95E22590 /* Resources */ = {
+		40ACA242364213F3B78FF0A05C37140C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA9E649BC88CB1796D2E98CCB5448A0 /* Roboto-Medium.ttf in Resources */,
-				1B22B35EFA7248CC40627A4AF305E404 /* Roboto-Regular.ttf in Resources */,
+				3EC15E8E7E88B63A5E1957FCA8954017 /* Roboto-Medium.ttf in Resources */,
+				B1FBEA8DC0A82B096F701B46DA8E0086 /* Roboto-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A93877FD3B3A35F69FF5F8394B1B179 /* Sources */ = {
+		112D07AF3B914E494EFF11FA4869FE40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB3C093D856B7A2AC97C6702262903F /* FBSnapshotTestCase-dummy.m in Sources */,
-				F0088C7CF6B3AB9D9C95270AF5C82CEE /* FBSnapshotTestCase.m in Sources */,
-				067F438C35F4B5E8F2B52232B1C1C353 /* FBSnapshotTestCasePlatform.m in Sources */,
-				FCA1E0B2586D39FB2D9164024675E2A2 /* FBSnapshotTestController.m in Sources */,
-				73D858BCBED0261B6B78D3BEC63DAA78 /* UIImage+Compare.m in Sources */,
-				CF97905D5B7AD9E9CBD18C6953CFA713 /* UIImage+Diff.m in Sources */,
+				5DE379F1E81D1EA9B2A883BC90092FF7 /* Pods-NBMaterialDialogIOS_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20B764369D2FED7075C6DA8BF7FC7275 /* Sources */ = {
+		456858E6D92B961BD5D64923F8048CD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963F13990854C41F1B8456DBA554B543 /* HaveValidSnapshot.swift in Sources */,
-				CE4DF0AA04EB7C76CB19894C4BAFB08F /* Nimble-Snapshots-dummy.m in Sources */,
-				386811B80D5D2AAB35FA87008B5B543C /* NimbleSnapshotsConfiguration.swift in Sources */,
-				4638A501529256374D4A9E449331DBAF /* PrettySyntax.swift in Sources */,
+				079234622107482DE15756C6F477DF8E /* UIColor+BFPaperColors-dummy.m in Sources */,
+				8746868DFD9FA683790748D8B544CDFE /* UIColor+BFPaperColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F02D465058C8845B16EDB3651D346C1 /* Sources */ = {
+		5012ACD1BE485440F991713EB0AE1846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4305CDCF1A0F298A977831324AEFDC7 /* NBConfig.swift in Sources */,
-				60BDCC4E64237017FC562DD83FDF4E23 /* NBMaterialAlertDialog.swift in Sources */,
-				E8EAADEA294857B99E04EAA00ECA9B00 /* NBMaterialCircularActivityIndicator.swift in Sources */,
-				4A5B7F7D99A77DDA9C5015B60E815013 /* NBMaterialDialog.swift in Sources */,
-				06727DA9CE44CB9961BFF69C9EEF4F24 /* NBMaterialDialogIOS-dummy.m in Sources */,
-				86C2CFB1A40D5182F057659483EFBB56 /* NBMaterialLoadingDialog.swift in Sources */,
-				8C757DF3A0F468E70DFAE337EAA53C46 /* NBMaterialSnackbar.swift in Sources */,
-				5969D3CC424497449651F7F602399F0C /* NBMaterialToast.swift in Sources */,
-				CD4CAA86BDCEDBFD7320931D203073D7 /* UIColor+Hex.swift in Sources */,
-				861CCC3556684187AA0773C007D714FF /* UIFont+Roboto.swift in Sources */,
+				F0C49A93AF5727C557C6B14CF23D8068 /* Pods-NBMaterialDialogIOS_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		443465B2D76CFDAF9287FFCCBA46EB21 /* Sources */ = {
+		784B9DD0215EFC13729445551D2D7E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2A318DF7913C6EAA58A2D46F862D4F /* Pods-NBMaterialDialogIOS_Example-dummy.m in Sources */,
+				2275DE3FBDFCA3C6ECC9B953648FDF50 /* NBConfig.swift in Sources */,
+				3EA89B4B650F790FD65E5969E8B30B90 /* NBMaterialAlertDialog.swift in Sources */,
+				6A88A9B1025B976C94AFE4EDB5C5D702 /* NBMaterialCircularActivityIndicator.swift in Sources */,
+				1C5846E62F37CFC70647423A7F5AAAAD /* NBMaterialDialog.swift in Sources */,
+				0AE78FCC8D4305E1934BA277768B92C0 /* NBMaterialDialogIOS-dummy.m in Sources */,
+				D2BD7BBFC811AFB3D2C2289A88D12EF6 /* NBMaterialLoadingDialog.swift in Sources */,
+				E44D74971261637F6C30C53013C73AC8 /* NBMaterialSnackbar.swift in Sources */,
+				D79CF0F9CA9423D554930CBA932E419E /* NBMaterialToast.swift in Sources */,
+				47EE3C565CA99C28B850A14A21249562 /* UIColor+Hex.swift in Sources */,
+				0BCA52E2CC833A2E475AB679A8D9017F /* UIFont+Roboto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F75F14EFB51C11779CC83CCF5B1B875 /* Sources */ = {
+		F8860C75290EADEF35DCD0A6AC89BA86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8A6A2D48A0EA7E438009D6AA716675 /* UIColor+BFPaperColors-dummy.m in Sources */,
-				8DCEFB4A0BDC33FC516CB33D38BB548E /* UIColor+BFPaperColors.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DCB0DA068A003A28317DCB838318F7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D4886B4D4C548282379871187BAE1F4 /* AdapterProtocols.swift in Sources */,
-				6699DD134221E8440B2104D64F926694 /* AllPass.swift in Sources */,
-				83483E142F425A45C8F6C595615CD176 /* AssertionDispatcher.swift in Sources */,
-				9AE66A87F7AB559F2A245403B16961C6 /* AssertionRecorder.swift in Sources */,
-				FF7651EDFF006A44D81F97A6683768F7 /* AsyncMatcherWrapper.swift in Sources */,
-				FB2FDC3E942376C2E8560FDB60A286CF /* BeAKindOf.swift in Sources */,
-				2552E15C52471F580FB55ADD113E012C /* BeAnInstanceOf.swift in Sources */,
-				72AEEEE30BC5C3C5FEE16E6CAB047511 /* BeCloseTo.swift in Sources */,
-				BCBEFE3B90F49EAA12C83B26A5197445 /* BeEmpty.swift in Sources */,
-				3989A5CAF5BE0795EDD19EBCD92DDC56 /* BeGreaterThan.swift in Sources */,
-				9ADEAB8A50936E1B671EE0D6CF4E0A9E /* BeGreaterThanOrEqualTo.swift in Sources */,
-				99B70CDA59FAB46BEA86B8AE873AB0B1 /* BeIdenticalTo.swift in Sources */,
-				52DDCBCC07DDD2C0C5BAB9A4C96A2FFD /* BeLessThan.swift in Sources */,
-				CFCDDE64698787D2827EC5A62D9003E0 /* BeLessThanOrEqual.swift in Sources */,
-				057B336F4150C66B076FFD2A5F8FC186 /* BeLogical.swift in Sources */,
-				663E260AEA1705F4BA765672B5A18649 /* BeNil.swift in Sources */,
-				9EF7979CC3241228BD652E4CEBB11003 /* BeginWith.swift in Sources */,
-				AD10060EBD526ACD73244CCA42B2778A /* Contain.swift in Sources */,
-				D5A234DF5460C881BF7CD531BD0E38CF /* DSL+Wait.swift in Sources */,
-				F4A43E70827C0984AA33EEFFC2D600B0 /* DSL.m in Sources */,
-				D98C308553B40EB801BDF074F41A7DBD /* DSL.swift in Sources */,
-				9765831EDE96A3CDB01BC919D35C218F /* EndWith.swift in Sources */,
-				6436740BF6F2FF75BF78BD71BBB09117 /* Equal.swift in Sources */,
-				D538104DB028124FEEEEAB90920422B5 /* Expectation.swift in Sources */,
-				793BD7AC45310F823484DA77D82EFF14 /* Expression.swift in Sources */,
-				CEC3B5AFD51E52D26EBDD434B28E4B80 /* FailureMessage.swift in Sources */,
-				72714E08C9CDAD7590178949B4B11E4E /* Functional.swift in Sources */,
-				8C610BBC55FE1EAA2BDF0D20F1EE4987 /* Match.swift in Sources */,
-				B190DCB8E10D94F870451F047EE14813 /* MatcherFunc.swift in Sources */,
-				107D33BA7F166664945719C1B0FAC331 /* MatcherProtocols.swift in Sources */,
-				B02D2489F3469E6BC6569890B57F8036 /* NMBExceptionCapture.m in Sources */,
-				56B9F7B6AEB44CA295C64243B4C26B7C /* Nimble-dummy.m in Sources */,
-				E26C5A041841DC29D3E1F6BC92C07ECB /* NimbleXCTestHandler.swift in Sources */,
-				6E51B02AEB14ADAA813EF51207363A77 /* ObjCExpectation.swift in Sources */,
-				2B9049C86806A5FDFAD8768037C8C918 /* ObjCMatcher.swift in Sources */,
-				67F236D68D294D7EBF0EC6C4991E172F /* Poll.swift in Sources */,
-				70F3469F1A74D66FB2FA08F7F6F3F1D1 /* RaisesException.swift in Sources */,
-				B6F10817F081E0E49D7E2F8B70D1111C /* SourceLocation.swift in Sources */,
-				CA73F48AB0A3C4EE9D7CC6EE96DB06BE /* Stringers.swift in Sources */,
-				2CC3A36E4C84B2E924D00ED83640A0E4 /* ThrowError.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFA454354AD59909775EA4292C2AC609 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C569578FAEE638A06E1DD5C2D7042AB /* Pods-NBMaterialDialogIOS_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E292A4D10F7C4D9E397F4F412FFB59CB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BDAE0EE653409757B60258FBBAE0933D /* BFPaperButton-dummy.m in Sources */,
-				1C1C6D3004CB657BE6660F882ECBB937 /* BFPaperButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E29BDB7A7443D472243E8D26662B7C35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C839843F810AAF0339FDC19988E713E5 /* Callsite.swift in Sources */,
-				0F34EA0B7421AC539D4657B2B4B5E3F9 /* Closures.swift in Sources */,
-				6225CF9DA6F89756739C085C5D809319 /* Configuration.swift in Sources */,
-				08D9D59EA8DDE6FD61183D5E5A40E298 /* DSL.swift in Sources */,
-				54CF0C69AC0EAD175A335C73B200AD2D /* Example.swift in Sources */,
-				BBCD229BB90046D24B9B62C751165A94 /* ExampleGroup.swift in Sources */,
-				FB993680B24EC264C6966F38408F33A3 /* ExampleHooks.swift in Sources */,
-				E282E9C8469F1F7F755CEBD8F1DA843D /* ExampleMetadata.swift in Sources */,
-				7A0224D0922612C3B056206F12D89A70 /* Filter.swift in Sources */,
-				F2287FEE488E8F2C634E51C8ED004889 /* NSString+QCKSelectorName.m in Sources */,
-				DC1B279587DFC5905F408DD232B6393B /* QCKDSL.m in Sources */,
-				7882A56063EFC82DD62A1AC0862B60B6 /* Quick-dummy.m in Sources */,
-				265359FAF3111196C57BE82A3E1863BD /* QuickConfiguration.m in Sources */,
-				4ED5A9F0A2EEC3BF10BA3E6ADE0D8D9C /* QuickSpec.m in Sources */,
-				0319C072B7C92611A398F3A49DE69AFD /* SuiteHooks.swift in Sources */,
-				E532159E4B7468DE1B0C737218B92DF7 /* World+DSL.swift in Sources */,
-				184890465999646F6019D4503AFBDC9B /* World.swift in Sources */,
+				434E4C12CB121CC0A60F0BFD50C54743 /* BFPaperButton-dummy.m in Sources */,
+				16D8DE246FED7224ED9772DFB17DEF5C /* BFPaperButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C91C0BEE547F96D1FF2C0B1E77AE6C4 /* PBXTargetDependency */ = {
+		0012619112E3FCA8BEC4A89C0D97A596 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "UIColor+BFPaperColors";
-			target = 44F8B8E68E06A8EDBC9DE7B84BCABE18 /* UIColor+BFPaperColors */;
-			targetProxy = 2EBB9DDB5CD4D44FE90AC8AE9D2A226D /* PBXContainerItemProxy */;
+			target = 99CADFE69A7E494B256A79CC7E9026C1 /* UIColor+BFPaperColors */;
+			targetProxy = B73B8CDD2B4EB4B43DAFFC897371670B /* PBXContainerItemProxy */;
 		};
-		0E3AFDE243E1099C9151BD25D2A2A2BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor+BFPaperColors";
-			target = 44F8B8E68E06A8EDBC9DE7B84BCABE18 /* UIColor+BFPaperColors */;
-			targetProxy = 90308665B27A830766D3251BCC03F9A8 /* PBXContainerItemProxy */;
-		};
-		190AECB9DD06C191062CF73CCB7BA710 /* PBXTargetDependency */ = {
+		211822465106833134AF96D166B8B103 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BFPaperButton;
-			target = F39D53F209E5E9B97E6A71A5A3F1BC7D /* BFPaperButton */;
-			targetProxy = 2C2A7CE3387836450A6506FD6AD9D693 /* PBXContainerItemProxy */;
+			target = 03B15615889710FDACFA6CB29AFBBDF0 /* BFPaperButton */;
+			targetProxy = 984D4BEF2717D8AEA08B0A47033A98A1 /* PBXContainerItemProxy */;
 		};
-		1CC7167CC9CDC823B220D16ABEDFE8AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BFPaperButton;
-			target = F39D53F209E5E9B97E6A71A5A3F1BC7D /* BFPaperButton */;
-			targetProxy = 3922B7568554B20ED34D5ED2738B1B29 /* PBXContainerItemProxy */;
-		};
-		38DCCA553380C6578825FFF23691BFCB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 5E18725495C2E1084BD3D62EF504062C /* FBSnapshotTestCase */;
-			targetProxy = 1840F24F1DE842E635A3286D258AAF4D /* PBXContainerItemProxy */;
-		};
-		4317144DB86CC6B33EC65498E03892F7 /* PBXTargetDependency */ = {
+		4CEE32C35BFCFFD981A693026F18D4B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NBMaterialDialogIOS;
-			target = D82A36767A74A29F58507B5D4DC76C74 /* NBMaterialDialogIOS */;
-			targetProxy = 391CC37144FAB92BB66D57827F61F51F /* PBXContainerItemProxy */;
+			target = 8B0E65E6AEC6569CEF947C82EAAA561B /* NBMaterialDialogIOS */;
+			targetProxy = CD0583DAD1229A51C3A6C6E7D3C1BD89 /* PBXContainerItemProxy */;
 		};
-		5ADFC9BD82C0E411C02D5C67EA17ADFA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nimble-Snapshots";
-			target = 8328D7D172085B05D141296D64BE531A /* Nimble-Snapshots */;
-			targetProxy = DA72AB1165EADCCA24B40708CD5A2B05 /* PBXContainerItemProxy */;
-		};
-		7F263F775E6743D50943F02D3B8D17ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Quick;
-			target = 9D75ED47E5B80FF267BC9EF42D85BCFA /* Quick */;
-			targetProxy = 837D589495F8BF3DC1EABDA80390E7D3 /* PBXContainerItemProxy */;
-		};
-		A43391F1002BC18D863A8CB9232C57C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIColor+BFPaperColors";
-			target = 44F8B8E68E06A8EDBC9DE7B84BCABE18 /* UIColor+BFPaperColors */;
-			targetProxy = 6EB29776BE261CC4672B6B6C1A3546B5 /* PBXContainerItemProxy */;
-		};
-		A89FF8E40D0DFCE472C66057EC0E0EAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Quick;
-			target = 9D75ED47E5B80FF267BC9EF42D85BCFA /* Quick */;
-			targetProxy = CA3E95CC7367784144CF70A360D5317C /* PBXContainerItemProxy */;
-		};
-		CC9468DDED4CF4C14730A22DA6BE02A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 5E18725495C2E1084BD3D62EF504062C /* FBSnapshotTestCase */;
-			targetProxy = 6DF9CCE6E236FEFA95D328167FF8E851 /* PBXContainerItemProxy */;
-		};
-		DAF0560F7118CC68B9F1B712A21B8D49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Nimble;
-			target = D6B321FA30935C958776E6D37BCE239A /* Nimble */;
-			targetProxy = 2939814BFBFFD3DB41F334388D518206 /* PBXContainerItemProxy */;
-		};
-		DD25681D7907475EE79A3912F99C452B /* PBXTargetDependency */ = {
+		6395753FECF074030543C815DDD70C2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NBMaterialDialogIOS;
-			target = D82A36767A74A29F58507B5D4DC76C74 /* NBMaterialDialogIOS */;
-			targetProxy = 17EEF7D0E20AAFED458F402F4FCF7734 /* PBXContainerItemProxy */;
+			target = 8B0E65E6AEC6569CEF947C82EAAA561B /* NBMaterialDialogIOS */;
+			targetProxy = 0626637C76F42D9FD7B1EA595736A065 /* PBXContainerItemProxy */;
 		};
-		EAF56637130522D689BD02429DF47A6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Nimble;
-			target = D6B321FA30935C958776E6D37BCE239A /* Nimble */;
-			targetProxy = 600B5D44BEC4362854476EB6AD79AD4A /* PBXContainerItemProxy */;
-		};
-		EEE8F82BC9702E43F389D1DC8A2E7A46 /* PBXTargetDependency */ = {
+		765A0555E89BF82A5CE56F5740850A17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BFPaperButton;
-			target = F39D53F209E5E9B97E6A71A5A3F1BC7D /* BFPaperButton */;
-			targetProxy = 228E1095534D2DD852E03475BB68D34C /* PBXContainerItemProxy */;
+			target = 03B15615889710FDACFA6CB29AFBBDF0 /* BFPaperButton */;
+			targetProxy = 0C6F76EB364151519EF7256ED43E5C80 /* PBXContainerItemProxy */;
+		};
+		8AD97AD45D556718B4DC53697696387D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor+BFPaperColors";
+			target = 99CADFE69A7E494B256A79CC7E9026C1 /* UIColor+BFPaperColors */;
+			targetProxy = 9F98B9E80E16CF1105EA423D8813199C /* PBXContainerItemProxy */;
+		};
+		978B94747C8A039E9CC830BA262797CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BFPaperButton;
+			target = 03B15615889710FDACFA6CB29AFBBDF0 /* BFPaperButton */;
+			targetProxy = DE9614A12D53BAD5ABD2F6BB81897EAD /* PBXContainerItemProxy */;
+		};
+		D7138C74AC785E6C2728F0B5DBDBAF62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor+BFPaperColors";
+			target = 99CADFE69A7E494B256A79CC7E9026C1 /* UIColor+BFPaperColors */;
+			targetProxy = FFAA3FE5B06916EEDE2ECE64A929A331 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01BFD6C996C0497E4D803BDBA0BC991B /* Debug */ = {
+		05B811BDF543FA7C0F014803BF065C42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF97D2BD1CF490B499F915B4B5945590 /* Nimble-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1CE30A7504D5447A3714856E0AE1ADBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A5D02A927AEA142DE1763117F6950AD /* UIColor+BFPaperColors-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.7.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor+BFPaperColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIColor_BFPaperColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		29F1386FE6056E0A4CE3611FC1051168 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1715057478F79CBBF485BAA9A78E3E2B /* FBSnapshotTestCase-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.8.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		43109C796A98C20127E9FF9AD910DDC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A77B9654B5026D8A201B8F2BC5328681 /* NBMaterialDialogIOS-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.2.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NBMaterialDialogIOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NBMaterialDialogIOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		498134D88A43EF29126D737080260278 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1887120FC7A0FDCE4A9EA620BA591019 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */;
+			baseConfigurationReference = FEDAE7F1AFC0141729449069E31C4846 /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1598,16 +738,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_NBMaterialDialogIOS_Tests;
+				PRODUCT_NAME = Pods_NBMaterialDialogIOS_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1616,52 +757,25 @@
 			};
 			name = Release;
 		};
-		5447C5FC0815ABD8BCB71BE97BE0D249 /* Debug */ = {
+		08465CFB823EAB075AFE18FEA8AD5EEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1715057478F79CBBF485BAA9A78E3E2B /* FBSnapshotTestCase-Private.xcconfig */;
+			baseConfigurationReference = F06EA0F364B28126A2470EF0D3A4820B /* NBMaterialDialogIOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.8.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBMaterialDialogIOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6C8EFF89719403956A05BF12B0AFE94E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F0AC2264D873564D24EE05BADD7B952 /* Quick-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.6.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.6.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
+				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Quick;
+				PRODUCT_NAME = NBMaterialDialogIOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1670,15 +784,15 @@
 			};
 			name = Release;
 		};
-		70A8F10ED2E53DEB06BC99A971762E29 /* Release */ = {
+		1A9A232FF6F8EE42CAA821AEA3441FC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A5D02A927AEA142DE1763117F6950AD /* UIColor+BFPaperColors-Private.xcconfig */;
+			baseConfigurationReference = 6CFFBC5C0BDC5C5A7FD8952D22B0B7C0 /* UIColor+BFPaperColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.7.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors-prefix.pch";
@@ -1697,15 +811,42 @@
 			};
 			name = Release;
 		};
-		7B238A5A34E52EB413F364C47B79DD08 /* Debug */ = {
+		3DEBC2456B2265CEF04AB0A17250F204 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0FCD2FDB9457E8F80ED5C7CA92FF9E5 /* BFPaperButton-Private.xcconfig */;
+			baseConfigurationReference = 8516F32D4ED05CB8FFCA4282A57E4118 /* BFPaperButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.18;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BFPaperButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BFPaperButton/BFPaperButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BFPaperButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		674D90E0561E6D75BEF82EF4726B7EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8516F32D4ED05CB8FFCA4282A57E4118 /* BFPaperButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
@@ -1724,15 +865,15 @@
 			};
 			name = Debug;
 		};
-		9554D87F78DEF81F99E1EECC550C6224 /* Release */ = {
+		6E22BFF802DB22A3DBAD789219FFC227 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A77B9654B5026D8A201B8F2BC5328681 /* NBMaterialDialogIOS-Private.xcconfig */;
+			baseConfigurationReference = F06EA0F364B28126A2470EF0D3A4820B /* NBMaterialDialogIOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.2.0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
@@ -1741,15 +882,74 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = NBMaterialDialogIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CF0F3FABD7375C1A097B650C1279C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F86A2DE2615B9D0B70934DBC20AD6C /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NBMaterialDialogIOS_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96B384FEFC8C2C16C70705888947EEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFFBC5C0BDC5C5A7FD8952D22B0B7C0 /* UIColor+BFPaperColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor+BFPaperColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor+BFPaperColors/UIColor+BFPaperColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_BFPaperColors;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		9EB645C612834738B99727720210C23E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1790,9 +990,9 @@
 			};
 			name = Debug;
 		};
-		AA3A19E9F02F752C60F55E519ED4D36D /* Debug */ = {
+		C20088148123BB848EE04EBE25BA3559 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3A9E293771134D1DE5EA93E13A2BF67 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */;
+			baseConfigurationReference = 0929751C7FDF2341243F86789DE8425A /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1805,40 +1005,13 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_NBMaterialDialogIOS_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B6DC53CEEA58A342E10C9E98E6890836 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF97D2BD1CF490B499F915B4B5945590 /* Nimble-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Nimble;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1847,9 +1020,9 @@
 			};
 			name = Release;
 		};
-		B7DD2C67F1E1794CAE9B43046093962C /* Release */ = {
+		E0BFE328EE572A32292CE708058F26EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C465613523EE156E7A097D9CAE3C5BD /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
+			baseConfigurationReference = DA01111D7B13E873285F5B7688189658 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1862,66 +1035,13 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_NBMaterialDialogIOS_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BFF7CCAA9DF5972CBA34EE561835167B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC74406572435EB903B78429DF31B318 /* Nimble-Snapshots-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-Snapshots/Nimble-Snapshots-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-Snapshots/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble-Snapshots/Nimble-Snapshots.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Nimble_Snapshots;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CCE350C50AD55DD46ACA114DD77FAB20 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F0AC2264D873564D24EE05BADD7B952 /* Quick-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.6.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.6.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Quick;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1930,33 +1050,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		DC371732AB9CA6FBE6792DEA9B414E59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0FCD2FDB9457E8F80ED5C7CA92FF9E5 /* BFPaperButton-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.18;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BFPaperButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BFPaperButton/BFPaperButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BFPaperButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1992,99 +1085,14 @@
 			};
 			name = Release;
 		};
-		EE316438EDDF26B59DEE35B6F02A6236 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF01642FD9666740307011957CAA9349 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_NBMaterialDialogIOS_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FDFFB5B0946443F0229FA5A5B5A8F073 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC74406572435EB903B78429DF31B318 /* Nimble-Snapshots-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-Snapshots/Nimble-Snapshots-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-Snapshots/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble-Snapshots/Nimble-Snapshots.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Nimble_Snapshots;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		107BB24021CBDFA7C3E3836838B1739C /* Build configuration list for PBXNativeTarget "Nimble-Snapshots" */ = {
+		2CF8F008359D2ACB1B97019A9AEA9026 /* Build configuration list for PBXNativeTarget "UIColor+BFPaperColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDFFB5B0946443F0229FA5A5B5A8F073 /* Debug */,
-				BFF7CCAA9DF5972CBA34EE561835167B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18A1100EBA3BAA2414B1751E90436F02 /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA3A19E9F02F752C60F55E519ED4D36D /* Debug */,
-				498134D88A43EF29126D737080260278 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1DA55F5D543C0E562943A3365F784CD3 /* Build configuration list for PBXNativeTarget "UIColor+BFPaperColors" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CE30A7504D5447A3714856E0AE1ADBD /* Debug */,
-				70A8F10ED2E53DEB06BC99A971762E29 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F52A1D193D97C244BE3F74F486A6F7C /* Build configuration list for PBXNativeTarget "BFPaperButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B238A5A34E52EB413F364C47B79DD08 /* Debug */,
-				DC371732AB9CA6FBE6792DEA9B414E59 /* Release */,
+				96B384FEFC8C2C16C70705888947EEFF /* Debug */,
+				1A9A232FF6F8EE42CAA821AEA3441FC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2098,47 +1106,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		532437DB9EEAB12A920A130F64532640 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS" */ = {
+		8AC4F5F8199E7CFC9B9630BB85615620 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43109C796A98C20127E9FF9AD910DDC5 /* Debug */,
-				9554D87F78DEF81F99E1EECC550C6224 /* Release */,
+				6E22BFF802DB22A3DBAD789219FFC227 /* Debug */,
+				08465CFB823EAB075AFE18FEA8AD5EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5324F5B088234724E3BFDEA066CFAC4B /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+		8C2BABD5168F143EFDE2C1ED8ADA1D58 /* Build configuration list for PBXNativeTarget "BFPaperButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5447C5FC0815ABD8BCB71BE97BE0D249 /* Debug */,
-				29F1386FE6056E0A4CE3611FC1051168 /* Release */,
+				674D90E0561E6D75BEF82EF4726B7EF8 /* Debug */,
+				3DEBC2456B2265CEF04AB0A17250F204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C081C64054F49B597007F25C791BB86D /* Build configuration list for PBXNativeTarget "Nimble" */ = {
+		93A0E7C730ED2D877D6783ECCF8080A0 /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01BFD6C996C0497E4D803BDBA0BC991B /* Debug */,
-				B6DC53CEEA58A342E10C9E98E6890836 /* Release */,
+				E0BFE328EE572A32292CE708058F26EB /* Debug */,
+				05B811BDF543FA7C0F014803BF065C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAD9476194B92D5FAB6F76808B8468C6 /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Example" */ = {
+		9D82BDF0F26C8AE9F92B4F8CCF67F7CC /* Build configuration list for PBXNativeTarget "Pods-NBMaterialDialogIOS_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE316438EDDF26B59DEE35B6F02A6236 /* Debug */,
-				B7DD2C67F1E1794CAE9B43046093962C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D93C178E712EB29D04B7EF04C741EE47 /* Build configuration list for PBXNativeTarget "Quick" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCE350C50AD55DD46ACA114DD77FAB20 /* Debug */,
-				6C8EFF89719403956A05BF12B0AFE94E /* Release */,
+				7CF0F3FABD7375C1A097B650C1279C09 /* Debug */,
+				C20088148123BB848EE04EBE25BA3559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

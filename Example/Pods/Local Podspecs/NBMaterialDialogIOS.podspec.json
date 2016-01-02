@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "summary": "NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS.",
   "homepage": "https://github.com/tskulbru/NBMaterialDialogIOS",
+  "screenshots": "https://github.com/tskulbru/NBMaterialDialogIOS/blob/master/Screenshots/appdemo.gif",
   "license": "MIT",
   "authors": {
     "Torstein Skulbru": "serrghi@gmail.com"
@@ -11,6 +12,7 @@
     "git": "https://github.com/tskulbru/NBMaterialDialogIOS.git",
     "tag": "0.2.0"
   },
+  "social_media_url": "https://twitter.com/tskulbru",
   "platforms": {
     "ios": "8.1"
   },

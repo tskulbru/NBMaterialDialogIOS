@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   s.version          = "0.2.0"
   s.summary          = "NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS."
   s.homepage         = "https://github.com/tskulbru/NBMaterialDialogIOS"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://github.com/tskulbru/NBMaterialDialogIOS/blob/master/Screenshots/appdemo.gif"
   s.license          = 'MIT'
   s.author           = { "Torstein Skulbru" => "serrghi@gmail.com" }
   s.source           = { :git => "https://github.com/tskulbru/NBMaterialDialogIOS.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/tskulbru'
+  s.social_media_url = 'https://twitter.com/tskulbru'
 
   s.platform     = :ios, '8.1'
   s.requires_arc = true

@@ -1,24 +1,13 @@
 PODS:
   - BFPaperButton (2.0.18):
     - UIColor+BFPaperColors
-  - FBSnapshotTestCase (1.8.1)
   - NBMaterialDialogIOS (0.2.0):
     - BFPaperButton (~> 2.0.18)
-  - Nimble (2.0.0-rc.3)
-  - Nimble-Snapshots (1.0.0):
-    - FBSnapshotTestCase (~> 1.7)
-    - Nimble (~> 2.0.0-rc.2)
-    - Quick (~> 0.5)
-  - Quick (0.6.0)
-  - UIColor+BFPaperColors (1.7.1)
+  - UIColor+BFPaperColors (1.7.2)
 
 DEPENDENCIES:
   - BFPaperButton (~> 2.0.18)
-  - FBSnapshotTestCase
   - NBMaterialDialogIOS (from `../`)
-  - Nimble
-  - Nimble-Snapshots
-  - Quick
 
 EXTERNAL SOURCES:
   NBMaterialDialogIOS:
@@ -26,11 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BFPaperButton: 16b3ec9c2964d24f89f623a4113321d3f003ed60
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  NBMaterialDialogIOS: db24ab664c266690577a2dfd47d1e43c622b57db
-  Nimble: 9dff98ee195ffe7351d3b2fb01d3a1420fd97948
-  Nimble-Snapshots: c16dd279a4840ec06288198fafd53f3c17750ff3
-  Quick: 563686dbcf0ae0f9f7401ac9cd2d786ee1b7f3d7
-  UIColor+BFPaperColors: b1efa4320e2f56c4b14f73232faf967ba0e5b4a2
+  NBMaterialDialogIOS: fd5eb7080fda596ccfa47b2c7e6645a4994cffc0
+  UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
