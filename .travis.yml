@@ -6,13 +6,19 @@ language: objective-c
 os: osx
 osx_image: xcode7.2
 
+xcode_workspace: Example/NBMaterialDialogIOS.xcworkspace
+xcode_scheme: NBMaterialDialogIOS-Example
+xctool_args: -destination 'platform=iOS Simulator,name=iPhone 6s,OS=latest'
+podfile: Example/Podfile
+
+xcode_sdk: iphonesimulator9.1
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
-install:
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-script:
-- set -o pipefail && xcodebuild test -workspace Example/NBMaterialDialogIOS.xcworkspace -scheme NBMaterialDialogIOS-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-- pod lib lint --quick
+#install:
+#- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+#script:
+#- set -o pipefail && xcodebuild test -workspace Example/NBMaterialDialogIOS.xcworkspace -scheme NBMaterialDialogIOS-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+#- pod lib lint --quick
