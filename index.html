@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>NBMaterialDialogIOS by tskulbru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">NBMaterialDialogIOS</h1>
+      <h2 class="project-tagline">Material design dialogs, toast and snackbar for IOS</h2>
+      <a href="https://github.com/tskulbru/NBMaterialDialogIOS" class="btn">View on GitHub</a>
+      <a href="https://github.com/tskulbru/NBMaterialDialogIOS/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/tskulbru/NBMaterialDialogIOS/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="nbmaterialdialogios" class="anchor" href="#nbmaterialdialogios" aria-hidden="true"><span class="octicon octicon-link"></span></a>NBMaterialDialogIOS</h1>
+
+<p>NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS</p>
+
+<p><a href="https://developer.apple.com/swift"><img src="http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat" alt="Language"></a>
+<a href="http://cocoapods.org/pods/NBMaterialDialogIOS"><img src="https://img.shields.io/cocoapods/v/NBMaterialDialogIOS.svg?style=flat" alt="Version"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://travis-ci.org/tskulbru/NBMaterialDialogIOS"><img src="https://travis-ci.org/tskulbru/NBMaterialDialogIOS.svg" alt="Build Status"></a>
+<a href="http://mit-license.org"><img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License"></a></p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+
+<p><img src="https://raw.githubusercontent.com/tskulbru/NBMaterialDialogIOS/master/Screenshots/appdemo.gif" alt="Example Gif"></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a id="cocoapods" class="anchor" href="#cocoapods" aria-hidden="true"><span class="octicon octicon-link"></span></a>CocoaPods</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. You can install it with the following command:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ gem install cocoapods</pre></div>
+
+<p>To integrate NBMaterialDialogIOS into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+
+<div class="highlight highlight-source-ruby"><pre>source <span class="pl-s"><span class="pl-pds">'</span>https://github.com/CocoaPods/Specs.git<span class="pl-pds">'</span></span>
+platform <span class="pl-c1">:ios</span>, <span class="pl-s"><span class="pl-pds">'</span>8.0<span class="pl-pds">'</span></span>
+use_frameworks!
+
+pod <span class="pl-s"><span class="pl-pds">'</span>NBMaterialDialogIOS<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>~&gt; 0.2.1<span class="pl-pds">'</span></span></pre></div>
+
+<p>Then, run the following command:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ pod install</pre></div>
+
+<h3>
+<a id="carthage" class="anchor" href="#carthage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.</p>
+
+<p>You can install Carthage with <a href="http://brew.sh/">Homebrew</a> using the following command:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ brew update
+$ brew install carthage</pre></div>
+
+<p>To integrate NBMaterialDialogIOS into your Xcode project using Carthage, specify it in your <code>Cartfile</code>:</p>
+
+<pre lang="ogdl"><code>github "tskulbru/NBMaterialDialogIOS" ~&gt; 0.2.1
+</code></pre>
+
+<p>Run <code>carthage update</code> to build the framework and drag the built <code>NBMaterialDialogIOS.framework</code> into your Xcode project.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>To set up your own color scheme, set your colors in <code>NBConfig</code></p>
+
+<p>MaterialDialog supports any kind of UIView as its content, so if you want you can provide a scrollview if need be.</p>
+
+<p>More information on how you should use the different components, see the example project.</p>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>Torstein Skulbru</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><em>NBMaterialDialogIOS</em> is available under the MIT license. </p>
+
+<blockquote>
+<p>See the <a href="LICENSE">LICENSE file</a> for more info.</p>
+</blockquote>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/tskulbru/NBMaterialDialogIOS">NBMaterialDialogIOS</a> is maintained by <a href="https://github.com/tskulbru">tskulbru</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-72630200-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
