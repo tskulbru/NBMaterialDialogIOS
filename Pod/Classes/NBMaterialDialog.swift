@@ -43,6 +43,7 @@ Simple material dialog class
     private var tapGesture: UITapGestureRecognizer!
     private var backgroundColor: UIColor!
     private var windowView: UIView!
+    private var tappableView: UIView = UIView()
 
     private var isStacked: Bool = false
 
@@ -77,6 +78,9 @@ Simple material dialog class
         view.frame = UIScreen.mainScreen().bounds
         view.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
         view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:kBackgroundTransparency)
+        tappableView.backgroundColor = UIColor.clearColor()
+        tappableView.frame = view.frame
+        view.addSubview(tappableView)
         backgroundColor = color
         setupContainerView()
         view.addSubview(containerView)
@@ -114,7 +118,7 @@ Simple material dialog class
             }
         }
 
-        view.removeGestureRecognizer(tapGesture)
+        tappableView.removeGestureRecognizer(tapGesture)
 
         for childView in view.subviews {
             childView.removeFromSuperview()
@@ -212,8 +216,9 @@ Simple material dialog class
 
         windowView.addSubview(view)
         view.frame = windowView.bounds
+        tappableView.frame = view.frame
         tapGesture = UITapGestureRecognizer(target: self, action: "tappedBg")
-        view.addGestureRecognizer(tapGesture)
+        tappableView.addGestureRecognizer(tapGesture)
 
         setupContainerView()
         // Add content to contentView
