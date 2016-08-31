@@ -108,7 +108,7 @@
 
         layer.addSublayer(progressLayer)
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "resetAnimations", name: UIApplicationDidBecomeActiveNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NBMaterialCircularActivityIndicator.resetAnimations), name: UIApplicationDidBecomeActiveNotification, object: nil)
     }
 
     deinit {
