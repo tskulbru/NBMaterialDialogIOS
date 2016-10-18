@@ -10,7 +10,7 @@ import UIKit
 import NBMaterialDialogIOS
 
 class ViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -65,4 +65,3 @@ class ViewController: UIViewController {
         NBMaterialSnackbar.showWithText(view, text: "Super awesome toast message, cheers!", duration: NBLunchDuration.LONG)
     }
 }
-
