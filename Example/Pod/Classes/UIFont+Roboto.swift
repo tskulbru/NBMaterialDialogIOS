@@ -33,8 +33,10 @@ public extension UIFont {
         }
 
         let name = "Roboto-Medium"
-        if UIFont.fontNames(forFamilyName: name).count == 0 {
-            FontLoader.loadFont(name)
+        if (UIFont.fontNames(forFamilyName: name).count == 0) {
+            dispatch_once(&Static.onceToken) {
+                FontLoader.loadFont(name)
+            }
         }
 
         return UIFont(name: name, size: fontSize)!
@@ -46,8 +48,10 @@ public extension UIFont {
         }
 
         let name = "Roboto-Regular"
-        if UIFont.fontNames(forFamilyName: name).count == 0 {
-            FontLoader.loadFont(name)
+        if (UIFont.fontNames(forFamilyName: name).count == 0) {
+            dispatch_once(&Static.onceToken) {
+                FontLoader.loadFont(name)
+            }
         }
 
         return UIFont(name: name, size: fontSize)!

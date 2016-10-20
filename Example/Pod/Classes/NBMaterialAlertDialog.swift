@@ -62,7 +62,7 @@
         alertLabel.sizeToFit()
 
         let dialog = NBMaterialAlertDialog()
-        _ = dialog.showDialog(windowView, title: title, content: alertLabel, dialogHeight: dialogHeight ?? dialog.kMinimumHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
+        dialog.showDialog(windowView, title: title, content: alertLabel, dialogHeight: dialogHeight ?? dialog.kMinimumHeight, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
         return dialog
     }
 }
