@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		7B7607B41BDA4418B42680D7 /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */; };
 		AC466F8F5321E9D40EEAA7C2 /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */; };
+		F7F35D981DB86DA000A4D0A2 /* Pod in Resources */ = {isa = PBXBuildFile; fileRef = F7F35D971DB86DA000A4D0A2 /* Pod */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BA02290BB8727000EFA2C2B2 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F35D971DB86DA000A4D0A2 /* Pod */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pod; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				F7F35D971DB86DA000A4D0A2 /* Pod */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for NBMaterialDialogIOS */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -215,9 +218,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VLF9HQZ98F;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VLF9HQZ98F;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -248,6 +253,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				F7F35D981DB86DA000A4D0A2 /* Pod in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +495,7 @@
 			baseConfigurationReference = 1E0A10367FA1049FB23D8C3B /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLF9HQZ98F;
 				INFOPLIST_FILE = NBMaterialDialogIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,6 +510,7 @@
 			baseConfigurationReference = B5B7F9389BA6CBB7B643896D /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLF9HQZ98F;
 				INFOPLIST_FILE = NBMaterialDialogIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +526,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VLF9HQZ98F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +550,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VLF9HQZ98F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

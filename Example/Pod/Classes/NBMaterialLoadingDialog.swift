@@ -84,7 +84,7 @@
 
         // Initialize dialog and display
         let dialog = NBMaterialLoadingDialog()
-        _ = dialog.showDialog(windowView, title: nil, content: containerView)
+        dialog.showDialog(windowView, title: nil, content: containerView)
 
         // Start spinner
         circularLoadingActivity.startAnimating()

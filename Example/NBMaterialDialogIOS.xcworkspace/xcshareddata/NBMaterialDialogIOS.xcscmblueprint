@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "30D63CECE08FAD6D0517CD151A767C2465F22A9D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "27C32C3F23552169D023552DA5E7D8B17D88316C" : 9223372036854775807,
+    "30D63CECE08FAD6D0517CD151A767C2465F22A9D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "37AF3128-E03A-4017-AA01-D2A6348A998A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "27C32C3F23552169D023552DA5E7D8B17D88316C" : "",
+    "30D63CECE08FAD6D0517CD151A767C2465F22A9D" : "NBMaterialDialogIOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NBMaterialDialogIOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/NBMaterialDialogIOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Gerst20051\/XCode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "27C32C3F23552169D023552DA5E7D8B17D88316C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Gerst20051\/NBMaterialDialogIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30D63CECE08FAD6D0517CD151A767C2465F22A9D"
+    }
+  ]
+}
