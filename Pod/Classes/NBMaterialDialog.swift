@@ -217,7 +217,7 @@ Simple material dialog class
         windowView.addSubview(view)
         view.frame = windowView.bounds
         tappableView.frame = view.frame
-        tapGesture = UITapGestureRecognizer(target: self, action: "tappedBg")
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(NBMaterialDialog.tappedBg))
         tappableView.addGestureRecognizer(tapGesture)
 
         setupContainerView()
@@ -248,7 +248,7 @@ Simple material dialog class
             setupButtonWithTitle(okButtonTitle, button: &okButton, isStacked: isStacked)
             if let okButton = okButton {
                 okButton.tag = 0
-                okButton.addTarget(self, action: "pressedAnyButton:", forControlEvents: UIControlEvents.TouchUpInside)
+                okButton.addTarget(self, action: #selector(NBMaterialDialog.pressedAnyButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             }
         }
 
@@ -256,7 +256,7 @@ Simple material dialog class
             setupButtonWithTitle(cancelButtonTitle, button: &cancelButton, isStacked: isStacked)
             if let cancelButton = cancelButton {
                 cancelButton.tag = 1
-                cancelButton.addTarget(self, action: "pressedAnyButton:", forControlEvents: UIControlEvents.TouchUpInside)
+                cancelButton.addTarget(self, action: #selector(NBMaterialDialog.pressedAnyButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             }
         }
 
