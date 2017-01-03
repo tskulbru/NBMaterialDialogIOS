@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NBMaterialDialogIOS"
-  s.version          = "0.2.3"
+  s.version          = "0.3.0"
   s.summary          = "NBMaterialDialogIOS contains different dialogs and components used in Material Design by Google, on iOS."
   s.homepage         = "https://github.com/tskulbru/NBMaterialDialogIOS"
   #s.screenshots     = "https://github.com/tskulbru/NBMaterialDialogIOS/blob/master/Screenshots/appdemo.gif"

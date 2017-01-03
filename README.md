@@ -31,7 +31,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.1'
 use_frameworks!
 
-pod 'NBMaterialDialogIOS', '~> 0.2.3'
+pod 'NBMaterialDialogIOS', '~> 0.3.0'
 ```
 
 Then, run the following command:
@@ -54,12 +54,16 @@ $ brew install carthage
 To integrate NBMaterialDialogIOS into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "tskulbru/NBMaterialDialogIOS" ~> 0.2.3
+github "tskulbru/NBMaterialDialogIOS" ~> 0.3.0
 ```
 
 Run `carthage update` to build the framework and drag the built `NBMaterialDialogIOS.framework` into your Xcode project.
 
+## Swift version support
+For swift 3 support, use version `0.3.0` and up. Swift 2 support is no longer maintained, but can still be used. Latest Swift2 supported version is `0.2.3`
+
 ## Usage
+
 To set up your own color scheme, set your colors in `NBConfig`
 
 MaterialDialog supports any kind of UIView as its content, so if you want you can provide a scrollview if need be.
