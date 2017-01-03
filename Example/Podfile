@@ -3,10 +3,10 @@ use_frameworks!
 
 target 'NBMaterialDialogIOS_Example', :exclusive => true do
   pod 'NBMaterialDialogIOS', :path => '../'
-  pod 'BFPaperButton', '~> 2.0.18'
+  pod 'BFPaperButton', '~> 2.1.1'
 end
 
 target 'NBMaterialDialogIOS_Tests', :exclusive => true do
   pod 'NBMaterialDialogIOS', :path => '../'
-  pod 'BFPaperButton', '~> 2.0.18'
+  pod 'BFPaperButton', '~> 2.1.1'
 end
