@@ -1,12 +1,16 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.1'
+inhibit_all_warnings!
+
+project 'NBMaterialDialogIOS'
 use_frameworks!
 
-target 'NBMaterialDialogIOS_Example', :exclusive => true do
+target 'NBMaterialDialogIOS_Example' do
   pod 'NBMaterialDialogIOS', :path => '../'
   pod 'BFPaperButton', '~> 2.1.1'
 end
 
-target 'NBMaterialDialogIOS_Tests', :exclusive => true do
+target 'NBMaterialDialogIOS_Tests' do
   pod 'NBMaterialDialogIOS', :path => '../'
   pod 'BFPaperButton', '~> 2.1.1'
 end

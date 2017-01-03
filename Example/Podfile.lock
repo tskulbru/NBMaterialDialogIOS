@@ -1,12 +1,10 @@
 PODS:
-  - BFPaperButton (2.0.18):
-    - UIColor+BFPaperColors
-  - NBMaterialDialogIOS (0.2.0):
-    - BFPaperButton (~> 2.0.18)
-  - UIColor+BFPaperColors (1.7.2)
+  - BFPaperButton (2.1.1)
+  - NBMaterialDialogIOS (0.2.3):
+    - BFPaperButton (~> 2.1.1)
 
 DEPENDENCIES:
-  - BFPaperButton (~> 2.0.18)
+  - BFPaperButton (~> 2.1.1)
   - NBMaterialDialogIOS (from `../`)
 
 EXTERNAL SOURCES:
@@ -14,8 +12,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BFPaperButton: 16b3ec9c2964d24f89f623a4113321d3f003ed60
-  NBMaterialDialogIOS: fd5eb7080fda596ccfa47b2c7e6645a4994cffc0
-  UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
+  BFPaperButton: c76835e789669f64d600dc68934cc60fbb550bb9
+  NBMaterialDialogIOS: 3f67c7971eb8f24e4c7a34e291c306d6d6f3c1c6
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 1d9019bc53d18b95c988b261d007837da5c6a50f
+
+COCOAPODS: 1.1.1

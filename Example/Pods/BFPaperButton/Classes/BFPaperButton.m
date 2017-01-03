@@ -29,7 +29,6 @@
 
 #import "BFPaperButton.h"
 #import <QuartzCore/QuartzCore.h>
-#import "UIColor+BFPaperColors.h"
 
 
 @interface BFPaperButton ()
@@ -151,6 +150,8 @@ CGFloat const bfPaperButton_tapCircleDiameterDefault = -2.f;
     
     self.fadeAndClippingMaskRect = CGRectMake(self.bounds.origin.x, self.bounds.origin.y , self.bounds.size.width, self.bounds.size.height);
     
+    [self setEnabled:self.enabled];
+
     [self setNeedsDisplay];
     [self.layer setNeedsDisplay];
 }
@@ -187,6 +188,8 @@ CGFloat const bfPaperButton_tapCircleDiameterDefault = -2.f;
     
     self.fadeAndClippingMaskRect = CGRectMake(self.bounds.origin.x, self.bounds.origin.y , self.bounds.size.width, self.bounds.size.height);
     
+    [self setEnabled:self.enabled];
+
     [self setNeedsDisplay];
     [self.layer setNeedsDisplay];
 }
@@ -465,7 +468,7 @@ CGFloat const bfPaperButton_tapCircleDiameterDefault = -2.f;
 - (void)fadeInBackgroundAndRippleTapCircle
 {
     // Spawn a growing circle that "ripples" through the view:
-    if ([UIColor isColorClear:self.backgroundColor]) {
+    if ([BFPaperButton isColorClear:self.backgroundColor]) {
         // CLEAR BACKROUND SHOULD ONLY BE FOR FLAT VIEW!!!
         
         // Set the fill color for the tap circle (self.animationLayer's fill color):
@@ -626,7 +629,7 @@ CGFloat const bfPaperButton_tapCircleDiameterDefault = -2.f;
         [self.layer addAnimation:shadowOpacityAnimation forKey:@"shadowOpacity"];
     }
     
-    if ([UIColor isColorClear:self.backgroundColor]) {
+    if ([BFPaperButton isColorClear:self.backgroundColor]) {
         // Remove darkened background fade:
         
         CGFloat startingOpacity = self.backgroundColorFadeLayer.opacity;
@@ -665,41 +668,43 @@ CGFloat const bfPaperButton_tapCircleDiameterDefault = -2.f;
     
     // Get the next tap circle to expand:
     CAShapeLayer *tapCircle = [self.rippleAnimationQueue firstObject];
-    if (self.rippleAnimationQueue.count > 0) {
-        [self.rippleAnimationQueue removeObjectAtIndex:0];
+    if (nil != tapCircle) {
+        if (self.rippleAnimationQueue.count > 0) {
+            [self.rippleAnimationQueue removeObjectAtIndex:0];
+        }
+        [self.deathRowForCircleLayers addObject:tapCircle];
+        
+        
+        CGPathRef startingPath = tapCircle.path;
+        CGFloat startingOpacity = tapCircle.opacity;
+        
+        if ([[tapCircle animationKeys] count] > 0) {
+            startingPath = [[tapCircle presentationLayer] path];
+            startingOpacity = [[tapCircle presentationLayer] opacity];
+        }
+        
+        // Burst tap-circle:
+        CABasicAnimation *tapCircleGrowthAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+        tapCircleGrowthAnimation.duration = self.touchUpAnimationDuration;
+        tapCircleGrowthAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        tapCircleGrowthAnimation.fromValue = (__bridge id)startingPath;
+        tapCircleGrowthAnimation.toValue = (__bridge id)endingCirclePath.CGPath;
+        tapCircleGrowthAnimation.fillMode = kCAFillModeForwards;
+        tapCircleGrowthAnimation.removedOnCompletion = NO;
+        
+        // Fade tap-circle out:
+        CABasicAnimation *fadeOut = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        [fadeOut setValue:@"fadeCircleOut" forKey:@"id"];
+        fadeOut.delegate = self;
+        fadeOut.fromValue = [NSNumber numberWithFloat:startingOpacity];
+        fadeOut.toValue = [NSNumber numberWithFloat:0.f];
+        fadeOut.duration = self.touchUpAnimationDuration;
+        fadeOut.fillMode = kCAFillModeForwards;
+        fadeOut.removedOnCompletion = NO;
+        
+        [tapCircle addAnimation:tapCircleGrowthAnimation forKey:@"animatePath"];
+        [tapCircle addAnimation:fadeOut forKey:@"opacityAnimation"];
     }
-    [self.deathRowForCircleLayers addObject:tapCircle];
-    
-    
-    CGPathRef startingPath = tapCircle.path;
-    CGFloat startingOpacity = tapCircle.opacity;
-    
-    if ([[tapCircle animationKeys] count] > 0) {
-        startingPath = [[tapCircle presentationLayer] path];
-        startingOpacity = [[tapCircle presentationLayer] opacity];
-    }
-    
-    // Burst tap-circle:
-    CABasicAnimation *tapCircleGrowthAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    tapCircleGrowthAnimation.duration = self.touchUpAnimationDuration;
-    tapCircleGrowthAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    tapCircleGrowthAnimation.fromValue = (__bridge id)startingPath;
-    tapCircleGrowthAnimation.toValue = (__bridge id)endingCirclePath.CGPath;
-    tapCircleGrowthAnimation.fillMode = kCAFillModeForwards;
-    tapCircleGrowthAnimation.removedOnCompletion = NO;
-    
-    // Fade tap-circle out:
-    CABasicAnimation *fadeOut = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    [fadeOut setValue:@"fadeCircleOut" forKey:@"id"];
-    fadeOut.delegate = self;
-    fadeOut.fromValue = [NSNumber numberWithFloat:startingOpacity];
-    fadeOut.toValue = [NSNumber numberWithFloat:0.f];
-    fadeOut.duration = self.touchUpAnimationDuration;
-    fadeOut.fillMode = kCAFillModeForwards;
-    fadeOut.removedOnCompletion = NO;
-    
-    [tapCircle addAnimation:tapCircleGrowthAnimation forKey:@"animatePath"];
-    [tapCircle addAnimation:fadeOut forKey:@"opacityAnimation"];
 }
 
 - (CGFloat)calculateTapCircleFinalDiameter
@@ -724,7 +729,27 @@ CGFloat const bfPaperButton_tapCircleDiameterDefault = -2.f;
     }
     return finalDiameter;
 }
-#pragma mark -
+
+
+#pragma mark - Utility Functions
+#pragma mark Private
++ (BOOL)isColorClear:(UIColor *)color
+{
+    if (color == [UIColor clearColor]) { return YES; }
+    
+    NSUInteger totalComponents = CGColorGetNumberOfComponents(color.CGColor);
+    BOOL isGreyscale = (totalComponents == 2) ? YES : NO;
+    CGFloat *components = (CGFloat *)CGColorGetComponents(color.CGColor);
+    if (!components) { return YES; }
+    if(isGreyscale) {
+        if (components[1] <= 0) { return YES; }
+    } else {
+        if (components[3] <= 0) { return YES; }
+    }
+    return NO;
+}
+
+#pragma mark Public
 
 
 @end

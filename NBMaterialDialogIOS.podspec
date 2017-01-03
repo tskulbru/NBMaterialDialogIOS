@@ -22,10 +22,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*.swift'
-  s.resource = 'Pod/Assets/*.ttf'
-#  s.resource_bundles = {
-#   'NBMaterialDialogIOS' => ['Pod/Assets/*.ttf']
-# }
+ 
+ #s.resource = 'Pod/Assets/*.ttf'
+  s.resource_bundles = {
+    'NBMaterialDialogIOS' => ['Pod/Assets/*.ttf']
+  }
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

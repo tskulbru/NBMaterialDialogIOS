@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4C6874F1E97FE029409B1A /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB120BF3A611825EBB99E54F /* Pods_NBMaterialDialogIOS_Tests.framework */; };
 		32EC644A1C3851AE007B2731 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC64491C3851AE007B2731 /* Tests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		7B7607B41BDA4418B42680D7 /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */; };
-		AC466F8F5321E9D40EEAA7C2 /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */; };
+		C9AA39EE44CDD2A401F3CDFE /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE26D1643E901BEB8B89243 /* Pods_NBMaterialDialogIOS_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E0A10367FA1049FB23D8C3B /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1FE72936A1E4328CECEC226F /* NBMaterialDialogIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NBMaterialDialogIOS.podspec; path = ../NBMaterialDialogIOS.podspec; sourceTree = "<group>"; };
+		21C38A9CBF5018BA8951CD9E /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		323582461E1BE6ED00E88809 /* NBMaterialDialogIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NBMaterialDialogIOS.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/NBMaterialDialogIOS-fivljokmfkykmwdfrhrhermmphvn/Build/Products/Debug-iphonesimulator/NBMaterialDialogIOS/NBMaterialDialogIOS.framework"; sourceTree = "<group>"; };
 		32EC64491C3851AE007B2731 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		4C747B255BB242EE8EBDA921 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5135C39F36C2F75914DD2DB0 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		52B0F47AB483781EBCB4269F /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NBMaterialDialogIOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBMaterialDialogIOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +43,11 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* NBMaterialDialogIOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBMaterialDialogIOS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F5F69F651ED54810491E482 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FE26D1643E901BEB8B89243 /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E635391B5FC5BB85674F74 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		ADEC4D77C3807169AE9D2F8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B5B7F9389BA6CBB7B643896D /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BA02290BB8727000EFA2C2B2 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB120BF3A611825EBB99E54F /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7607B41BDA4418B42680D7 /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */,
+				C9AA39EE44CDD2A401F3CDFE /* Pods_NBMaterialDialogIOS_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC466F8F5321E9D40EEAA7C2 /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */,
+				2C4C6874F1E97FE029409B1A /* Pods_NBMaterialDialogIOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +77,8 @@
 				607FACD21AFB9204008FA782 /* Example for NBMaterialDialogIOS */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				6B2BC76ADFE2AF85545CA22E /* Pods */,
-				760B52EF8BC76E801FF1F0FD /* Frameworks */,
+				9795D41CE226DDEF798AF50C /* Frameworks */,
+				A25735DBC3BE13D159076F5C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,24 +140,25 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		6B2BC76ADFE2AF85545CA22E /* Pods */ = {
+		9795D41CE226DDEF798AF50C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E0A10367FA1049FB23D8C3B /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */,
-				B5B7F9389BA6CBB7B643896D /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */,
-				BA02290BB8727000EFA2C2B2 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */,
-				4C747B255BB242EE8EBDA921 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		760B52EF8BC76E801FF1F0FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E6D0873CF2F3521BDCDB9C21 /* Pods_NBMaterialDialogIOS_Example.framework */,
-				D3A346A180F7888389A17695 /* Pods_NBMaterialDialogIOS_Tests.framework */,
+				323582461E1BE6ED00E88809 /* NBMaterialDialogIOS.framework */,
+				8FE26D1643E901BEB8B89243 /* Pods_NBMaterialDialogIOS_Example.framework */,
+				BB120BF3A611825EBB99E54F /* Pods_NBMaterialDialogIOS_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A25735DBC3BE13D159076F5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C38A9CBF5018BA8951CD9E /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */,
+				52B0F47AB483781EBCB4269F /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */,
+				6F5F69F651ED54810491E482 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */,
+				5135C39F36C2F75914DD2DB0 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS_Example" */;
 			buildPhases = (
-				77E88693CC1E6E0DA288DFAD /* Check Pods Manifest.lock */,
+				65E49BB64BB3DA7A41179C1F /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				145C166227C9669188805BA6 /* Embed Pods Frameworks */,
-				A267E572A6BB9D7A37C479F4 /* Copy Pods Resources */,
+				E8886092E1AEFCB99E362CB5 /* [CP] Embed Pods Frameworks */,
+				FD7EBDE77BEAB9AC5FB8E03B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS_Tests" */;
 			buildPhases = (
-				4338293623E16DEB1CC67DBD /* Check Pods Manifest.lock */,
+				315B3FAB402C3B728E927447 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				862F173DDEAF9D1CBB6B53AB /* Embed Pods Frameworks */,
-				976AF226C813A80A3D1E1F45 /* Copy Pods Resources */,
+				2B5695822C9F18F6ECE7FBE1 /* [CP] Embed Pods Frameworks */,
+				3CAA0A7344B451235232581E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,59 +265,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		145C166227C9669188805BA6 /* Embed Pods Frameworks */ = {
+		2B5695822C9F18F6ECE7FBE1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4338293623E16DEB1CC67DBD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		77E88693CC1E6E0DA288DFAD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		862F173DDEAF9D1CBB6B53AB /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,14 +280,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		976AF226C813A80A3D1E1F45 /* Copy Pods Resources */ = {
+		315B3FAB402C3B728E927447 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CAA0A7344B451235232581E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,14 +310,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBMaterialDialogIOS_Tests/Pods-NBMaterialDialogIOS_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A267E572A6BB9D7A37C479F4 /* Copy Pods Resources */ = {
+		65E49BB64BB3DA7A41179C1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8886092E1AEFCB99E362CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBMaterialDialogIOS_Example/Pods-NBMaterialDialogIOS_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7EBDE77BEAB9AC5FB8E03B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +447,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -481,13 +484,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E0A10367FA1049FB23D8C3B /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */;
+			baseConfigurationReference = 21C38A9CBF5018BA8951CD9E /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N4PRNQLJ4L;
@@ -502,7 +506,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5B7F9389BA6CBB7B643896D /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
+			baseConfigurationReference = 52B0F47AB483781EBCB4269F /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N4PRNQLJ4L;
@@ -517,7 +521,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA02290BB8727000EFA2C2B2 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */;
+			baseConfigurationReference = 6F5F69F651ED54810491E482 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -540,7 +544,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C747B255BB242EE8EBDA921 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */;
+			baseConfigurationReference = 5135C39F36C2F75914DD2DB0 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
