@@ -1,24 +1,8 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 language: objective-c
-os: osx
-osx_image: xcode8.2
-
-xcode_workspace: Example/NBMaterialDialogIOS.xcworkspace
-xcode_scheme: NBMaterialDialogIOS-Example
-xctool_args: -destination 'platform=iOS Simulator,name=iPhone 7,OS=latest'
-podfile: Example/Podfile
-
-xcode_sdk: iphonesimulator10.1
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-#install:
-#- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-#script:
-#- set -o pipefail && xcodebuild test -workspace Example/NBMaterialDialogIOS.xcworkspace -scheme NBMaterialDialogIOS-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-#- pod lib lint --quick
+osx_image: xcode8
+install:
+  - gem install xcpretty
+  - gem install cocoapods --pre
+script:
+  - pod update
+  - set -o pipefail && env NSUnbufferedIO=YES xcodebuild -workspace Example/NBMaterialDialogIOS.xcworkspace -scheme NBMaterialDialogIOS-Example -destination 'platform=iOS Simulator,name=iPhone 6s Plus'  build test | xcpretty 
