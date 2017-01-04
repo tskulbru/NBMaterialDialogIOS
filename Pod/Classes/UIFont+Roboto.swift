@@ -7,60 +7,50 @@
 //
 
 private class FontLoader {
-  class func loadFont(name: String) {
-    let bundle = NSBundle(forClass: FontLoader.self)
+  class func loadFont(_ name: String) {
+    let bundle = Bundle(for: FontLoader.self)
     let identifier = bundle.bundleIdentifier
     let fileExtension = "ttf"
 
-    let url: NSURL?
+    let url: URL?
     if identifier?.hasPrefix("org.cocoapods") == true {
-      url = bundle.URLForResource(name, withExtension: fileExtension, subdirectory: "NBMaterialDialogIOS.bundle")
+      url = bundle.url(forResource: name, withExtension: fileExtension, subdirectory: "NBMaterialDialogIOS.bundle")
     } else {
-      url = bundle.URLForResource(name, withExtension: fileExtension)
+      url = bundle.url(forResource: name, withExtension: fileExtension)
     }
 
     guard let fontURL = url else { fatalError("\(name) not found in bundle") }
 
-    guard let data = NSData(contentsOfURL: fontURL),
-      let provider = CGDataProviderCreateWithCFData(data) else { return }
-    let font = CGFontCreateWithDataProvider(provider)
+    guard let data = try? Data(contentsOf: fontURL),
+      let provider = CGDataProvider(data: data as CFData) else { return }
+    let font = CGFont(provider)
 
     var error: Unmanaged<CFError>?
     if !CTFontManagerRegisterGraphicsFont(font, &error) {
-      let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
+      let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
       let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-      NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+      NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
     }
   }
 }
 
 
 public extension UIFont {
-  public class func robotoMediumOfSize(fontSize: CGFloat) -> UIFont {
-    struct Static {
-      static var onceToken : dispatch_once_t = 0
-    }
+  public class func robotoMediumOfSize(_ fontSize: CGFloat) -> UIFont {
 
     let name = "Roboto-Medium"
-    if (UIFont.fontNamesForFamilyName(name).count == 0) {
-      dispatch_once(&Static.onceToken) {
+    if UIFont.fontNames(forFamilyName: name).isEmpty {
         FontLoader.loadFont(name)
-      }
     }
 
     return UIFont(name: name, size: fontSize)!
   }
 
-  public class func robotoRegularOfSize(fontSize: CGFloat) -> UIFont {
-    struct Static {
-      static var onceToken : dispatch_once_t = 0
-    }
+  public class func robotoRegularOfSize(_ fontSize: CGFloat) -> UIFont {
 
     let name = "Roboto-Regular"
-    if (UIFont.fontNamesForFamilyName(name).count == 0) {
-      dispatch_once(&Static.onceToken) {
-        FontLoader.loadFont(name)
-      }
+    if UIFont.fontNames(forFamilyName: name).isEmpty {
+      FontLoader.loadFont(name)
     }
 
     return UIFont(name: name, size: fontSize)!

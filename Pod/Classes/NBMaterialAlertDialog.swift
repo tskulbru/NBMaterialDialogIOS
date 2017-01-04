@@ -27,7 +27,7 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-@objc public class NBMaterialAlertDialog : NBMaterialDialog {
+@objc open class NBMaterialAlertDialog : NBMaterialDialog {
 
     /**
     Displays an alert dialog with a simple text and buttons
@@ -38,7 +38,8 @@
     - parameter action: The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
     - parameter cancelButtonTitle: The negative button when multiple buttons.
     */
-    public class func showAlertWithText(windowView: UIView, text: String, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialAlertDialog {
+    @discardableResult
+    open class func showAlertWithText(_ windowView: UIView, text: String, okButtonTitle: String?, action: ((_ isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialAlertDialog {
         return NBMaterialAlertDialog.showAlertWithTextAndTitle(windowView, text: text, title: nil, dialogHeight: nil, okButtonTitle: okButtonTitle, action: action, cancelButtonTitle: cancelButtonTitle)
     }
 
@@ -53,7 +54,8 @@
     - parameter action: The block you want to run when the user clicks any of the buttons. If no block is given, the standard dismiss action will be used
     - parameter cancelButtonTitle: The negative button when multiple buttons.
     */
-    public class func showAlertWithTextAndTitle(windowView: UIView, text: String, title: String?, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialAlertDialog {
+    @discardableResult
+    open class func showAlertWithTextAndTitle(_ windowView: UIView, text: String, title: String?, dialogHeight: CGFloat?, okButtonTitle: String?, action: ((_ isOtherButton: Bool) -> Void)?, cancelButtonTitle: String?) -> NBMaterialAlertDialog {
         let alertLabel = UILabel()
         alertLabel.numberOfLines = 0
         alertLabel.font = UIFont.robotoRegularOfSize(14)

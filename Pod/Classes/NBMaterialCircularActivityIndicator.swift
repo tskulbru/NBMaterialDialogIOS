@@ -26,18 +26,18 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@objc public class NBMaterialCircularActivityIndicator : UIView {
+@objc open class NBMaterialCircularActivityIndicator : UIView {
     // MARK: - Field Vars
-    private var _progressLayer: CAShapeLayer!
-    private var _isAnimating: Bool = false
-    private var _hidesWhenStopped: Bool = false
-    private var _timingFunction: CAMediaTimingFunction!
+    fileprivate var _progressLayer: CAShapeLayer!
+    fileprivate var _isAnimating: Bool = false
+    fileprivate var _hidesWhenStopped: Bool = false
+    fileprivate var _timingFunction: CAMediaTimingFunction!
 
     // MARK; - Properties
     internal var progressLayer: CAShapeLayer {
         if _progressLayer == nil {
             _progressLayer = CAShapeLayer()
-            _progressLayer.strokeColor = tintColor.CGColor
+            _progressLayer.strokeColor = tintColor.cgColor
             _progressLayer.fillColor = nil
             _progressLayer.lineWidth = 3.0
         }
@@ -45,14 +45,14 @@
         return _progressLayer
     }
 
-    public var isAnimating: Bool {
+    open var isAnimating: Bool {
         return _isAnimating
     }
 
     /**
     Defines the thickness of the indicator. Change this to make the circular indicator larger
     */
-    public var lineWidth: CGFloat {
+    open var lineWidth: CGFloat {
         get {
             return progressLayer.lineWidth
         }
@@ -65,17 +65,17 @@
     /**
     Defines if the indicator should be hidden when its stopped (usually yes).
     */
-    public var hidesWhenStopped: Bool {
+    open var hidesWhenStopped: Bool {
         get {
             return _hidesWhenStopped
         }
         set {
             _hidesWhenStopped = newValue
-            hidden = !isAnimating && _hidesWhenStopped
+            isHidden = !isAnimating && _hidesWhenStopped
         }
     }
 
-    public var indicatorColor: UIColor {
+    open var indicatorColor: UIColor {
         get {
             return tintColor
         }
@@ -108,32 +108,32 @@
 
         layer.addSublayer(progressLayer)
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NBMaterialCircularActivityIndicator.resetAnimations), name: UIApplicationDidBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(NBMaterialCircularActivityIndicator.resetAnimations), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
     }
 
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIApplicationDidBecomeActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
     }
 
     // MARK:  UIView overrides
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
 
         progressLayer.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
         updatePath()
     }
 
-    public override func tintColorDidChange() {
+    open override func tintColorDidChange() {
         super.tintColorDidChange()
 
-        progressLayer.strokeColor = tintColor.CGColor
+        progressLayer.strokeColor = tintColor.cgColor
     }
 
     // MARK: Animation functions
     /**
     If for some reason you need to reset, call this
     */
-    public func resetAnimations() {
+    open func resetAnimations() {
         if isAnimating {
             stopAnimating()
             startAnimating()
@@ -145,7 +145,7 @@
     
     - parameter animate: BOOL
     */
-    public func setAnimating(animate: Bool) {
+    open func setAnimating(_ animate: Bool) {
         animate ? startAnimating() : stopAnimating()
     }
 
@@ -161,7 +161,7 @@
         animation.toValue = 2 * M_PI
         animation.repeatCount = Float.infinity
         animation.timingFunction = _timingFunction
-        progressLayer.addAnimation(animation, forKey: kNBCircleRotationAnimationKey)
+        progressLayer.add(animation, forKey: kNBCircleRotationAnimationKey)
 
         let headAnimation: CABasicAnimation = CABasicAnimation()
         headAnimation.keyPath = "strokeStart"
@@ -197,12 +197,12 @@
         animations.duration = 1.5
         animations.animations = [headAnimation, tailAnimation, endHeadAnimation, endTailAnimation]
         animations.repeatCount = Float.infinity
-        progressLayer.addAnimation(animations, forKey: kNBCircleStrokeAnimationKey)
+        progressLayer.add(animations, forKey: kNBCircleStrokeAnimationKey)
 
         _isAnimating = true
 
         if hidesWhenStopped {
-            hidden = false
+            isHidden = false
         }
     }
 
@@ -211,24 +211,24 @@
             return
         }
 
-        progressLayer.removeAnimationForKey(kNBCircleRotationAnimationKey)
-        progressLayer.removeAnimationForKey(kNBCircleStrokeAnimationKey)
+        progressLayer.removeAnimation(forKey: kNBCircleRotationAnimationKey)
+        progressLayer.removeAnimation(forKey: kNBCircleStrokeAnimationKey)
         _isAnimating = false
 
         if hidesWhenStopped {
-            hidden = true
+            isHidden = true
         }
     }
 
     // MARK: - Private methods
-    private func updatePath() {
+    fileprivate func updatePath() {
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         let radius = min(bounds.width / 2, bounds.height / 2) - progressLayer.lineWidth / 2
         let startAngle:CGFloat = 0.0
         let endAngle:CGFloat = CGFloat(2.0*M_PI)
         let path: UIBezierPath = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
 
-        progressLayer.path = path.CGPath
+        progressLayer.path = path.cgPath
         progressLayer.strokeStart = 0.0
         progressLayer.strokeEnd = 0.0
     }

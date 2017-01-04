@@ -661,6 +661,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		028E506FC798472BAFA1DAF05AE05C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E1037EB3825F3393B4CA89B77B274C /* BFPaperButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BFPaperButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BFPaperButton/BFPaperButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BFPaperButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3C41A0DE138084518F5D851E10F7355C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEDAE7F1AFC0141729449069E31C4846 /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
@@ -696,9 +728,9 @@
 			};
 			name = Release;
 		};
-		44481E976C8A13143C27DFD78BB43054 /* Debug */ = {
+		623A97BAA6E434F0EB76B8B1A3586A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E1037EB3825F3393B4CA89B77B274C /* BFPaperButton.xcconfig */;
+			baseConfigurationReference = BA83C94887B1E114D69A7F44C6C1883D /* NBMaterialDialogIOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -711,22 +743,55 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BFPaperButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBMaterialDialogIOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BFPaperButton/BFPaperButton.modulemap";
+				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BFPaperButton;
+				PRODUCT_NAME = NBMaterialDialogIOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		67A0AE678AC2C0685517BFBF74171B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA83C94887B1E114D69A7F44C6C1883D /* NBMaterialDialogIOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBMaterialDialogIOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NBMaterialDialogIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		783A13BE990D71EC2D31B7E9A3E9B7F6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -799,38 +864,6 @@
 			};
 			name = Debug;
 		};
-		8FA17FF40D20281174D5DBAB56FC1212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E1037EB3825F3393B4CA89B77B274C /* BFPaperButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BFPaperButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BFPaperButton/BFPaperButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BFPaperButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A435E3C35B2666C25C53422D898980A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -875,39 +908,6 @@
 			};
 			name = Debug;
 		};
-		A915170E62F2F2AB7CDCB27CC4590AF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA83C94887B1E114D69A7F44C6C1883D /* NBMaterialDialogIOS.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NBMaterialDialogIOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NBMaterialDialogIOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A9A7D7F590C220C2310D0BF05D10BBE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA83C94887B1E114D69A7F44C6C1883D /* NBMaterialDialogIOS.xcconfig */;
@@ -925,9 +925,9 @@
 			};
 			name = Debug;
 		};
-		D79E8753147ED6EEFBBFBC597A87A591 /* Release */ = {
+		E5606A5C0F8F1C44954FD55AEA754C2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA83C94887B1E114D69A7F44C6C1883D /* NBMaterialDialogIOS.xcconfig */;
+			baseConfigurationReference = 06E1037EB3825F3393B4CA89B77B274C /* BFPaperButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -940,17 +940,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NBMaterialDialogIOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BFPaperButton/BFPaperButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BFPaperButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NBMaterialDialogIOS/NBMaterialDialogIOS.modulemap";
+				MODULEMAP_FILE = "Target Support Files/BFPaperButton/BFPaperButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = NBMaterialDialogIOS;
+				PRODUCT_NAME = BFPaperButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1074,8 +1074,8 @@
 		B9F7300B0E384991ECC90C4E6E730855 /* Build configuration list for PBXNativeTarget "NBMaterialDialogIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A915170E62F2F2AB7CDCB27CC4590AF4 /* Debug */,
-				D79E8753147ED6EEFBBFBC597A87A591 /* Release */,
+				623A97BAA6E434F0EB76B8B1A3586A8F /* Debug */,
+				67A0AE678AC2C0685517BFBF74171B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1101,8 +1101,8 @@
 		DB5028EEC792B052877AACAAA6CCEBF5 /* Build configuration list for PBXNativeTarget "BFPaperButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44481E976C8A13143C27DFD78BB43054 /* Debug */,
-				8FA17FF40D20281174D5DBAB56FC1212 /* Release */,
+				028E506FC798472BAFA1DAF05AE05C7B /* Debug */,
+				E5606A5C0F8F1C44954FD55AEA754C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

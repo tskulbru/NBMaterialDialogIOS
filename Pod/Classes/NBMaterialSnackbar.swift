@@ -26,7 +26,7 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@objc public class NBMaterialSnackbar : UIView {
+@objc open class NBMaterialSnackbar : UIView {
     // MARK: - Class variables and constants
 
     internal let kMinHeight: CGFloat = 48.0
@@ -52,9 +52,9 @@
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        lunchDuration = NBLunchDuration.MEDIUM
+        lunchDuration = NBLunchDuration.medium
         hasRoundedCorners = false
-        userInteractionEnabled = false
+        isUserInteractionEnabled = false
         backgroundColor = kDefaultBackground
     }
 
@@ -67,11 +67,11 @@
         superview?.layoutIfNeeded()
         verticalConstraint.constant = 0
 
-        UIView.animateKeyframesWithDuration(0.4, delay: 0.2, options: [], animations: {
+        UIView.animateKeyframes(withDuration: 0.4, delay: 0.2, options: [], animations: {
             self.textLabel.alpha = 1.0
         }, completion: nil)
 
-        UIView.animateWithDuration(0.4, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
             self.superview?.layoutIfNeeded()
             }, completion: { (completed) in
                 self.__hide()
@@ -80,14 +80,14 @@
 
     internal func __hide() {
         verticalConstraint.constant = currentHeight
-        UIView.animateWithDuration(0.4, delay: lunchDuration.rawValue, options: [], animations: {
+        UIView.animate(withDuration: 0.4, delay: lunchDuration.rawValue, options: [], animations: {
             self.superview?.layoutIfNeeded()
             }, completion: { (finished) in
                 self.removeFromSuperview()
         })
     }
 
-    internal class func __createSingleWithTextAndDuration(windowView: UIView, text: String, duration: NBLunchDuration) -> NBMaterialSnackbar {
+    internal class func __createSingleWithTextAndDuration(_ windowView: UIView, text: String, duration: NBLunchDuration) -> NBMaterialSnackbar {
 
         let snack = NBMaterialSnackbar()
         snack.lunchDuration = duration
@@ -97,8 +97,8 @@
         snack.textLabel = UILabel()
 
 
-        snack.textLabel.backgroundColor = UIColor.clearColor()
-        snack.textLabel.textAlignment = NSTextAlignment.Left
+        snack.textLabel.backgroundColor = UIColor.clear
+        snack.textLabel.textAlignment = NSTextAlignment.left
         snack.textLabel.font = snack.kFontRoboto
         snack.textLabel.textColor = snack.kFontColor
         snack.textLabel.numberOfLines = 1
@@ -115,18 +115,18 @@
             "snack": snack
         ]
         snack.constraintMetrics = [
-            "vPad": snack.kVerticalSinglePadding,
-            "hPad": snack.kHorizontalPadding,
-            "minHeight": snack.kMinHeight,
+            "vPad": snack.kVerticalSinglePadding as AnyObject,
+            "hPad": snack.kHorizontalPadding as AnyObject,
+            "minHeight": snack.kMinHeight as AnyObject,
         ]
 
-        snack.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-vPad-[textLabel]-vPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
-        snack.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-hPad-[textLabel]-hPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        snack.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-vPad-[textLabel]-vPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        snack.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-hPad-[textLabel]-hPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
 
-        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[snack(==minHeight)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
-        windowView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[snack]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        windowView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[snack(==minHeight)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
+        windowView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[snack]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: snack.constraintMetrics, views: snack.constraintViews))
 
-        snack.verticalConstraint = NSLayoutConstraint(item: snack, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: windowView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: snack.currentHeight)
+        snack.verticalConstraint = NSLayoutConstraint(item: snack, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: windowView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: snack.currentHeight)
         windowView.addConstraint(snack.verticalConstraint)
         
         
@@ -142,8 +142,8 @@
     
     - parameter text: The message to be displayed
     */
-    public class func showWithText(windowView: UIView, text: String) {
-        NBMaterialSnackbar.showWithText(windowView, text: text, duration: NBLunchDuration.MEDIUM)
+    open class func showWithText(_ windowView: UIView, text: String) {
+        NBMaterialSnackbar.showWithText(windowView, text: text, duration: NBLunchDuration.medium)
     }
 
     /**
@@ -152,7 +152,7 @@
     - parameter text: The message to be displayed
     - parameter duration: The duration of the snackbar
     */
-    public class func showWithText(windowView: UIView, text: String, duration: NBLunchDuration) {
+    open class func showWithText(_ windowView: UIView, text: String, duration: NBLunchDuration) {
         let toast: NBMaterialSnackbar = NBMaterialSnackbar.__createSingleWithTextAndDuration(windowView, text: text, duration: duration)
         toast.__show()
     }

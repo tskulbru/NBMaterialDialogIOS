@@ -30,9 +30,9 @@
     A simple loading dialog with text message
 */
 
-@objc public class NBMaterialLoadingDialog : NBMaterialDialog {
+@objc open class NBMaterialLoadingDialog : NBMaterialDialog {
 
-    public var dismissOnBgTap: Bool = false
+    open var dismissOnBgTap: Bool = false
 
     internal override var kMinimumHeight: CGFloat {
         return 72.0
@@ -44,7 +44,8 @@
         - parameter message: The message displayed to the user while its loading
         - returns: The Loading Dialog
     */
-    public class func showLoadingDialogWithText(windowView: UIView, message: String) -> NBMaterialLoadingDialog {
+    @discardableResult
+    open class func showLoadingDialogWithText(_ windowView: UIView, message: String) -> NBMaterialLoadingDialog {
         let containerView = UIView()
         let circularLoadingActivity = NBMaterialCircularActivityIndicator()
         let loadingLabel = UILabel()
@@ -68,19 +69,19 @@
 
         // Setup constraints
         let constraintViews = ["spinner": circularLoadingActivity, "label": loadingLabel]
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[spinner(==32)]-16-[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[spinner(==32)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[spinner(==32)]-16-[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[spinner(==32)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
         // Center Y needs to be set manually, not through VFL
         containerView.addConstraint(
             NSLayoutConstraint(
                 item: circularLoadingActivity,
-                attribute: NSLayoutAttribute.CenterY,
-                relatedBy: NSLayoutRelation.Equal,
+                attribute: NSLayoutAttribute.centerY,
+                relatedBy: NSLayoutRelation.equal,
                 toItem: containerView,
-                attribute: NSLayoutAttribute.CenterY,
+                attribute: NSLayoutAttribute.centerY,
                 multiplier: 1,
                 constant: 0))
-        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
+        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
 
         // Initialize dialog and display
         let dialog = NBMaterialLoadingDialog()
