@@ -501,7 +501,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21C38A9CBF5018BA8951CD9E /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ENU8MJCMXV;
 				INFOPLIST_FILE = NBMaterialDialogIOS/Info.plist;
@@ -518,7 +517,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52B0F47AB483781EBCB4269F /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ENU8MJCMXV;
 				INFOPLIST_FILE = NBMaterialDialogIOS/Info.plist;
@@ -535,7 +533,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F5F69F651ED54810491E482 /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ENU8MJCMXV;
@@ -561,7 +558,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5135C39F36C2F75914DD2DB0 /* Pods-NBMaterialDialogIOS_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ENU8MJCMXV;

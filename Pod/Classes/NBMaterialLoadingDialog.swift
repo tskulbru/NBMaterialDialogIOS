@@ -84,9 +84,7 @@
         containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews))
 
         // Initialize dialog and display
-        let dialog = NBMaterialLoadingDialog()
-        dialog.showDialog(windowView, title: nil, content: containerView)
-
+        let dialog = NBMaterialLoadingDialog().showDialog(windowView, title: nil, content: containerView)
         // Start spinner
         circularLoadingActivity.startAnimating()
 

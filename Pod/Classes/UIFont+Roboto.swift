@@ -38,8 +38,10 @@ private class FontLoader {
 public extension UIFont {
   public class func robotoMediumOfSize(_ fontSize: CGFloat) -> UIFont {
 
-    let name = "Roboto-Medium"
-    if UIFont.fontNames(forFamilyName: name).isEmpty {
+    let family = "Roboto"
+    let name = "\(family)-Medium"
+    let fNames = UIFont.fontNames(forFamilyName: family)
+    if fNames.isEmpty || !fNames.contains(name) {
         FontLoader.loadFont(name)
     }
 
@@ -48,8 +50,10 @@ public extension UIFont {
 
   public class func robotoRegularOfSize(_ fontSize: CGFloat) -> UIFont {
 
-    let name = "Roboto-Regular"
-    if UIFont.fontNames(forFamilyName: name).isEmpty {
+    let family = "Roboto"
+    let name = "\(family)-Regular"
+    let fNames = UIFont.fontNames(forFamilyName: family)
+    if fNames.isEmpty || !fNames.contains(name) {
       FontLoader.loadFont(name)
     }
 

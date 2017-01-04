@@ -1,6 +1,6 @@
 PODS:
   - BFPaperButton (2.1.1)
-  - NBMaterialDialogIOS (0.2.3):
+  - NBMaterialDialogIOS (0.3.0):
     - BFPaperButton (~> 2.1.1)
 
 DEPENDENCIES:
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BFPaperButton: c76835e789669f64d600dc68934cc60fbb550bb9
-  NBMaterialDialogIOS: 3f67c7971eb8f24e4c7a34e291c306d6d6f3c1c6
+  NBMaterialDialogIOS: b7f2f7d272379451cdbad21559682d3beafe590b
 
 PODFILE CHECKSUM: 1d9019bc53d18b95c988b261d007837da5c6a50f
 

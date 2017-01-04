@@ -12,6 +12,8 @@
 		1201B805229B9EC960A6B79EE0C0A230 /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8429F27FF9C4D60E2B9E8996AC22B8 /* BFPaperButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		17C718CA3D36C65305618530ADE3CCA8 /* BFPaperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0FA46A771F1D3DBFF04D87014DE77F /* BFPaperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E8F4CC0D3174832E9204C89DC60C19 /* NBMaterialDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5233293678461050FB89FEA4F66259 /* NBMaterialDialog.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		32D5F17C1E1D193D00EA094B /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AA5C441BBC7C71C345ECF1C98E2FDB1 /* Roboto-Medium.ttf */; };
+		32D5F17D1E1D193D00EA094B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441129172087E6121BD3CBA21814FACD /* Roboto-Regular.ttf */; };
 		3B5869A640937DE92636EE8867BC738D /* NBMaterialCircularActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD883C02E0C8B6BE6277E759A86F8 /* NBMaterialCircularActivityIndicator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		61D684E6FBD44737816E9BBE876C490C /* NBMaterialLoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D530AEC314D4D251BC2FAD7648B6C /* NBMaterialLoadingDialog.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		79D62707FE441E8BCD9EB5892B666D3B /* Pods-NBMaterialDialogIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24542E99EE13FDB5751190E3D13A91D6 /* Pods-NBMaterialDialogIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -92,19 +94,19 @@
 		244DCB61ABFCB42D630FB44919645704 /* NBMaterialSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialSnackbar.swift; sourceTree = "<group>"; };
 		24542E99EE13FDB5751190E3D13A91D6 /* Pods-NBMaterialDialogIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBMaterialDialogIOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		284776E633975BAA0FE6BA8EB4484EF2 /* NBMaterialDialogIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMaterialDialogIOS-umbrella.h"; sourceTree = "<group>"; };
-		2AA5C441BBC7C71C345ECF1C98E2FDB1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		2AA5C441BBC7C71C345ECF1C98E2FDB1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		31BCD883C02E0C8B6BE6277E759A86F8 /* NBMaterialCircularActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialCircularActivityIndicator.swift; sourceTree = "<group>"; };
 		3BBEB06647C753FF1B8DE0C47694CD35 /* ResourceBundle-NBMaterialDialogIOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NBMaterialDialogIOS-Info.plist"; sourceTree = "<group>"; };
-		42064E504AFA2D4BD5F6D99B5492815E /* NBMaterialDialogIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NBMaterialDialogIOS.modulemap; sourceTree = "<group>"; };
-		441129172087E6121BD3CBA21814FACD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		42064E504AFA2D4BD5F6D99B5492815E /* NBMaterialDialogIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NBMaterialDialogIOS.modulemap; sourceTree = "<group>"; };
+		441129172087E6121BD3CBA21814FACD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		460EAED2F6B40CC469DD1A3519DD15FF /* BFPaperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BFPaperButton-dummy.m"; sourceTree = "<group>"; };
 		4B2B2F02B83AACC75E9A19720822AADE /* Pods-NBMaterialDialogIOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Example-resources.sh"; sourceTree = "<group>"; };
-		4EB0E9B1C14A0E302D041EA5D606BA36 /* NBMaterialDialogIOS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NBMaterialDialogIOS.bundle; path = NBMaterialDialogIOS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB0E9B1C14A0E302D041EA5D606BA36 /* NBMaterialDialogIOS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBMaterialDialogIOS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FAA94826AD286079F5E814F994C825 /* Pods-NBMaterialDialogIOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		55FF1B040E8F33757AF7001584C4EE05 /* UIColor+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		5D5FD700359DA9A5D71B8D3A74F17B6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		645E66141D0B4475CB7EAFD31896119D /* Pods-NBMaterialDialogIOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		658F69E63A93F0A4E0DD0582C80460EA /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NBMaterialDialogIOS_Tests.framework; path = "Pods-NBMaterialDialogIOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		658F69E63A93F0A4E0DD0582C80460EA /* Pods_NBMaterialDialogIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		670C1E654AB88F7D054D5A66704CCCAD /* BFPaperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFPaperButton-prefix.pch"; sourceTree = "<group>"; };
 		6CC439A68D0DEC56C511EF27F4B610C9 /* Pods-NBMaterialDialogIOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBMaterialDialogIOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6F8DDEC04426E0BA42722CA5FB4D0B93 /* NBConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBConfig.swift; sourceTree = "<group>"; };
@@ -113,26 +115,26 @@
 		74A98B2B83DEBDAEF55F915AA0DDA37F /* NBMaterialToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialToast.swift; sourceTree = "<group>"; };
 		789C43282EFCE4955B1F4127C8408B86 /* Pods-NBMaterialDialogIOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NBMaterialDialogIOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		797B05FECEAD9DC1721FAFD7EFE336A8 /* Pods-NBMaterialDialogIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBMaterialDialogIOS_Example-dummy.m"; sourceTree = "<group>"; };
-		7E2A02BC2F5ADD5678B015EA40F6A71D /* Pods-NBMaterialDialogIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NBMaterialDialogIOS_Example.modulemap"; sourceTree = "<group>"; };
-		8D1A09110BEA528CF8A8CFF1296F3EB0 /* Pods-NBMaterialDialogIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NBMaterialDialogIOS_Tests.modulemap"; sourceTree = "<group>"; };
+		7E2A02BC2F5ADD5678B015EA40F6A71D /* Pods-NBMaterialDialogIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NBMaterialDialogIOS_Example.modulemap"; sourceTree = "<group>"; };
+		8D1A09110BEA528CF8A8CFF1296F3EB0 /* Pods-NBMaterialDialogIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NBMaterialDialogIOS_Tests.modulemap"; sourceTree = "<group>"; };
 		8E5233293678461050FB89FEA4F66259 /* NBMaterialDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialDialog.swift; sourceTree = "<group>"; };
 		91FA0CC624905C6C7D8890CFB5D4D967 /* Pods-NBMaterialDialogIOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBMaterialDialogIOS_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7255BA57D3796F55B3D0974D4B35F73 /* UIFont+Roboto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Roboto.swift"; sourceTree = "<group>"; };
-		A912C28B18B5937793B50617BB1011E2 /* NBMaterialDialogIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NBMaterialDialogIOS.framework; path = NBMaterialDialogIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A912C28B18B5937793B50617BB1011E2 /* NBMaterialDialogIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBMaterialDialogIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC524A181B9A9C3D156FAD7077B57821 /* NBMaterialAlertDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialAlertDialog.swift; sourceTree = "<group>"; };
 		AF0E5AC05571696D0796E706B6612770 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AF44B273E4496143DFFEA8A4BDE7071D /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NBMaterialDialogIOS_Example.framework; path = "Pods-NBMaterialDialogIOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF44B273E4496143DFFEA8A4BDE7071D /* Pods_NBMaterialDialogIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBMaterialDialogIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA83C94887B1E114D69A7F44C6C1883D /* NBMaterialDialogIOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NBMaterialDialogIOS.xcconfig; sourceTree = "<group>"; };
 		BE8429F27FF9C4D60E2B9E8996AC22B8 /* BFPaperButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFPaperButton.m; path = Classes/BFPaperButton.m; sourceTree = "<group>"; };
-		BFD5CD8895614445190D16533DD3209E /* BFPaperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BFPaperButton.modulemap; sourceTree = "<group>"; };
+		BFD5CD8895614445190D16533DD3209E /* BFPaperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BFPaperButton.modulemap; sourceTree = "<group>"; };
 		C1F86A2DE2615B9D0B70934DBC20AD6C /* Pods-NBMaterialDialogIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8965EFFFA2EE159FFB147344B663006 /* NBMaterialDialogIOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMaterialDialogIOS-prefix.pch"; sourceTree = "<group>"; };
 		CFDA05AF34D0F77B688EAF918E5E215B /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA01111D7B13E873285F5B7688189658 /* Pods-NBMaterialDialogIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DEC2DCFFA8BB12BDC7209670E945002B /* Pods-NBMaterialDialogIOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NBMaterialDialogIOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DF2B36B923E061B09B16FCDC4A963498 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4332EF163E0A8F3771CEA22C154EE5C /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BFPaperButton.framework; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4332EF163E0A8F3771CEA22C154EE5C /* BFPaperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03D530AEC314D4D251BC2FAD7648B6C /* NBMaterialLoadingDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NBMaterialLoadingDialog.swift; sourceTree = "<group>"; };
 		FB87A2E3A3026EEAEFD538BB61913996 /* NBMaterialDialogIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NBMaterialDialogIOS-dummy.m"; sourceTree = "<group>"; };
 		FEDAE7F1AFC0141729449069E31C4846 /* Pods-NBMaterialDialogIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBMaterialDialogIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +203,6 @@
 			children = (
 				FB014F2F95A5778577E9BC3E2D1DDA1F /* Assets */,
 			);
-			name = Pod;
 			path = Pod;
 			sourceTree = "<group>";
 		};
@@ -230,7 +231,6 @@
 				BE8429F27FF9C4D60E2B9E8996AC22B8 /* BFPaperButton.m */,
 				00868EB411DAE543EE738C11F1087C84 /* Support Files */,
 			);
-			name = BFPaperButton;
 			path = BFPaperButton;
 			sourceTree = "<group>";
 		};
@@ -298,7 +298,6 @@
 			children = (
 				E99616B00B33E3AB3BCBE0C931EAE005 /* Classes */,
 			);
-			name = Pod;
 			path = Pod;
 			sourceTree = "<group>";
 		};
@@ -374,7 +373,6 @@
 				55FF1B040E8F33757AF7001584C4EE05 /* UIColor+Hex.swift */,
 				A7255BA57D3796F55B3D0974D4B35F73 /* UIFont+Roboto.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -384,7 +382,6 @@
 				2AA5C441BBC7C71C345ECF1C98E2FDB1 /* Roboto-Medium.ttf */,
 				441129172087E6121BD3CBA21814FACD /* Roboto-Regular.ttf */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -563,6 +560,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D5F17C1E1D193D00EA094B /* Roboto-Medium.ttf in Resources */,
+				32D5F17D1E1D193D00EA094B /* Roboto-Regular.ttf in Resources */,
 				F7CD5388C451F6A1F532E7479D187050 /* NBMaterialDialogIOS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
