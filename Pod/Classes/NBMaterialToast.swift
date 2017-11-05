@@ -119,9 +119,9 @@ public enum NBLunchDuration : TimeInterval {
         toast.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-vPad-[textLabel]-vPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: toast.constraintMetrics, views: toast.constraintViews))
         toast.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-hPad-[textLabel]-hPad-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: toast.constraintMetrics, views: toast.constraintViews))
 
-        toast.setContentHuggingPriority(750, for: UILayoutConstraintAxis.vertical)
-        toast.setContentHuggingPriority(750, for: UILayoutConstraintAxis.horizontal)
-        toast.setContentCompressionResistancePriority(750, for: UILayoutConstraintAxis.horizontal)
+        toast.setContentHuggingPriority(UILayoutPriority(rawValue: 750), for: UILayoutConstraintAxis.vertical)
+        toast.setContentHuggingPriority(UILayoutPriority(rawValue: 750), for: UILayoutConstraintAxis.horizontal)
+        toast.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 750), for: UILayoutConstraintAxis.horizontal)
 
         windowView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[toast(>=minHeight)]-vMargin-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: toast.constraintMetrics, views: toast.constraintViews))
         windowView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(>=hMargin)-[toast]-(>=hMargin)-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: toast.constraintMetrics, views: toast.constraintViews))

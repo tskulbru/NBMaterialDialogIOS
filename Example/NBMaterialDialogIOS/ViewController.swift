@@ -38,8 +38,8 @@ class ViewController: UIViewController {
     :param: closure The block of code you wish to run
     */
     fileprivate func delay(_ delay: Double, closure: @escaping (Void) -> Void) {
-        DispatchQueue.main.asyncAfter(
-            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+//        DispatchQueue.main.asyncAfter(
+//            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
 
     @IBAction func handleShowAlert(_ sender: AnyObject) {

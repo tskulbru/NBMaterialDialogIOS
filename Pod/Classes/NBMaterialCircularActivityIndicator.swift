@@ -133,7 +133,7 @@
     /**
     If for some reason you need to reset, call this
     */
-    open func resetAnimations() {
+    @objc open func resetAnimations() {
         if isAnimating {
             stopAnimating()
             startAnimating()
