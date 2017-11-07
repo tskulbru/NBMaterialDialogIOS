@@ -231,9 +231,9 @@ Simple material dialog class
         }
 
         if let okButtonTitle = okButtonTitle {
-            totalButtonTitleLength += (okButtonTitle.uppercased() as NSString).size(attributes: [NSFontAttributeName: UIFont.robotoMediumOfSize(14)]).width + 8
+            totalButtonTitleLength += (okButtonTitle.uppercased() as NSString).size(withAttributes: [NSAttributedStringKey.font: UIFont.robotoMediumOfSize(14)]).width + 8
             if let cancelButtonTitle = cancelButtonTitle {
-                totalButtonTitleLength += (cancelButtonTitle.uppercased() as NSString).size(attributes: [NSFontAttributeName: UIFont.robotoMediumOfSize(14)]).width + 8
+                totalButtonTitleLength += (cancelButtonTitle.uppercased() as NSString).size(withAttributes: [NSAttributedStringKey.font: UIFont.robotoMediumOfSize(14)]).width + 8
             }
 
             // Calculate if the combined button title lengths are longer than max allowed for this dialog, if so use stacked buttons.
@@ -289,7 +289,7 @@ Simple material dialog class
     /**
     Invoked when the user taps the background (anywhere except the dialog)
     */
-    internal func tappedBg() {
+    @objc internal func tappedBg() {
         hideDialog(-1)
     }
 
@@ -298,7 +298,7 @@ Simple material dialog class
 
     - parameter sender: The button clicked
     */
-    internal func pressedAnyButton(_ sender: AnyObject) {
+    @objc internal func pressedAnyButton(_ sender: AnyObject) {
         self.hideDialog((sender as! UIButton).tag)
     }
 
